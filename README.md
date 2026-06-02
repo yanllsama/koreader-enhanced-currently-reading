@@ -45,6 +45,5 @@ All settings are configured via the SimpleUI configuration menu (Wrench icon -> 
 * **Progress bar style:** Change the design of your progress bar here.
 * **Time Format:** Set the time display format as *Readable (e.g., 3.5 hours)* or *XhYm (e.g., 3h 30 min)*.
 
-* This module was developed by Yanllsama, based on the original open-source codes, to contribute to the KOReader and SimpleUI community.
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code as you wish. Feedback and Pull Requests are always welcome!
+This module was developed by Yanllsama, based on the original open-source codes, to contribute to the KOReader and SimpleUI community.  This project is licensed under the MIT License. You are free to use, modify, and distribute the code as you wish. Feedback and Pull Requests are always welcome!

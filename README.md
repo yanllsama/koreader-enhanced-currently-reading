@@ -1,5 +1,7 @@
 # koreader-enhanced-currently-reading
-![Image 1]([insert-screenshot-link-here](https://github.com/yanllsama/koreader-enhanced-currently-reading/blob/main/FileManager_2026-06-02_134508.png))
+<p align="center">
+  <img src="Reader_Sari Yuz - R. F. Kuang.epub_p.png" alt="Hata Ekranı">
+</p>
 # 📖 Enhanced Currently Reading (SimpleUI Dashboard Module)
 
 **Enhanced Currently Reading** is a completely redesigned, highly detailed, and **fully dynamic** reading statistics dashboard module intended to replace the original `module_currently.lua` file for KOReader's popular SimpleUI plugin.

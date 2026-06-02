@@ -1,6 +1,6 @@
 # koreader-enhanced-currently-reading
 <p align="center">
-  <img src="Reader_Sari Yuz - R. F. Kuang.epub_p.png" alt="Hata Ekranı">
+  <img src="FileManager_2026-06-02_134508.png" alt="Hata Ekranı">
 </p>
 # 📖 Enhanced Currently Reading (SimpleUI Dashboard Module)
 

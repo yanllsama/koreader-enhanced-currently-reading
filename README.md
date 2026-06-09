@@ -1,4 +1,4 @@
-# koreader-enhanced-currently-reading-Yanllsama
+# koreader-enhanced-currently-reading-yanllsama
 <p align="center">
   <img src="scr-1.png" alt="Hata Ekranı">
 </p>

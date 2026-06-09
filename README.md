@@ -1,6 +1,6 @@
 # koreader-enhanced-currently-reading
 <p align="center">
-  <img src="currently_Yanllsama.png" alt="Hata Ekranı">
+  <img src="scr-1.png" alt="Hata Ekranı">
 </p>
 # 📖 Enhanced Currently Reading (SimpleUI Dashboard Module)
 

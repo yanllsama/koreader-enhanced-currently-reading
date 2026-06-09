@@ -3,9 +3,7 @@
   <img src="FileManager_2026-06-02_134508.png" alt="Hata Ekranı">
 </p>
 # 📖 Enhanced Currently Reading (SimpleUI Dashboard Module)
-Enhanced Currently Reading is a completely redesigned, highly detailed, and fully dynamic reading statistics dashboard module intended to replace the original `module_currently.lua` file for KOReader's popular SimpleUI plugin.
 Enhanced Currently Reading is a completely redesigned, highly detailed, and fully dynamic reading statistics dashboard module. This module (`module_currently_yanllsama.lua`) is built as an extension for the `simpleui_ext.koplugin` to provide a premium, modern reading dashboard on KOReader.
-While maintaining the solid foundation of the original module, it offers enriched data, gorgeous modern design, dynamic grid management, vertical progress tracking, and flexible interface options. It features a crash-safe architecture fully compatible with the KOReader UI engine.
 While maintaining the solid foundation of the original concept, it offers enriched data, gorgeous modern design, dynamic grid management, vertical progress tracking, and flexible interface options. It features a crash-safe architecture fully compatible with the KOReader UI engine.
 ---
 ## ✨ Features
@@ -36,16 +34,10 @@ Deeply analyze your reading habits with:
 * **Reading Insights**: Tap directly on the statistics area to bring up the detailed Reading Insights popup (if the patch is installed).
 ---
 ## 📥 Installation
-This module updates a part of the original SimpleUI plugin. To install it, you need to overwrite the original file.
 This module requires the `simpleui_ext.koplugin` to function correctly. 
-1. Download the `module_currently.lua` file from this repository.
 **Step 1: Install `simpleui_ext.koplugin` (if you haven't already)**
 1. Download the `simpleui_ext.koplugin` package.
 2. Connect your e-reader to your computer.
-3. Navigate to the directory where the SimpleUI modules are located on your device. This path is usually: `koreader/plugins/simpleui.koplugin/desktop_modules/`
-4. *(Optional)* Make a backup of your original `module_currently.lua` file located in that folder.
-5. Copy the new downloaded file into this folder, overwriting the existing file.
-6. Safely disconnect your device and completely close and reopen KOReader (or reboot the device).
 3. Extract and copy the entire `simpleui_ext.koplugin` folder to your KOReader plugins directory:
    `koreader/plugins/`
 **Step 2: Install this Enhanced Module**
@@ -84,4 +76,3 @@ All settings are configured via the SimpleUI configuration menu (Wrench icon -> 
 * Smart Info Screen for book summaries.
 ---
 *This module was developed by Yanllsama, based on the original open-source codes, to contribute to the KOReader and SimpleUI community. This project is licensed under the MIT License. You are free to use, modify, and distribute the code as you wish. Feedback and Pull Requests are always welcome!*
-

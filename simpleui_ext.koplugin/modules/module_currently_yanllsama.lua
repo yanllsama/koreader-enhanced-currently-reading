@@ -1,4 +1,4 @@
-﻿-- module_currently_yanllsama.lua — Enhanced Currently Reading (SimpleUI Dashboard Module)
+-- module_currently_yanllsama.lua — Enhanced Currently Reading (SimpleUI Dashboard Module)
 --
 -- Enhanced Currently Reading is a completely redesigned, highly detailed, and fully dynamic
 -- reading statistics dashboard module for KOReader's SimpleUI plugin.
@@ -20,8 +20,8 @@
 
 local Device  = require("device")
 local Screen  = Device.screen
-local _       = require("sui_i18n").translate
-local N_      = require("sui_i18n").ngettext
+local _       = (package.loaded["sui_i18n"] or package.loaded["infra/sui_i18n"] or (function() local ok, m = pcall(require, "infra/sui_i18n"); return ok and m or require("sui_i18n") end)()).translate
+local N_      = (package.loaded["sui_i18n"] or package.loaded["infra/sui_i18n"] or (function() local ok, m = pcall(require, "infra/sui_i18n"); return ok and m or require("sui_i18n") end)()).ngettext
 local logger  = require("logger")
 
 local Blitbuffer      = require("ffi/blitbuffer")
@@ -48,16 +48,19 @@ local Math            = require("optmath")
 local Size            = require("ui/size")
 local util            = require("util")
 
-local Config       = require("sui_config")
-local UI           = require("sui_core")
-local SUISettings  = require("sui_store")
+local Config       = package.loaded["sui_config"] or package.loaded["infra/sui_config"] or (function() local ok, m = pcall(require, "infra/sui_config"); return ok and m or require("sui_config") end)()
+local UI           = package.loaded["sui_core"] or package.loaded["infra/sui_core"] or (function() local ok, m = pcall(require, "infra/sui_core"); return ok and m or require("sui_core") end)()
+local SUISettings  = package.loaded["sui_store"] or package.loaded["infra/sui_store"] or (function() local ok, m = pcall(require, "infra/sui_store"); return ok and m or require("sui_store") end)()
 local PAD          = UI.PAD
 local CLR_TEXT_SUB = UI.CLR_TEXT_SUB
 
 local _SH = nil
 local function getSH()
     if not _SH then
-        local ok, m = pcall(require, "desktop_modules/module_books_shared")
+        local ok, m = pcall(require, "modules/module_books_shared")
+        if not ok or not m then
+            ok, m = pcall(require, "desktop_modules/module_books_shared")
+        end
         if ok and m then _SH = m else logger.warn("simpleui: cannot load module_books_shared") end
     end
     return _SH
@@ -66,7 +69,10 @@ end
 local _SUIStyle = nil
 local function getSUIStyle()
     if not _SUIStyle then
-        local ok, m = pcall(require, "sui_style")
+        local ok, m = pcall(require, "features/sui_style")
+        if not ok or not m then
+            ok, m = pcall(require, "sui_style")
+        end
         if ok and m then _SUIStyle = m end
     end
     return _SUIStyle
@@ -326,7 +332,7 @@ end
 local function dbGetBookId(conn, md5)
     if not md5 then return nil end
     local id
-    pcall(function() id = conn:rowexec(string.format("SELECT id FROM book WHERE md5 = %q LIMIT 1;", md5)) end)
+    pcall(function() id = conn:rowexec(string.format("SELECT id FROM book WHERE md5 = '%s' ORDER BY last_open DESC LIMIT 1;", md5)) end)
     return id and tonumber(id) or nil
 end
 
@@ -354,12 +360,25 @@ local function gatherStats(book, pfx, conn_ext)
     local cur_page = (pages > 0) and math.max(1, math.floor(pct * pages)) or 0
 
     if pct > 0 then s.book_progress = { value = string.format("%%%.0f", pct * 100), unit = "" } end
-    if pages > 0 then s.book_pages_read = { value = fmtFraction(cur_page, pages), unit = _("read") } end
 
     local conn = conn_ext or openStatsDB()
-    if not conn then return s end
+    if not conn then 
+        if pages > 0 then s.book_pages_read = { value = fmtFraction(cur_page, pages), unit = _("read") } end
+        return s 
+    end
 
     local book_id = dbGetBookId(conn, book.md5)
+    
+    if book_id then
+        pcall(function()
+            local max_db = conn:rowexec(string.format("SELECT max(page) FROM page_stat_data WHERE id_book = %d", book_id))
+            if max_db and tonumber(max_db) > 0 then
+                cur_page = tonumber(max_db)
+            end
+        end)
+    end
+    
+    if pages > 0 then s.book_pages_read = { value = fmtFraction(cur_page, pages), unit = _("read") } end
     if not book_id then
         if not conn_ext then pcall(function() conn:close() end) end
         return s
@@ -373,7 +392,7 @@ local function gatherStats(book, pfx, conn_ext)
 
     pcall(function()
         local rows = conn:exec(string.format([[
-            WITH ps AS (SELECT page, sum(duration) AS pd FROM page_stat WHERE id_book = %d GROUP BY page)
+            WITH ps AS (SELECT page, sum(duration) AS pd FROM page_stat_data WHERE id_book = %d GROUP BY page)
             SELECT sum(min(pd, %d)), count(*) FROM ps;
         ]], book_id, max_sec))
         
@@ -383,22 +402,22 @@ local function gatherStats(book, pfx, conn_ext)
             ts = { total_time = tt, read_pages = rp, avg_time = (rp > 0 and tt > 0) and (tt / rp) or nil }
         end
 
-        local ndays = conn:rowexec(string.format("SELECT count(*) FROM (SELECT strftime('%%Y-%%m-%%d', start_time, 'unixepoch', 'localtime') FROM page_stat WHERE id_book = %d GROUP BY 1);", book_id))
+        local ndays = conn:rowexec(string.format("SELECT count(*) FROM (SELECT strftime('%%Y-%%m-%%d', start_time, 'unixepoch', 'localtime') FROM page_stat_data WHERE id_book = %d GROUP BY 1);", book_id))
         total_days = ndays and tonumber(ndays) or nil
 
-        local nses = conn:rowexec(string.format("SELECT count(DISTINCT round(start_time / 3600)) FROM page_stat WHERE id_book = %d", book_id))
+        local nses = conn:rowexec(string.format("SELECT count(DISTINCT round(start_time / 3600)) FROM page_stat_data WHERE id_book = %d", book_id))
         session_cnt = tonumber(nses) or 0
 
         local q_last = string.format([[
-            SELECT count(DISTINCT page) FROM page_stat 
+            SELECT count(DISTINCT page) FROM page_stat_data 
             WHERE id_book = %d AND strftime('%%Y-%%m-%%d', start_time, 'unixepoch', 'localtime') = 
-                (SELECT strftime('%%Y-%%m-%%d', max(start_time), 'unixepoch', 'localtime') FROM page_stat WHERE id_book = %d)
+                (SELECT strftime('%%Y-%%m-%%d', max(start_time), 'unixepoch', 'localtime') FROM page_stat_data WHERE id_book = %d)
         ]], book_id, book_id)
         last_session_pages = conn:rowexec(q_last)
         
         local t = os.date("*t")
         local start_today = os.time() - (t.hour * 3600 + t.min * 60 + t.sec)
-        local q_today = string.format("SELECT count(DISTINCT page) FROM page_stat WHERE id_book = %d AND start_time >= %d", book_id, start_today)
+        local q_today = string.format("SELECT count(DISTINCT page) FROM page_stat_data WHERE id_book = %d AND start_time >= %d", book_id, start_today)
         s.today_pages = tonumber(conn:rowexec(q_today)) or 0
     end)
 
@@ -492,7 +511,19 @@ M.enabled_key     = "currently_yanllsama"
 M.default_on      = false
 M.has_covers      = true   
 M.is_book_mod     = true   
-M.needs           = { db = true } 
+M.needs           = { db = true, books = true, stats = true }
+
+function M.isEnabled(pfx)
+    local SUISettings = package.loaded["infra/sui_store"] or package.loaded["sui_store"]
+    if SUISettings then
+        local ext_enabled = SUISettings:readSetting("sui_ext_mod_" .. M.id)
+        if ext_enabled ~= nil then return ext_enabled end
+        
+        local val = SUISettings:readSetting(pfx .. M.enabled_key)
+        if val ~= nil then return val end
+    end
+    return M.default_on
+end
 
 function M.reset()
     _SH = nil; _SUIStyle = nil; _cache = nil
@@ -509,8 +540,13 @@ local function _buildWidget(w, ctx, pfx, SH, bd, cover, stats, D, scale, lbl_sca
 
     local SS = getSUIStyle()
     if SS then
-        _CLR_DARK_EFF = SS.getThemeColor("fg") or _CLR_DARK_EFF
-        CLR_TEXT_SUB_EFF = SS.getThemeColor("text_secondary") or _CLR_DARK_EFF
+        if SS.COLOR then
+            _CLR_DARK_EFF = SS.COLOR.text_primary or _CLR_DARK_EFF
+            CLR_TEXT_SUB_EFF = SS.COLOR.text_secondary or _CLR_DARK_EFF
+        elseif SS.getThemeColor then
+            _CLR_DARK_EFF = SS.getThemeColor("fg") or _CLR_DARK_EFF
+            CLR_TEXT_SUB_EFF = SS.getThemeColor("text_secondary") or _CLR_DARK_EFF
+        end
     end
 
     local val_fg_color = _CLR_DARK_EFF
@@ -600,7 +636,14 @@ local function _buildWidget(w, ctx, pfx, SH, bd, cover, stats, D, scale, lbl_sca
     elseif hdr_weight == "medium" then sec_fs = Font:getFace("NotoSans-Regular.ttf", hdr_base_fs)
     else sec_fs = Font:getFace("NotoSans-Bold.ttf", hdr_base_fs) end
 
-    local CLR_HDR_BG = SS and (SS.getThemeColor("muted") or SS.getThemeColor("divider")) or Blitbuffer.COLOR_GRAY_D
+    local CLR_HDR_BG = Blitbuffer.COLOR_GRAY_D
+    if SS then
+        if SS.COLOR then
+            CLR_HDR_BG = SS.COLOR.gray_soft or SS.COLOR.track or Blitbuffer.COLOR_GRAY_D
+        elseif SS.getThemeColor then
+            CLR_HDR_BG = SS.getThemeColor("muted") or SS.getThemeColor("divider") or Blitbuffer.COLOR_GRAY_D
+        end
+    end
     
     local function mkDynamicGrid(items)
         local grid_args = { align = "left" }
@@ -677,7 +720,7 @@ local function _buildWidget(w, ctx, pfx, SH, bd, cover, stats, D, scale, lbl_sca
         if not desc or desc == "" then
             pcall(function()
                 -- YÖNTEM 1: BookInfoManager (KOReader yerleşik metadata yöneticisi - En Güvenilir)
-                local Config = require("sui_config")
+                local Config = package.loaded["sui_config"] or package.loaded["infra/sui_config"] or (function() local ok, m = pcall(require, "infra/sui_config"); return ok and m or require("sui_config") end)()
                 local bim = Config.getBookInfoManager()
                 local props = nil
                 
@@ -960,7 +1003,7 @@ local function makeVertBar(pct, label_bot, color_fg)
     
     local tappable = InputContainer:new{
         dimen = Geom:new{ w = w, h = content_h }, _fp = current_fp, _open_fn = ctx.open_fn,
-        _hs = ctx._hs_widget,
+        _hs = ctx._screen_widget or ctx._hs_widget,
         _count = fps and #fps or 1,
         _cur = curIdx or 1,
         [1] = FrameContainer:new{ bordersize = 0, padding = 0, padding_left = PAD, padding_right = PAD, [1] = row },
@@ -976,12 +1019,24 @@ local function makeVertBar(pct, label_bot, color_fg)
             if ges.direction == "south" then
                 self._cur = (self._cur - 2 + self._count) % self._count + 1
                 ctx.yanllsama_cur_idx = self._cur
-                if self._hs then self._hs:_refreshImmediate(true) end
+                if self._hs then
+                    if type(self._hs._refreshBookModSlot) == "function" then
+                        self._hs:_refreshBookModSlot("currently_yanllsama")
+                    elseif type(self._hs._refreshImmediate) == "function" then
+                        self._hs:_refreshImmediate(true)
+                    end
+                end
                 return true
             elseif ges.direction == "north" then
                 self._cur = self._cur % self._count + 1
                 ctx.yanllsama_cur_idx = self._cur
-                if self._hs then self._hs:_refreshImmediate(true) end
+                if self._hs then
+                    if type(self._hs._refreshBookModSlot) == "function" then
+                        self._hs:_refreshBookModSlot("currently_yanllsama")
+                    elseif type(self._hs._refreshImmediate) == "function" then
+                        self._hs:_refreshImmediate(true)
+                    end
+                end
                 return true
             end
             return false
@@ -997,9 +1052,9 @@ local function makeVertBar(pct, label_bot, color_fg)
             local bars_start_x = stats_start_x + stats_w + (pad_x * 2) + sep_w
             
             if rel_x > bars_start_x then
-                local ok, SW = pcall(require, "sui_stats_windows")
-                if ok and SW and SW.showReadingInsightsWindow then
-                    SW.showReadingInsightsWindow()
+                local ok, CBS = pcall(require, "modules/module_currently_books_stat")
+                if ok and CBS and CBS.showBookStatsWindow then
+                    CBS.showBookStatsWindow(current_fp, nil, ctx.ui)
                 else
                     local UIManager = require("ui/uimanager")
                     UIManager:broadcastEvent(require("ui/event"):new("ShowReaderProgress"))
@@ -1193,14 +1248,14 @@ function M.getMenuItems(ctx_menu)
             text = _lc("Statistics Layout & Appearance"),
             sub_item_table = {
                 {
-                    text = _lc("Kitap Kaynağı"),
+                    text = _lc("Book Source"),
                     sub_item_table = {
-                        { text = _lc("Son Okunanlar"), radio = true, keep_menu_open = true, checked_func = function() return getSource(pfx) == "recent" end, callback = function() SUISettings:saveSetting(pfx .. SETTING_SOURCE, "recent") refresh() end },
-                        { text = _lc("Okunacaklar (TBR)"), radio = true, keep_menu_open = true, checked_func = function() return getSource(pfx) == "tbr" end, callback = function() SUISettings:saveSetting(pfx .. SETTING_SOURCE, "tbr") refresh() end },
+                        { text = _lc("Recent"), radio = true, keep_menu_open = true, checked_func = function() return getSource(pfx) == "recent" end, callback = function() SUISettings:saveSetting(pfx .. SETTING_SOURCE, "recent") refresh() end },
+                        { text = _lc("To Be Read (TBR)"), radio = true, keep_menu_open = true, checked_func = function() return getSource(pfx) == "tbr" end, callback = function() SUISettings:saveSetting(pfx .. SETTING_SOURCE, "tbr") refresh() end },
                     }
                 },
                 {
-                    text_func = function() return string.format("%s: %d", _lc("Günlük Sayfa Hedefi"), getDailyPageGoal(pfx)) end,
+                    text_func = function() return string.format("%s: %d", _lc("Daily Page Goal"), getDailyPageGoal(pfx)) end,
                     callback = function()
                         local SpinWidget = require("ui/widget/spinwidget")
                         UIManager:show(SpinWidget:new{
@@ -1208,8 +1263,8 @@ function M.getMenuItems(ctx_menu)
                             value_min = 10,
                             value_max = 500,
                             value_step = 10,
-                            title_text = _lc("Günlük Sayfa Hedefi"),
-                            ok_text = _lc("Kaydet"),
+                            title_text = _lc("Daily Page Goal"),
+                            ok_text = _lc("Save"),
                             callback = function(spin)
                                 SUISettings:saveSetting(pfx .. DAILY_PAGE_GOAL_KEY, spin.value)
                                 refresh()
@@ -1218,7 +1273,7 @@ function M.getMenuItems(ctx_menu)
                     end,
                 },
                 {
-                    text = _lc("İstatistik Öğelerini Düzenle"),
+                    text = _lc("Edit Statistics Items"),
                     sub_item_table = {
                         { text = _lc("Toggle Visibility"), sub_item_table = toggle_items },
                         {
@@ -1241,7 +1296,7 @@ function M.getMenuItems(ctx_menu)
                     }
                 },
                 {
-                    text = _lc("Izgara Ayarları"),
+                    text = _lc("Grid Settings"),
                     sub_item_table = {
                         {
                             text = _lc("Grid Dimensions"),
@@ -1345,25 +1400,25 @@ function M.getMenuItems(ctx_menu)
                     }
                 },
                 {
-                    text = _lc("Dikey Çubuk Ayarları"),
+                    text = _lc("Vertical Bar Settings"),
                     sub_item_table = {
                         {
-                            text = _lc("Çubuk Boyutu"),
+                            text = _lc("Bar Size"),
                             sub_item_table = bar_height_menu
                         },
 
                         {
-                            text = _lc("Çubuk Kalınlığı"),
+                            text = _lc("Bar Thickness"),
                             sub_item_table = {
-                                { text = _lc("1. Kademe (İnce)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 1 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 1) refresh() end },
-                                { text = _lc("2. Kademe (Normal)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 2 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 2) refresh() end },
-                                { text = _lc("3. Kademe (Kalın)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 3 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 3) refresh() end },
-                                { text = _lc("4. Kademe (Ekstra Kalın)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 4 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 4) refresh() end },
+                                { text = _lc("Level 1 (Thin)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 1 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 1) refresh() end },
+                                { text = _lc("Level 2 (Normal)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 2 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 2) refresh() end },
+                                { text = _lc("Level 3 (Bold)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 3 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 3) refresh() end },
+                                { text = _lc("Level 4 (Extra Bold)"), radio = true, keep_menu_open = true, checked_func = function() return getBarThickness(pfx) == 4 end, callback = function() SUISettings:saveSetting(pfx .. BAR_THICKNESS_KEY, 4) refresh() end },
                             }
                         },
-                        { text = _lc("Çubuk Etiketi Yazı Tipi"), sub_item_table = makeFontMenu(BAR_LBL_FONT_KEY, "NotoSans") },
-                        { text = _lc("Çubuk Etiketi Boyutu"), sub_item_table = makeSizeMenu(BAR_LBL_FS_KEY, 10, 30, 2, 6) },
-                        { text_func = function() return getBarLblBold(pfx) and _lc("Etiket Kalınlığı: Kalın") or _lc("Etiket Kalınlığı: Normal") end, keep_menu_open = true, callback = function() SUISettings:saveSetting(pfx .. BAR_LBL_BOLD_KEY, not getBarLblBold(pfx)) refresh() end },
+                        { text = _lc("Bar Label Font"), sub_item_table = makeFontMenu(BAR_LBL_FONT_KEY, "NotoSans") },
+                        { text = _lc("Bar Label Size"), sub_item_table = makeSizeMenu(BAR_LBL_FS_KEY, 10, 30, 2, 6) },
+                        { text_func = function() return getBarLblBold(pfx) and _lc("Label Weight: Bold") or _lc("Label Weight: Normal") end, keep_menu_open = true, callback = function() SUISettings:saveSetting(pfx .. BAR_LBL_BOLD_KEY, not getBarLblBold(pfx)) refresh() end },
                     }
                 },
                 {
@@ -1481,12 +1536,33 @@ function M.build(w, ctx)
     local cover = SH.getBookCover(current_fp, D.COVER_W, D.COVER_H, nil, 0.10)
                   or SH.coverPlaceholder(bd.title, bd.authors, D.COVER_W, D.COVER_H)
 
+    -- Fix for missing MD5 checksums causing 0-stats
+    local extracted_md5 = prefetched_entry and prefetched_entry.partial_md5_checksum
+    pcall(function()
+        local DS = package.loaded["docsettings"] or require("docsettings")
+        if DS and require("libs/libkoreader-lfs").attributes(current_fp, "mode") == "file" then
+            local ok, ds = pcall(DS.open, DS, current_fp)
+            if ok and ds then
+                extracted_md5 = extracted_md5 or ds:readSetting("partial_md5_checksum")
+                bd.percent = bd.percent or ds:readSetting("percent_finished")
+                
+                local phys = ds:readSetting("yanllsama_physical_pages")
+                if phys and tonumber(phys) and tonumber(phys) > 0 then
+                    bd.pages = tonumber(phys)
+                else
+                    bd.pages = bd.pages or ds:readSetting("doc_pages")
+                end
+                pcall(function() ds:close() end)
+            end
+        end
+    end)
+
     local stats = cacheGet(current_fp, pfx)
     if not stats then
         local book_meta = {
             fp = current_fp,
             title = bd.title or "",
-            md5 = prefetched_entry and prefetched_entry.partial_md5_checksum,
+            md5 = extracted_md5,
             percent = bd.percent or 0,
             pages = bd.pages or 0
         }
@@ -1498,6 +1574,7 @@ function M.build(w, ctx)
 end
 
 return M
+
 
 
 

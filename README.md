@@ -1,4 +1,4 @@
-# KOReader Enhanced Currently Reading — SimpleUI Plus (v3.0.0)
+# SimpleUI Plus (v3.0.0)
 
 <p align="center">
   <img src="_screenshots/1.png" alt="Screenshot 1" width="48%">

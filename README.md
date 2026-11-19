@@ -20,7 +20,7 @@ It integrates cleanly with SimpleUI at runtime via in-memory hooks without modif
 
 ---
 
-## ✨ Highlights (v3.0.0)
+##  Highlights (v3.0.0)
 
 * **Standalone Plugin & Setup Wizard**: Works alongside `simpleui.koplugin` with zero core file edits and includes a first-run setup wizard (`wizard.lua`).
 * **Cover Deck (1 / 3 / 5 / 7 Books)**: Stacked multi-book cover deck with vertical swipe and tap-to-switch between recent or TBR books.
@@ -32,7 +32,7 @@ It integrates cleanly with SimpleUI at runtime via in-memory hooks without modif
 
 ---
 
-## 📥 How to Install
+##  How to Install
 
 1. **Remove the Old Module (If Installed):**
    If you previously placed `module_currently_yanllsama.lua` manually inside `simpleui.koplugin` (or `simpleui_ext.koplugin`), delete it to avoid conflicts.
@@ -45,7 +45,7 @@ It integrates cleanly with SimpleUI at runtime via in-memory hooks without modif
 
 ---
 
-## 📝 Change Log
+##  Change Log
 
 **v3.0.0 (Latest)**
 * **Architecture & Setup**: Transformed from a single drop-in module (`module_currently_yanllsama.lua`) into a full KOReader plugin (`simpleui_plus.koplugin`) that integrates via in-memory hooks (`main.lua`) without modifying `simpleui.koplugin` files on disk; added a first-run Setup Wizard (`wizard.lua`).

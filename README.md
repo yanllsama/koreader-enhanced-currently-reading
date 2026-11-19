@@ -8,7 +8,10 @@
   <img src="_screenshots/3.png" alt="Screenshot 3" width="48%">
   <img src="_screenshots/4.png" alt="Screenshot 4" width="48%">
 </p>
-
+<p align="center">
+  <img src="_screenshots/5.png" alt="Screenshot 3" width="48%">
+  <img src="_screenshots/6.png" alt="Screenshot 4" width="48%">
+</p>
 # 📖 SimpleUI Plus (`simpleui_plus.koplugin`)
 
 **SimpleUI Plus** is the next-generation evolution of Enhanced Currently Reading — transformed from a standalone `module_currently_yanllsama.lua` file into a full, independent KOReader plugin (`simpleui_plus.koplugin`) for **SimpleUI**.

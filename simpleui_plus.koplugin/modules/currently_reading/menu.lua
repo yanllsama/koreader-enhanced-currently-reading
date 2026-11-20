@@ -88,7 +88,7 @@ function M.buildMenuItems(ctx_menu)
     local SUISettings = getSUIModule("sui_store", "infra")
     local Config      = C.getConfig()
     local refresh     = ctx_menu.refresh
-    local _lc         = ctx_menu._ or _
+    local _lc         = _
 
     _preview_state.pfx = pfx
     _preview_state._lc = _lc
@@ -1654,12 +1654,25 @@ function M.buildMenuItems(ctx_menu)
 
     -- Profiles menu
     local profiles_menu = {}
-    local buildProfilesMenu
+    local saved_profiles_sub = {}
+    local buildProfilesMenu, rebuildSavedProfilesSub
     local function rebuildProfilesMenu()
+        if type(rebuildSavedProfilesSub) == "function" then
+            rebuildSavedProfilesSub()
+        end
         for k in pairs(profiles_menu) do profiles_menu[k] = nil end
         for _, it in ipairs(buildProfilesMenu()) do
             table.insert(profiles_menu, it)
         end
+    end
+    local function syncProfileUI(touchmenu_instance)
+        rebuildProfilesMenu()
+        if touchmenu_instance and type(touchmenu_instance.updateItems) == "function" then
+            pcall(function() touchmenu_instance:updateItems() end)
+        end
+        UIManager:nextTick(function()
+            if type(refresh) == "function" then pcall(refresh) end
+        end)
     end
 
     buildProfilesMenu = function()
@@ -1737,7 +1750,7 @@ function M.buildMenuItems(ctx_menu)
                             end
                         end
                         SUISettings:saveSetting(pfx .. CFG.PROFILES_KEY, cur_list)
-                        rebuildProfilesMenu()
+                        syncProfileUI()
                         notifyChange(nil, true)
                         suiToast(is_locked and _lc("Profile unlocked.") or _lc("Profile locked."))
                     end,
@@ -1746,7 +1759,7 @@ function M.buildMenuItems(ctx_menu)
                     text = is_default and _lc("Unset as Default Profile") or _lc("Set as Default Profile (Auto-Load on Startup)"),
                     callback = function()
                         SUISettings:saveSetting(pfx .. CFG.DEFAULT_PROFILE_KEY, is_default and "" or target_name)
-                        rebuildProfilesMenu()
+                        syncProfileUI()
                         notifyChange(nil, true)
                         suiToast(is_default and _lc("Default profile unset.") or string.format(_lc("'%s' set as default profile."), target_name))
                     end,
@@ -1802,7 +1815,7 @@ function M.buildMenuItems(ctx_menu)
                                     qraw[target_name] = nil
                                     SUISettings:saveSetting(pfx .. CFG.QUICK_PROFILES_KEY, qraw)
                                 end
-                                rebuildProfilesMenu()
+                                syncProfileUI()
                                 notifyChange(nil, true)
                             end,
                         }
@@ -1845,7 +1858,7 @@ function M.buildMenuItems(ctx_menu)
                                     qraw[target_name] = nil
                                     SUISettings:saveSetting(pfx .. CFG.QUICK_PROFILES_KEY, qraw)
                                 end
-                                rebuildProfilesMenu()
+                                syncProfileUI()
                                 notifyChange(nil, true)
                                 suiToast(string.format(_lc("Profile '%s' deleted."), target_name))
                             end,
@@ -1861,102 +1874,108 @@ function M.buildMenuItems(ctx_menu)
             }
         end
 
-        local saved_sub = {}
-        if #profiles > 0 then
-            for _, p in ipairs(profiles) do
-                local prof_name = p.name
-                local prof_data = p.data
-                local is_locked = p.locked == true
-                local is_default = (default_name == prof_name)
+        rebuildSavedProfilesSub = function()
+            for k in pairs(saved_profiles_sub) do saved_profiles_sub[k] = nil end
+            local cur_profiles = CFG.getProfiles(pfx)
+            local cur_def_name = CFG.getDefaultProfileName(pfx)
+            if #cur_profiles > 0 then
+                for _, p in ipairs(cur_profiles) do
+                    local prof_name = p.name
+                    local prof_data = p.data
+                    local is_locked = p.locked == true
+                    local is_default = (cur_def_name == prof_name)
 
-                local badge = ""
-                if is_default then badge = badge .. " ★" end
-                if is_locked then badge = badge .. " 🔒" end
+                    local badge = ""
+                    if is_default then badge = badge .. " ★" end
+                    if is_locked then badge = badge .. " 🔒" end
 
-                table.insert(saved_sub, {
-                    text = prof_name .. badge,
-                    radio = true,
-                    keep_menu_open = true,
-                    checked_func = function()
-                        return CFG.getActiveProfileName(pfx) == prof_name
-                    end,
+                    table.insert(saved_profiles_sub, {
+                        text = prof_name .. badge,
+                        radio = true,
+                        keep_menu_open = true,
+                        checked_func = function()
+                            return CFG.getActiveProfileName(pfx) == prof_name
+                        end,
+                        callback = function()
+                            ProfilesMod.applyProfileData(pfx, prof_data)
+                            SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, prof_name)
+                            syncProfileUI()
+                            notifyChange(nil, nil, true)
+                        end,
+                        on_hold = function() showProfileActionsDialog(prof_name) end,
+                        hold_callback = function() showProfileActionsDialog(prof_name) end,
+                        sui_build = function(build_ctx)
+                            local SUI = getSUIModule("sui_window", "engines")
+                            if not SUI or not SUI.ListRow then return nil end
+
+                            local is_active = (CFG.getActiveProfileName(pfx) == prof_name)
+                            local row = SUI.ListRow{
+                                title = prof_name .. badge,
+                                inner_w = (build_ctx and build_ctx.inner_w) or Screen:getWidth(),
+                                checked = is_active,
+                                on_tap = function()
+                                    ProfilesMod.applyProfileData(pfx, prof_data)
+                                    SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, prof_name)
+                                    syncProfileUI()
+                                    notifyChange(nil, nil, true)
+                                end,
+                                on_more = function() showProfileActionsDialog(prof_name) end,
+                                on_hold = function() showProfileActionsDialog(prof_name) end,
+                            }
+                            local ic = row and row[1]
+                            if ic and ic.ges_events then
+                                local hold_done = false
+                                ic.ges_events.Hold = {
+                                    GestureRange:new{ ges = "hold", range = function() return ic.dimen end }
+                                }
+                                ic.ges_events.HoldRelease = {
+                                    GestureRange:new{ ges = "hold_release", range = function() return ic.dimen end }
+                                }
+                                function ic:onHold()
+                                    hold_done = true
+                                    showProfileActionsDialog(prof_name)
+                                    return true
+                                end
+                                function ic:onHoldRelease()
+                                    if not hold_done then showProfileActionsDialog(prof_name) end
+                                    hold_done = false
+                                    return true
+                                end
+                            end
+                            return row
+                        end,
+                    })
+                end
+
+                table.insert(saved_profiles_sub, {
+                    text = _lc("Manage Profile Options..."),
                     callback = function()
-                        ProfilesMod.applyProfileData(pfx, prof_data)
-                        SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, prof_name)
-                        notifyChange(nil, nil, true)
-                        rebuildProfilesMenu()
-                    end,
-                    on_hold = function() showProfileActionsDialog(prof_name) end,
-                    hold_callback = function() showProfileActionsDialog(prof_name) end,
-                    sui_build = function(build_ctx)
-                        local SUI = getSUIModule("sui_window", "engines")
-                        if not SUI or not SUI.ListRow then return nil end
-
-                        local is_active = (CFG.getActiveProfileName(pfx) == prof_name)
-                        local row = SUI.ListRow{
-                            title = prof_name .. badge,
-                            inner_w = (build_ctx and build_ctx.inner_w) or Screen:getWidth(),
-                            checked = is_active,
-                            on_tap = function()
-                                ProfilesMod.applyProfileData(pfx, prof_data)
-                                SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, prof_name)
-                                notifyChange(nil, nil, true)
-                                rebuildProfilesMenu()
-                            end,
-                            on_more = function() showProfileActionsDialog(prof_name) end,
-                            on_hold = function() showProfileActionsDialog(prof_name) end,
-                        }
-                        local ic = row and row[1]
-                        if ic and ic.ges_events then
-                            local hold_done = false
-                            ic.ges_events.Hold = {
-                                GestureRange:new{ ges = "hold", range = function() return ic.dimen end }
-                            }
-                            ic.ges_events.HoldRelease = {
-                                GestureRange:new{ ges = "hold_release", range = function() return ic.dimen end }
-                            }
-                            function ic:onHold()
-                                hold_done = true
-                                showProfileActionsDialog(prof_name)
-                                return true
+                        local cur_profs = CFG.getProfiles(pfx)
+                        if #cur_profs == 1 then
+                            showProfileActionsDialog(cur_profs[1].name)
+                        else
+                            local picker_items = {}
+                            for _, p in ipairs(cur_profs) do
+                                local p_name = p.name
+                                table.insert(picker_items, {
+                                    text = p_name .. (p.locked and " 🔒" or "") .. (CFG.getDefaultProfileName(pfx) == p_name and " ★" or ""),
+                                    callback = function() showProfileActionsDialog(p_name) end,
+                                })
                             end
-                            function ic:onHoldRelease()
-                                if not hold_done then showProfileActionsDialog(prof_name) end
-                                hold_done = false
-                                return true
-                            end
+                            suiActionMenu{
+                                title = _lc("Select Profile to Manage"),
+                                items = picker_items,
+                                cancel_text = _lc("Cancel"),
+                            }
                         end
-                        return row
                     end,
                 })
+            else
+                table.insert(saved_profiles_sub, { text = _lc("(No saved profiles)"), dim = true })
             end
-
-            table.insert(saved_sub, {
-                text = _lc("Manage Profile Options..."),
-                callback = function()
-                    local cur_profs = CFG.getProfiles(pfx)
-                    if #cur_profs == 1 then
-                        showProfileActionsDialog(cur_profs[1].name)
-                    else
-                        local picker_items = {}
-                        for _, p in ipairs(cur_profs) do
-                            local p_name = p.name
-                            table.insert(picker_items, {
-                                text = p_name .. (p.locked and " 🔒" or "") .. (CFG.getDefaultProfileName(pfx) == p_name and " ★" or ""),
-                                callback = function() showProfileActionsDialog(p_name) end,
-                            })
-                        end
-                        suiActionMenu{
-                            title = _lc("Select Profile to Manage"),
-                            items = picker_items,
-                            cancel_text = _lc("Cancel"),
-                        }
-                    end
-                end,
-            })
-        else
-            table.insert(saved_sub, { text = _lc("(No saved profiles)"), dim = true })
+            return saved_profiles_sub
         end
+        rebuildSavedProfilesSub()
 
         table.insert(sub, {
             text_func = function()
@@ -1967,7 +1986,7 @@ function M.buildMenuItems(ctx_menu)
                     return _lc("Saved Profiles")
                 end
             end,
-            sub_item_table = saved_sub,
+            sub_item_table_func = function() return rebuildSavedProfilesSub() end,
         })
 
         table.insert(sub, {
@@ -2106,7 +2125,7 @@ function M.buildMenuItems(ctx_menu)
                             else table.insert(list, { name = name, data = snapshot, locked = false }) end
                             SUISettings:saveSetting(pfx .. CFG.PROFILES_KEY, list)
                             SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, name)
-                            rebuildProfilesMenu()
+                            syncProfileUI()
                             notifyChange(nil, true)
                             suiToast(string.format(_lc("Profile '%s' saved."), name))
                         end
@@ -2155,7 +2174,7 @@ function M.buildMenuItems(ctx_menu)
                     cancel_text = _lc("Cancel"),
                     ok_callback = function()
                         CFG.seedDefaultProfiles(pfx, true)
-                        rebuildProfilesMenu()
+                        syncProfileUI()
                         notifyChange()
                         suiToast(_lc("Bundled profiles restored."))
                     end,
@@ -2195,10 +2214,7 @@ function M.buildMenuItems(ctx_menu)
                     cancel_text = _lc("Cancel"),
                     ok_callback = function()
                         local deleted_cnt, kept_cnt = ProfilesMod.purgeUnlockedProfilesFromStore(pfx)
-                        rebuildProfilesMenu()
-                        if touchmenu_instance and type(touchmenu_instance.updateItems) == "function" then
-                            touchmenu_instance:updateItems()
-                        end
+                        syncProfileUI(touchmenu_instance)
                         notifyChange(nil, true)
                         suiToast(string.format(_lc("Deleted %d unlocked profile(s) from SimpleUI (%d locked kept)."), deleted_cnt, kept_cnt))
                     end,
@@ -3293,6 +3309,52 @@ function M.buildMenuItems(ctx_menu)
                             },
                         },
                     },
+                },
+                {
+                    text_func = function()
+                        local cur = C.getLanguage()
+                        local lbl = _lc("Auto (Follow KOReader)")
+                        if cur ~= "auto" then
+                            for _, opt in ipairs(C.LANG_OPTIONS) do
+                                if opt.code == cur then
+                                    lbl = opt.native
+                                    break
+                                end
+                            end
+                        end
+                        return string.format("%s: %s", _lc("Language"), lbl)
+                    end,
+                    sub_item_table_func = function()
+                        local items = {}
+                        for _, opt in ipairs(C.LANG_OPTIONS) do
+                            local code = opt.code
+                            local title = (code == "auto") and _lc("Auto (Follow KOReader)") or opt.label
+                            table.insert(items, {
+                                text = title,
+                                radio = true,
+                                keep_menu_open = true,
+                                checked_func = function() return C.getLanguage() == code end,
+                                callback = function()
+                                    C.setLanguage(code, CFG.refreshTranslations)
+                                    local mod_y = package.loaded["modules/module_currently_yanllsama"]
+                                    if mod_y and type(mod_y.refreshTranslations) == "function" then pcall(mod_y.refreshTranslations) end
+                                    local mod_b = package.loaded["modules/module_currently_books_stat"]
+                                    if mod_b and type(mod_b.refreshTranslations) == "function" then pcall(mod_b.refreshTranslations) end
+                                    notifyChange(nil, true, true)
+                                    local SUIWin = getSUIModule("sui_window", "engines")
+                                    local open_wins = SUIWin and SUIWin._open_instances
+                                    local top_win = open_wins and open_wins[#open_wins]
+                                    if top_win and type(top_win.close) == "function" then
+                                        pcall(function() top_win:close() end)
+                                    elseif type(refresh) == "function" then
+                                        pcall(refresh)
+                                    end
+                                    suiToast(_("Language changed. Reopen settings to refresh all menu labels."))
+                                end,
+                            })
+                        end
+                        return items
+                    end,
                 },
             }
         },

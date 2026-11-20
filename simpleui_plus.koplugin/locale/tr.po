@@ -1,0 +1,1453 @@
+# SimpleUI Plus (tr) translation.
+msgid ""
+msgstr ""
+"Project-Id-Version: SimpleUI Plus 3.0.0\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid " (Default)"
+msgstr " (Varsayılan)"
+
+msgid "%d min"
+msgstr "%d dk"
+
+msgid "%dh %02d min"
+msgstr "%d sa %02d dk"
+
+msgid "'%s' set as default profile."
+msgstr "'%s' varsayılan profil olarak ayarlandı."
+
+msgid "(No saved profiles)"
+msgstr "(Kayıtlı profil yok)"
+
+msgid "0 min"
+msgstr "0 dk"
+
+msgid "0 px (Full Width)"
+msgstr "0 px (Tam Genişlik)"
+
+msgid "1st Bar Color"
+msgstr "1. Çubuk Rengi"
+
+msgid "1st Ring Color"
+msgstr "1. Halka Rengi"
+
+msgid "2 Seconds"
+msgstr "2 Saniye"
+
+msgid "2nd Bar Color"
+msgstr "2. Çubuk Rengi"
+
+msgid "2nd Ring Color"
+msgstr "2. Halka Rengi"
+
+msgid "3 Covers (1 Above / 1 Below)"
+msgstr "3 Kapak (1 Üstte / 1 Altta)"
+
+msgid "3 Seconds (Default)"
+msgstr "3 Saniye (Varsayılan)"
+
+msgid "3rd Bar Color"
+msgstr "3. Çubuk Rengi"
+
+msgid "3rd Ring Color"
+msgstr "3. Halka Rengi"
+
+msgid "4 Seconds"
+msgstr "4 Saniye"
+
+msgid "5 Covers (2 Above / 2 Below)"
+msgstr "5 Kapak (2 Üstte / 2 Altta)"
+
+msgid "5 Seconds"
+msgstr "5 Saniye"
+
+msgid "7 Covers (3 Above / 3 Below)"
+msgstr "7 Kapak (3 Üstte / 3 Altta)"
+
+msgid "A profile with that name already exists."
+msgstr "Bu isimde bir profil zaten var."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "Active"
+msgstr "Aktif"
+
+msgid "Active Profile"
+msgstr "Aktif Profil"
+
+msgid "Add Visual Item"
+msgstr "Görsel Öğe Ekle"
+
+msgid "Add at least 2 visual items to arrange."
+msgstr "Sıralamak için en az 2 görsel öğe ekleyin."
+
+msgid "Add to Quick Switch"
+msgstr "Hızlı Değiştirmeye Ekle"
+
+msgid "Added to Quick Switch."
+msgstr "Hızlı değiştirmeye eklendi."
+
+msgid "Afternoon"
+msgstr "Öğleden sonra"
+
+msgid "All"
+msgstr "Tümü"
+
+msgid "All Statistics"
+msgstr "Tüm İstatistikler"
+
+msgid "All colors reset."
+msgstr "Tüm renkler sıfırlandı."
+
+msgid "All-Time"
+msgstr "Tüm Zamanlar"
+
+msgid "All-Time Books"
+msgstr "Tüm Zamanlar Kitap"
+
+msgid "All-Time Days"
+msgstr "Tüm Zamanlar Gün"
+
+msgid "All-Time Duration"
+msgstr "Tüm Zamanlar Süre"
+
+msgid "All-Time Pages"
+msgstr "Tüm Zamanlar Sayfa"
+
+msgid "Apply"
+msgstr "Uygula"
+
+msgid "Apply Profile"
+msgstr "Profili Uygula"
+
+msgid "Are you sure you want to delete profile '%s'?"
+msgstr "'%s' profilini silmek istediğinize emin misiniz?"
+
+msgid "Arrange Visual Items"
+msgstr "Görsel Öğeleri Düzenle"
+
+msgid "At Bottom"
+msgstr "Altta"
+
+msgid "At Top"
+msgstr "Yukarıda"
+
+msgid "Author Name Color"
+msgstr "Yazar Adı Rengi"
+
+msgid "Author Name Font"
+msgstr "Yazar Adı Yazı Tipi"
+
+msgid "Author Name Size"
+msgstr "Yazar Adı Boyutu"
+
+msgid "Auto (Follow KOReader)"
+msgstr "Otomatik (KOReader Dilini İzle)"
+
+msgid "Automatic (Active Book)"
+msgstr "Otomatik (Aktif Kitap)"
+
+msgid "Average per day"
+msgstr "Günlük ortalama"
+
+msgid "Average per page"
+msgstr "Sayfa başına ortalama"
+
+msgid "Bar Height"
+msgstr "Çubuk Yüksekliği"
+
+msgid "Bar Length"
+msgstr "Çubuk Uzunluğu"
+
+msgid "Black"
+msgstr "Siyah"
+
+msgid "Bold"
+msgstr "Kalın"
+
+msgid "Book"
+msgstr "Kitap"
+
+msgid "Book Description"
+msgstr "Kitap Açıklaması"
+
+msgid "Book Progress"
+msgstr "Kitap İlerlemesi"
+
+msgid "Book Source"
+msgstr "Kitap Kaynağı"
+
+msgid "Book Statistics"
+msgstr "Kitap İstatistikleri"
+
+msgid "Book Statistics Window"
+msgstr "Kitap İstatistikleri Penceresi"
+
+msgid "Book Title Color"
+msgstr "Kitap Adı Rengi"
+
+msgid "Book Title Font"
+msgstr "Kitap Adı Yazı Tipi"
+
+msgid "Book Title Size"
+msgstr "Kitap Adı Boyutu"
+
+msgid "Book and Author"
+msgstr "Kitap ve Yazar"
+
+msgid "Bracket Frame"
+msgstr "Köşeli Parantez Çerçeve"
+
+msgid "Bundled profiles restored."
+msgstr "Dahili profiller geri yüklendi."
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Category Header Color"
+msgstr "Kategori Başlığı Rengi"
+
+msgid "Category Header Spacing"
+msgstr "Kategori Başlığı Boşluğu"
+
+msgid "Category Headers"
+msgstr "Kategori Başlıkları"
+
+msgid "Change Column 1 Header"
+msgstr "1. Sütun Başlığını Değiştir"
+
+msgid "Change Column 2 Header"
+msgstr "2. Sütun Başlığını Değiştir"
+
+msgid "Change Column 3 Header"
+msgstr "3. Sütun Başlığını Değiştir"
+
+msgid "Change Column 4 Header"
+msgstr "4. Sütun Başlığını Değiştir"
+
+msgid "Chapter Pages Left"
+msgstr "Bölüm Kalan Sayfa"
+
+msgid "Chapter Time Left"
+msgstr "Bölüm Kalan Süre"
+
+msgid "Chronometer Bezel"
+msgstr "Kronometre Çerçevesi"
+
+msgid "Classic"
+msgstr "Klasik"
+
+msgid "Classic Bar"
+msgstr "Klasik Çubuk"
+
+msgid "Classic Capsule"
+msgstr "Klasik Kapsül"
+
+msgid "Clear All"
+msgstr "Tümünü Temizle"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Colors"
+msgstr "Renkler"
+
+msgid "Column 1 Header"
+msgstr "1. Sütun Başlığı"
+
+msgid "Column 2 Header"
+msgstr "2. Sütun Başlığı"
+
+msgid "Column 3 Header"
+msgstr "3. Sütun Başlığı"
+
+msgid "Column 4 Header"
+msgstr "4. Sütun Başlığı"
+
+msgid "Columns"
+msgstr "Sütunlar"
+
+msgid ""
+"Comma separated path fragments.\n"
+"Books containing any of these fragments in their path will be skipped."
+msgstr ""
+"Virgülle ayrılmış yol parçaları.\n"
+"Yolunda bu parçalardan herhangi birini içeren kitaplar atlanır."
+
+msgid "Corner Radius"
+msgstr "Köşe Yuvarlatma (Radius)"
+
+msgid ""
+"Corner radius for the statistics and progress borders.\n"
+"Default is 10 px. Set to 0 px for square corners."
+msgstr ""
+"İstatistik ve ilerleme kenarlıklarının köşe yuvarlaklığı.\n"
+"Varsayılan 10 px. Köşeli görünüm için 0 px yapın."
+
+msgid "Could not open statistics database."
+msgstr "İstatistik veritabanı açılamadı."
+
+msgid "Cover Deck Stack"
+msgstr "Kapak Destesi Modu"
+
+msgid "Cover Settings"
+msgstr "Kapak Ayarları"
+
+msgid "Cover Spacing"
+msgstr "Kapak Boşluğu"
+
+msgid "Cover size"
+msgstr "Kapak boyutu"
+
+msgid "Currently Reading"
+msgstr "Şu Anda Okunanlar"
+
+msgid "Currently Reading (Yanllsama)"
+msgstr "Şu An Okunan (Yanllsama)"
+
+msgid "Cyber Crescent"
+msgstr "Siber Hilal"
+
+msgid "Daily"
+msgstr "Günlük"
+
+msgid "Daily Average"
+msgstr "Günlük Ortalama"
+
+msgid "Daily Goals"
+msgstr "Günlük Hedefler"
+
+msgid "Daily Min"
+msgstr "Günlük Dk"
+
+msgid "Daily Page Goal"
+msgstr "Günlük Sayfa Hedefi"
+
+msgid "Daily Pg"
+msgstr "Günlük Syf"
+
+msgid "Daily Streak"
+msgstr "Günlük Seri"
+
+msgid "Daily Time Goal"
+msgstr "Günlük Süre Hedefi"
+
+msgid "Dark Capsule Badge"
+msgstr "Koyu Kapsül Rozeti"
+
+msgid "Dark Gray"
+msgstr "Koyu Gri"
+
+msgid "Data"
+msgstr "Veri"
+
+msgid "Data Row Spacing"
+msgstr "Veri Satır Aralığı"
+
+msgid "Days"
+msgstr "Gün"
+
+msgid "Days Reading"
+msgstr "Okuma Günleri"
+
+msgid "Days Since Start"
+msgstr "Başlangıçtan Beri Gün"
+
+msgid "Days to Go"
+msgstr "Kalan Gün"
+
+msgid "Default"
+msgstr "Varsayılan"
+
+msgid "Default profile unset."
+msgstr "Varsayılan profil kaldırıldı."
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete All Profiles from SimpleUI"
+msgstr "SimpleUI'den Tüm Profilleri Sil"
+
+msgid "Delete All Profiles from SimpleUI..."
+msgstr "SimpleUI'den Tüm Profilleri Sil..."
+
+msgid "Delete Profile"
+msgstr "Profili Sil"
+
+msgid ""
+"Delete all unlocked profiles from SimpleUI settings (sui_settings.lua)?\n"
+"\n"
+"Locked profiles will be kept. Unlocked presets in default_profiles.lua will reload on the next restart unless removed from default_profiles.lua."
+msgstr ""
+"Kilitsiz tüm profiller SimpleUI ayarlarından (sui_settings.lua) silinsin mi?\n"
+"\n"
+"Kilitli profiller korunur. default_profiles.lua dosyasındaki kilitsiz profiller, bir sonraki yeniden başlatmaya kadar silinmezse tekrar yüklenebilir."
+
+msgid "Deleted %d unlocked profile(s) from SimpleUI (%d locked kept)."
+msgstr "SimpleUI'den %d kilitsiz profil silindi (%d kilitli korundu)."
+
+msgid "Detailed reading statistics and time-of-day distribution window opened by tapping the progress rings or bars."
+msgstr "Halka ve çubuk grafiklerine dokunulduğunda açılan zenginleştirilmiş okuma istatistikleri ve zaman analizi penceresi."
+
+msgid "Details"
+msgstr "Ayrıntılar"
+
+msgid "Done"
+msgstr "Tamam"
+
+msgid "Dot & Line"
+msgstr "Nokta ve Çizgi"
+
+msgid "Double Bordered"
+msgstr "Çift Çerçeveli"
+
+msgid "Double Framed"
+msgstr "Çift Çerçeveli"
+
+msgid "Double Framed Tank"
+msgstr "İç Boşluklu Çerçeve"
+
+msgid "Dual Split Rail"
+msgstr "Çift Ayrık Ray"
+
+msgid "EXTRA 1"
+msgstr "EKSTRA 1"
+
+msgid "EXTRA 2"
+msgstr "EKSTRA 2"
+
+msgid "Eclipse Rim"
+msgstr "Tutulma Halesi"
+
+msgid "Edit Statistics Items"
+msgstr "İstatistik Öğelerini Düzenle"
+
+msgid "Enhanced module suite and setup wizard for SimpleUI dashboard."
+msgstr "SimpleUI gösterge paneli için zenginleştirilmiş modül paketi ve kurulum sihirbazı."
+
+msgid "Enhanced reading dashboard featuring a dynamic stats grid, 39 reading metrics, 45 progress visuals, and multi-book cover deck."
+msgstr "Dinamik istatistik ızgarası, 39 okuma metriği, 45 ilerleme görseli ve çoklu kitap kapağı destesi sunan gelişmiş okuma paneli."
+
+msgid "Enter Manually"
+msgstr "Elle Gir"
+
+msgid "Enter a name for the new profile:"
+msgstr "Yeni profil için bir isim girin:"
+
+msgid "Enter a value"
+msgstr "Bir değer girin"
+
+msgid "Est. Finish Date"
+msgstr "Tahmini Bitiş"
+
+msgid "Evening"
+msgstr "Akşam"
+
+msgid "Exclude Paths from Recents"
+msgstr "Son Okunanlardan Hariç Tutulacak Yollar"
+
+msgid "Export"
+msgstr "Dışa Aktar"
+
+msgid "Export Profiles to Plugin"
+msgstr "Profilleri Eklentiye Dışa Aktar"
+
+msgid "Export Profiles to Plugin..."
+msgstr "Profilleri Eklentiye Dışa Aktar..."
+
+msgid ""
+"Export current profiles to default_profiles.lua inside plugin?\n"
+"\n"
+"This will update bundled presets for all future users."
+msgstr ""
+"Mevcut profiller eklenti içindeki default_profiles.lua dosyasına aktarılsın mı?\n"
+"\n"
+"Bu işlem tüm kullanıcılar için dahili şablonları günceller."
+
+msgid "Failed to export: "
+msgstr "Dışa aktarma başarısız: "
+
+msgid "Failed to write file: %s"
+msgstr "Dosya yazılamadı: %s"
+
+msgid "Finish Setup"
+msgstr "Kurulumu Tamamla"
+
+msgid "Finished Books"
+msgstr "Bitirilen Kitaplar"
+
+msgid "Flat Cut"
+msgstr "Keskin Uçlu"
+
+msgid "Goal"
+msgstr "Hedef"
+
+msgid "Goals"
+msgstr "Hedefler"
+
+msgid "Graduated Scale"
+msgstr "Cetvel Ölçekli"
+
+msgid "Gray Fill"
+msgstr "Gri Arka Dolgulu"
+
+msgid "Grid Dimensions"
+msgstr "Izgara Boyutları"
+
+msgid "Grid Settings"
+msgstr "Izgara Ayarları"
+
+msgid "HUD Calipers"
+msgstr "HUD Kumpası"
+
+msgid "HUD Visor (220°)"
+msgstr "HUD Vizörü (220°)"
+
+msgid "Header Style"
+msgstr "Başlık Stili"
+
+msgid "Header Thickness"
+msgstr "Başlık Kalınlığı"
+
+msgid "Heavy Underline"
+msgstr "Kalın Alt Çizgi"
+
+msgid "Highlights"
+msgstr "Vurgular"
+
+msgid "Horizon Blade"
+msgstr "Ufuk Çizgisi Bıçağı"
+
+msgid "Horizontal Bar"
+msgstr "Yatay Çubuk"
+
+msgid "Horizontal Spacing"
+msgstr "Yatay Boşluk"
+
+msgid ""
+"Horizontal side padding for the module.\n"
+"0 px expands to full width, matching all other SimpleUI modules."
+msgstr ""
+"Modül için yatay kenar boşluğu.\n"
+"0 px yapıldığında diğer tüm SimpleUI modülleri gibi tam genişliğe yayılır."
+
+msgid ""
+"Horizontal space between the cover and the text.\n"
+"100% is the default spacing."
+msgstr ""
+"Kapak ile metin arasındaki yatay boşluk.\n"
+"%100 varsayılan aralıktır."
+
+msgid "INFO"
+msgstr "BİLGİ"
+
+msgid "In Center"
+msgstr "Ortada"
+
+msgid "Inactive"
+msgstr "Pasif"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Label Color"
+msgstr "Etiket Rengi"
+
+msgid "Label Font"
+msgstr "Etiket Yazı Tipi"
+
+msgid "Label Size"
+msgstr "Etiket Boyutu"
+
+msgid "Label Weight: Bold"
+msgstr "Etiket Kalınlığı: Kalın"
+
+msgid "Label Weight: Normal"
+msgstr "Etiket Kalınlığı: Normal"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Language changed. Reopen settings to refresh all menu labels."
+msgstr "Dil değiştirildi. Tüm menü etiketlerini yenilemek için ayarları yeniden açın."
+
+msgid "Large"
+msgstr "Büyük"
+
+msgid "Last Read Date"
+msgstr "Son Okuma Tarihi"
+
+msgid "Last Session Pages"
+msgstr "Son Oturum Sayfaları"
+
+msgid "Later"
+msgstr "Daha Sonra"
+
+msgid "Left Accent Bar"
+msgstr "Sol Vurgu Çubuğu"
+
+msgid "Light Gray"
+msgstr "Açık Gri"
+
+msgid "Line & Marker"
+msgstr "Çizgi + İşaretçi"
+
+msgid "Line Spacing"
+msgstr "Satır Boşlukları"
+
+msgid "Live Preview Mode"
+msgstr "Canlı Önizleme Modu"
+
+msgid "Live Preview Mode: Off"
+msgstr "Canlı Önizleme Modu: Kapalı"
+
+msgid "Live Preview Mode: On"
+msgstr "Canlı Önizleme Modu: Açık"
+
+msgid "Lock Profile (Prevent Deletion & Edits)"
+msgstr "Profili Kilitle (Silme ve Düzenlemeyi Engelle)"
+
+msgid "Manage Profile Options..."
+msgstr "Profil Seçeneklerini Yönet..."
+
+msgid "Medium"
+msgstr "Orta"
+
+msgid "Medium Gray"
+msgstr "Orta Gri"
+
+msgid "Mins/Session"
+msgstr "Dk/Oturum"
+
+msgid "Module Details & Information"
+msgstr "Modül Detayı ve Bilgisi"
+
+msgid "Modules"
+msgstr "Modüller"
+
+msgid "Month Min"
+msgstr "Ay Dk"
+
+msgid "Month Pg"
+msgstr "Ay Syf"
+
+msgid "Monthly"
+msgstr "Aylık"
+
+msgid "Monthly Goals"
+msgstr "Aylık Hedefler"
+
+msgid "Monthly Page Goal"
+msgstr "Aylık Sayfa Hedefi"
+
+msgid "Monthly Time Goal"
+msgstr "Aylık Süre Hedefi"
+
+msgid "Morning"
+msgstr "Sabah"
+
+msgid "Neon Chamber"
+msgstr "Neon Hazne"
+
+msgid "Neon Halo"
+msgstr "Neon Hale"
+
+msgid "Neon Side Stripe"
+msgstr "Neon Yan Şerit"
+
+msgid "Night"
+msgstr "Gece"
+
+msgid "No description available for this book."
+msgstr "Bu kitap için açıklama bulunmuyor."
+
+msgid "No detailed description is available for this module."
+msgstr "Bu modül için detaylı açıklama bulunmuyor."
+
+msgid "No filepath."
+msgstr "Dosya yolu yok."
+
+msgid "No installed modules found."
+msgstr "Henüz yüklü modül bulunamadı."
+
+msgid "No modules available"
+msgstr "Kullanılabilir modül yok"
+
+msgid "No statistics found for this book."
+msgstr "Bu kitap için istatistik bulunamadı."
+
+msgid "No visual items selected."
+msgstr "Seçili görsel öğe yok."
+
+msgid "Notes"
+msgstr "Notlar"
+
+msgid "Number Color"
+msgstr "Veri Rengi"
+
+msgid "Number Font"
+msgstr "Sayı Yazı Tipi"
+
+msgid "Number Size"
+msgstr "Sayı Boyutu"
+
+msgid "Number Weight: Bold"
+msgstr "Sayı Ağırlığı: Kalın"
+
+msgid "Number Weight: Normal"
+msgstr "Sayı Ağırlığı: Normal"
+
+msgid "OK"
+msgstr "Tamam"
+
+msgid "Off"
+msgstr "Kapalı"
+
+msgid "Open Gauge (270°)"
+msgstr "Açık Kadran (270°)"
+
+msgid "Open the setup wizard to select and toggle modules."
+msgstr "Modülleri seçmek ve topluca etkinleştirmek/devre dışı bırakmak için kurulum ekranını açar."
+
+msgid "Orbit Pin"
+msgstr "Yörünge İğnesi"
+
+msgid "Orbit Satellite"
+msgstr "Yörünge Uydusu"
+
+msgid "Outlined Box"
+msgstr "Çerçeveli Kutu"
+
+msgid "Outlined Tank"
+msgstr "Çerçeveli Kutu"
+
+msgid "Overwrite"
+msgstr "Üzerine Yaz"
+
+msgid "Overwrite Profile"
+msgstr "Profilin Üzerine Yaz"
+
+msgid "Overwrite Profile?"
+msgstr "Profilin Üzerine Yazılsın mı?"
+
+msgid "Overwrite profile '%s' with your current settings?"
+msgstr "'%s' profilinin üzerine mevcut ayarlarınız yazılsın mı?"
+
+msgid "Overwrite with Current Settings"
+msgstr "Mevcut Ayarların Üzerine Yaz"
+
+msgid "Pages"
+msgstr "Sayfalar"
+
+msgid "Pages Left"
+msgstr "Kalan Sayfa"
+
+msgid "Pages Read"
+msgstr "Okunan Sayfa"
+
+msgid "Pages/Minute"
+msgstr "Sayfa/Dakika"
+
+msgid "Plain"
+msgstr "Sade (Çizgisiz)"
+
+msgid "Plasma Conduit"
+msgstr "Plazma Kanalı"
+
+msgid "Positioning & Border Settings"
+msgstr "Pozisyon ve Çerçeve Ayarları"
+
+msgid "Positioning Window"
+msgstr "Konumlandırma Penceresi"
+
+msgid "Preview Behavior"
+msgstr "Önizleme Davranışı"
+
+msgid "Preview Duration"
+msgstr "Önizleme Süresi"
+
+msgid "Preview Homescreen Now"
+msgstr "Ana Ekranı Şimdi Önizle"
+
+msgid "Prism Monolith"
+msgstr "Prizma Monolit"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid ""
+"Profile '%s' already exists.\n"
+"Overwrite?"
+msgstr ""
+"'%s' profili zaten var.\n"
+"Üzerine yazılsın mı?"
+
+msgid "Profile '%s' deleted."
+msgstr "'%s' profili silindi."
+
+msgid ""
+"Profile '%s' is locked and cannot be deleted!\n"
+"Unlock it first to delete."
+msgstr ""
+"'%s' profili kilitli ve silinemez!\n"
+"Silmek için önce kilidi açın."
+
+msgid ""
+"Profile '%s' is locked!\n"
+"You must unlock it before overwriting."
+msgstr ""
+"'%s' profili kilitli!\n"
+"Üzerine yazmadan önce kilidi açmalısınız."
+
+msgid ""
+"Profile '%s' is locked.\n"
+"Unlock it first if you want to overwrite it."
+msgstr ""
+"'%s' profili kilitli.\n"
+"Üzerine yazmak için önce kilidi açın."
+
+msgid "Profile '%s' saved."
+msgstr "'%s' profili kaydedildi."
+
+msgid "Profile '%s' updated."
+msgstr "'%s' profili güncellendi."
+
+msgid "Profile Actions"
+msgstr "Profil İşlemleri"
+
+msgid "Profile Locked"
+msgstr "Profil Kilitli"
+
+msgid "Profile locked."
+msgstr "Profil kilitlendi."
+
+msgid "Profile unlocked."
+msgstr "Profil kilidi açıldı."
+
+msgid "Profiles"
+msgstr "Profiller"
+
+msgid "Profiles exported to plugin successfully."
+msgstr "Profiller eklentiye başarıyla aktarıldı."
+
+msgid "Progress Visuals"
+msgstr "İlerleme Görselleri"
+
+msgid "Quick Profile Switch"
+msgstr "Hızlı Profil Değiştirme"
+
+msgid "Quick Profile Switch: Off"
+msgstr "Hızlı Profil Değiştirme: Kapalı"
+
+msgid "Quick Profile Switch: On"
+msgstr "Hızlı Profil Değiştirme: Açık"
+
+msgid "Reactor Core"
+msgstr "Reaktör Çekirdeği"
+
+msgid "Readable"
+msgstr "Okunabilir"
+
+msgid "Readable (e.g., 3.5 hours)"
+msgstr "Okunabilir (örn. 3.5 saat)"
+
+msgid "Reading Time Distribution"
+msgstr "Okuma Zamanı Dağılımı"
+
+msgid "Recent"
+msgstr "Son Okunanlar"
+
+msgid "Remove from Quick Switch"
+msgstr "Hızlı Değiştirmeden Çıkar"
+
+msgid "Removed from Quick Switch."
+msgstr "Hızlı değiştirmeden çıkarıldı."
+
+msgid "Rename"
+msgstr "Yeniden Adlandır"
+
+msgid "Rename Profile"
+msgstr "Profili Yeniden Adlandır"
+
+msgid "Rename Profile..."
+msgstr "Profili Yeniden Adlandır..."
+
+msgid "Reset"
+msgstr "Sıfırla"
+
+msgid "Reset All Colors"
+msgstr "Tüm Renkleri Sıfırla"
+
+msgid "Reset Visual Colors"
+msgstr "Görsel Renklerini Sıfırla"
+
+msgid "Reset all settings for Currently Reading to default?"
+msgstr "Şu An Okunan modülünün tüm ayarları varsayılana sıfırlansın mı?"
+
+msgid "Reset to Factory Defaults"
+msgstr "Fabrika Ayarlarına Sıfırla"
+
+msgid "Reset to Factory Defaults..."
+msgstr "Varsayılan Ayarlara Sıfırla..."
+
+msgid "Restore"
+msgstr "Geri Yükle"
+
+msgid "Restore Bundled Profiles"
+msgstr "Dahili Profilleri Geri Yükle"
+
+msgid "Restore Bundled Profiles..."
+msgstr "Dahili Profilleri Geri Yükle..."
+
+msgid "Restore default bundled profiles? Custom profiles created by you will be kept safely."
+msgstr "Varsayılan dahili profiller geri yüklensin mi? Oluşturduğunuz özel profiller korunacaktır."
+
+msgid "Return via Button (Manual)"
+msgstr "Butonla Geri Dön (Manuel)"
+
+msgid "Ring Labels: Off"
+msgstr "Halka Alt Yazıları: Kapalı"
+
+msgid "Ring Labels: On"
+msgstr "Halka Alt Yazıları: Açık"
+
+msgid "Ring Size"
+msgstr "Halka Büyüklüğü"
+
+msgid "Rings"
+msgstr "Halka"
+
+msgid "Rows"
+msgstr "Satırlar"
+
+msgid "Ruler Gauge"
+msgstr "Ölçek Çizgili"
+
+msgid "SPEED"
+msgstr "HIZ"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Save as New Profile"
+msgstr "Yeni Profil Olarak Kaydet"
+
+msgid "Save as New Profile..."
+msgstr "Yeni Profil Olarak Kaydet..."
+
+msgid "Saved Profiles"
+msgstr "Kayıtlı Profiller"
+
+msgid "Scale"
+msgstr "Ölçek"
+
+msgid ""
+"Scale for the cover thumbnail only.\n"
+"100% is the default size."
+msgstr ""
+"Yalnızca kapak küçük resmi için ölçek.\n"
+"%100 varsayılan boyuttur."
+
+msgid ""
+"Scale for this module.\n"
+"100% is the default size."
+msgstr ""
+"Bu modül için ölçek.\n"
+"%100 varsayılan boyuttur."
+
+msgid "Sec/Page"
+msgstr "Sn/Sayfa"
+
+msgid "Seconds"
+msgstr "Saniye"
+
+msgid "Select / Deselect All"
+msgstr "Tümünü Seç / Kaldır"
+
+msgid "Select All"
+msgstr "Tümünü Seç"
+
+msgid "Select Profile to Manage"
+msgstr "Yöneteceğiniz Profili Seçin"
+
+msgid "Select the modules you want to use on your SimpleUI home screen:"
+msgstr "SimpleUI ana ekranında kullanmak istediğiniz modülleri seçin:"
+
+msgid "Selected Tone"
+msgstr "Seçili Ton"
+
+msgid "Set as Default Profile (Auto-Load on Startup)"
+msgstr "Varsayılan Profil Yap (Başlangıçta Otomatik Yükle)"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Settings reset to default."
+msgstr "Ayarlar varsayılana sıfırlandı."
+
+msgid "Setup Wizard"
+msgstr "Kurulum Sihirbazı"
+
+msgid "Setup Wizard & Module Selection"
+msgstr "Kurulum Sihirbazı & Modül Seçimi"
+
+msgid "Sharp Minimal"
+msgstr "Keskin Düz"
+
+msgid "Sharp Rectangular"
+msgstr "Keskin Dikdörtgen"
+
+msgid "Show Headers: Off"
+msgstr "Başlıkları Göster: Kapalı"
+
+msgid "Show Headers: On"
+msgstr "Başlıkları Göster: Açık"
+
+msgid "Show Visuals: Off"
+msgstr "Görselleri Göster: Kapalı"
+
+msgid "Show Visuals: On"
+msgstr "Görselleri Göster: Açık"
+
+msgid "Side Lines"
+msgstr "Yan Çizgiler"
+
+msgid "Side Padding"
+msgstr "Yan Kenar Boşluğu"
+
+msgid "SimpleUI Plus"
+msgstr "SimpleUI Plus"
+
+msgid ""
+"SimpleUI Plus v3.0.0\n"
+"Developer: Yanllsama\n"
+"\n"
+"Enhanced reading modules and interactive setup wizard suite for SimpleUI."
+msgstr ""
+"SimpleUI Plus v3.0.0\n"
+"Geliştirici: Yanllsama\n"
+"\n"
+"SimpleUI için zenginleştirilmiş okuma modülleri ve etkileşimli kurulum sihirbazı paketi."
+
+msgid "SimpleUI Plus: Selected modules have been saved and enabled on the SimpleUI home screen."
+msgstr "SimpleUI Plus: Seçilen modüller başarıyla kaydedildi ve SimpleUI ana ekranında etkinleştirildi."
+
+msgid "Single Cover (No Stack)"
+msgstr "Tek Kapak (Destesiz)"
+
+msgid "Small"
+msgstr "Küçük"
+
+msgid "Soft Rounded"
+msgstr "Yumuşak Köşeli"
+
+msgid "Sonar Ping"
+msgstr "Sonar Darbesi"
+
+msgid "Speed & Pace"
+msgstr "Hız ve Tempo"
+
+msgid "Spine Core"
+msgstr "Omurga Çekirdeği"
+
+msgid "Started Date"
+msgstr "Başlama Tarihi"
+
+msgid "Statistics"
+msgstr "İstatistikler"
+
+msgid "Statistics Area Background Color"
+msgstr "İstatistik Alanı Arka Plan Rengi"
+
+msgid "Statistics Border: Off"
+msgstr "İstatistik Çerçevesi: Kapalı"
+
+msgid "Statistics Border: On"
+msgstr "İstatistik Çerçevesi: Açık"
+
+msgid "Statistics Layout & Appearance"
+msgstr "İstatistik Düzeni ve Görünümü"
+
+msgid "Statistics Table"
+msgstr "İstatistik Tablosu"
+
+msgid "Statistics database library not available."
+msgstr "İstatistik veritabanı kütüphanesi kullanılamıyor."
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "System UI Font"
+msgstr "Sistem Arayüzü Yazı Tipi"
+
+msgid "THIS BOOK"
+msgstr "BU KİTAP"
+
+msgid "Tab Headers Radius: Off"
+msgstr "Sekme Başlıkları Yuvarlatma: Kapalı"
+
+msgid "Tab Headers Radius: On"
+msgstr "Sekme Başlıkları Yuvarlatma: Açık"
+
+msgid "Tactical Reticle"
+msgstr "Taktik Nişangâh"
+
+msgid "Target Node"
+msgstr "Hedef Düğümü"
+
+msgid "Target Pillar"
+msgstr "Hedef Sütunu"
+
+msgid "Telemetry Dial"
+msgstr "Telemetri Kadranı"
+
+msgid "Text, Font and Color Settings"
+msgstr "Metin, Yazı Tipi ve Renk Ayarları"
+
+msgid "Thickness"
+msgstr "Kalınlık"
+
+msgid "Thin"
+msgstr "İnce"
+
+msgid "Thin Track"
+msgstr "İnce İzli"
+
+msgid "Thin Track + Bold Fill"
+msgstr "İnce İz + Kalın Dolgu"
+
+msgid "This Book"
+msgstr "Bu Kitap"
+
+msgid "This Month"
+msgstr "Bu Ay"
+
+msgid "This Month's Books"
+msgstr "Bu Ayın Kitapları"
+
+msgid "This Month's Days"
+msgstr "Bu Ayın Günleri"
+
+msgid "This Month's Pages"
+msgstr "Bu Ayın Sayfaları"
+
+msgid "This Month's Time"
+msgstr "Bu Ayın Süresi"
+
+msgid "This Week"
+msgstr "Bu Hafta"
+
+msgid "This Week's Books"
+msgstr "Bu Haftanın Kitapları"
+
+msgid "This Week's Days"
+msgstr "Bu Haftanın Günleri"
+
+msgid "This Week's Pages"
+msgstr "Bu Haftanın Sayfaları"
+
+msgid "This Week's Time"
+msgstr "Bu Haftanın Süresi"
+
+msgid "Time Format"
+msgstr "Zaman Formatı"
+
+msgid "Time Left"
+msgstr "Kalan Zaman"
+
+msgid "Time Spent"
+msgstr "Harcanan Zaman"
+
+msgid "Timed Auto-Return (Seconds)"
+msgstr "Süreli Otomatik Dönüş (Saniye)"
+
+msgid "Title Line Spacing"
+msgstr "Kitap Adı Satır Aralığı"
+
+msgid "Title and Author"
+msgstr "Kitap Başlığı ve Yazar"
+
+msgid "Title-Author Spacing"
+msgstr "Kitap-Yazar Boşluğu"
+
+msgid "To Be Read (TBR)"
+msgstr "Okunacaklar (TBR)"
+
+msgid "Today & Streak"
+msgstr "Bugün ve Seri"
+
+msgid "Today's Pages"
+msgstr "Bugünkü Sayfalar"
+
+msgid "Today's Time"
+msgstr "Bugünkü Süre"
+
+msgid "Total"
+msgstr "Toplam"
+
+msgid "Total Sessions"
+msgstr "Toplam Oturum"
+
+msgid "Track & Knob"
+msgstr "Çizgi Üstü Topuz"
+
+msgid "Track Background Color"
+msgstr "İz / Arka Plan Rengi"
+
+msgid "Underline"
+msgstr "Alt Çizgili"
+
+msgid "Unknown error."
+msgstr "Bilinmeyen hata."
+
+msgid "Unlock Profile"
+msgstr "Kilidi Kaldır"
+
+msgid "Unlock profile first to rename it."
+msgstr "Yeniden adlandırmak için önce profil kilidini açın."
+
+msgid "Unset as Default Profile"
+msgstr "Varsayılan Profil İşaretini Kaldır"
+
+msgid ""
+"User Guide & Features:\n"
+"• Book Summary: Tap the book cover or title/author to view the book summary.\n"
+"• Progress Visuals: Tap the rings or bars on the right to open the detailed Book Stats window.\n"
+"• Quick Insights: Tap the statistics grid to open the Reading Insights popup.\n"
+"• Multi-Book Cover Deck: Swipe vertically or tap stacked covers (1, 3, 5, or 7 books) to switch between recent or TBR books.\n"
+"• Fully Customizable: Dynamic grid (1–4 columns, 1–7 rows), width ratio, typography, colors, borders, 2D live positioning, and profiles."
+msgstr ""
+"Kullanım Rehberi & Özellikler:\n"
+"• Kitap Özeti: Kitap özetini görüntülemek için kapağa veya başlık/yazar alanına dokunun.\n"
+"• İlerleme Görselleri: Detaylı Kitap İstatistikleri penceresini açmak için sağdaki halkalara veya çubuklara dokunun.\n"
+"• Hızlı İstatistikler: Okuma özeti penceresini açmak için istatistik tablosuna dokunun.\n"
+"• Çoklu Kitap Kapak Destesi: Son okunanlar veya okunacaklar arasında geçiş yapmak için kapak alanında dikey kaydırın ya da yığın kapaklara (1, 3, 5 veya 7 kitap) dokunun.\n"
+"• Tam Özelleştirme: Dinamik ızgara (1–4 sütun, 1–7 satır), genişlik oranı, yazı tipleri, renkler, çerçeveler, 2B canlı konumlandırma ve profiller."
+
+msgid ""
+"User Guide & Features:\n"
+"• How to Open: Tap the progress rings or bars on the right side of the Currently Reading card.\n"
+"• Analytics: View total reading time, active days, pages read percentage, reading speed, and time-of-day distribution (morning, afternoon, evening, night).\n"
+"• Browse Books: Use the left/right arrows to browse statistics for previously read books.\n"
+"• Quick Shortcuts: Tap 'Finished Books' or 'All Statistics' at the bottom for detailed views."
+msgstr ""
+"Kullanım Rehberi & Özellikler:\n"
+"• Nasıl Açılır: Şu An Okunan Kitap kartının sağındaki ilerleme halkalarına veya çubuklarına dokunun.\n"
+"• Analizler: Toplam okuma süresi, aktif gün sayısı, okunan sayfa yüzdesi, okuma hızı ve günün saatlerine göre dağılımı (sabah, öğlen, akşam, gece) görüntüleyin.\n"
+"• Kitaplar Arası Geçiş: Önceki kitapların istatistiklerine göz atmak için sağ/sol okları kullanın.\n"
+"• Hızlı Kısayollar: Detaylı görünümler için alttaki 'Bitirilenler' veya 'Tüm İstatistikler' düğmelerine dokunun."
+
+msgid "Value-Label Gap"
+msgstr "Değer-Etiket Boşluğu"
+
+msgid "Variant"
+msgstr "Tarz"
+
+msgid "Vertical Bars"
+msgstr "Dikey Çubuklar"
+
+msgid "Vertical Spacing"
+msgstr "Dikey Boşluk"
+
+msgid "Visor Strip"
+msgstr "Vizör Şeridi"
+
+msgid "Visual Items (Max 3)"
+msgstr "Görsel Öğeler (En Fazla 3)"
+
+msgid "Visual Text Color"
+msgstr "Görsel Metin Rengi"
+
+msgid "Visual colors reset."
+msgstr "Görsel renkleri sıfırlandı."
+
+msgid "Visuals Border: Off"
+msgstr "Görseller Çerçevesi: Kapalı"
+
+msgid "Visuals Border: On"
+msgstr "Görseller Çerçevesi: Açık"
+
+msgid "Week Min"
+msgstr "Hafta Dk"
+
+msgid "Week Pg"
+msgstr "Hafta Syf"
+
+msgid "Weekly"
+msgstr "Haftalık"
+
+msgid "Weekly Goals"
+msgstr "Haftalık Hedefler"
+
+msgid "Weekly Page Goal"
+msgstr "Haftalık Sayfa Hedefi"
+
+msgid "Weekly Time Goal"
+msgstr "Haftalık Süre Hedefi"
+
+msgid "Width Ratio (Stats / Visuals)"
+msgstr "Genişlik Oranı (İstatistik / Görsel)"
+
+msgid "Window Position"
+msgstr "Pencere Konumu"
+
+msgid "Window Size"
+msgstr "Pencere Boyutu"
+
+msgid "Window system not available."
+msgstr "Pencere sistemi kullanılamıyor."
+
+msgid "XhYm (e.g., 3h 30 min)"
+msgstr "XhYm (örn. 3sa 30 dk)"
+
+msgid "Year Books"
+msgstr "Yıl Kitap"
+
+msgid "Year Min"
+msgstr "Yıl Dk"
+
+msgid "Year Pg"
+msgstr "Yıl Syf"
+
+msgid "Yearly"
+msgstr "Yıllık"
+
+msgid "Yearly Book Goal"
+msgstr "Yıllık Kitap Hedefi"
+
+msgid "Yearly Books (2026)"
+msgstr "Yıllık Kitaplar (2026)"
+
+msgid "Yearly Days (2026)"
+msgstr "Yıllık Günler (2026)"
+
+msgid "Yearly Goals"
+msgstr "Yıllık Hedefler"
+
+msgid "Yearly Page Goal"
+msgstr "Yıllık Sayfa Hedefi"
+
+msgid "Yearly Pages (2026)"
+msgstr "Yıllık Sayfalar (2026)"
+
+msgid "Yearly Time (2026)"
+msgstr "Yıllık Süre (2026)"
+
+msgid "Yearly Time Goal"
+msgstr "Yıllık Süre Hedefi"
+
+msgid "You can activate at most %d progress visuals. Remove one first."
+msgstr "En fazla %d ilerleme görseli aktif edebilirsiniz. Önce birini kaldırın."
+
+msgid "a day"
+msgstr "bir gün"
+
+msgid "all-time"
+msgstr "tüm zamanlar"
+
+msgid "books"
+msgstr "kitap"
+
+msgid "days"
+msgstr "gün"
+
+msgid "days ago"
+msgstr "gün önce"
+
+msgid "days left"
+msgstr "gün kaldı"
+
+msgid "days read"
+msgstr "gün okundu"
+
+msgid "days streak"
+msgstr "günlük seri"
+
+msgid "h"
+msgstr "sa"
+
+msgid "highlights"
+msgstr "vurgu"
+
+msgid "hours"
+msgstr "saat"
+
+msgid "hr"
+msgstr "sa"
+
+msgid "m"
+msgstr "dk"
+
+msgid "min"
+msgstr "dk"
+
+msgid "mins/session"
+msgstr "dk/oturum"
+
+msgid "months ago"
+msgstr "ay önce"
+
+msgid "months left"
+msgstr "ay kaldı"
+
+msgid "months read"
+msgstr "ay okundu"
+
+msgid "months streak"
+msgstr "aylık seri"
+
+msgid "notes"
+msgstr "not"
+
+msgid "pages"
+msgstr "sayfa"
+
+msgid "pages (last)"
+msgstr "sayfa"
+
+msgid "pages left"
+msgstr "syf kaldı"
+
+msgid "pages/min"
+msgstr "sayfa/dk"
+
+msgid "read"
+msgstr "okundu"
+
+msgid "remaining"
+msgstr "kaldı"
+
+msgid "sec/page"
+msgstr "sn/syf"
+
+msgid "sessions"
+msgstr "oturum"
+
+msgid "this month"
+msgstr "bu ay"
+
+msgid "this week"
+msgstr "bu hafta"
+
+msgid "today"
+msgstr "bugün"
+
+msgid "weeks ago"
+msgstr "hafta önce"
+
+msgid "weeks left"
+msgstr "hafta kaldı"
+
+msgid "weeks read"
+msgstr "hafta okundu"
+
+msgid "weeks streak"
+msgstr "haftalık seri"
+
+msgid "← Back"
+msgstr "← Geri"

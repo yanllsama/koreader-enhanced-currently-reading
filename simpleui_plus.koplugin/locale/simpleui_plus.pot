@@ -1,0 +1,2050 @@
+# SimpleUI Plus Translation Template.
+# Copyright (C) 2026 Yanllsama
+# This file is distributed under the same license as SimpleUI Plus.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SimpleUI Plus 3.0.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: modules/currently_reading/menu.lua:749
+#: modules/currently_reading/menu.lua:1456
+#: modules/currently_reading/menu.lua:1538
+msgid " (Default)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:904
+msgid "%d min"
+msgstr ""
+
+#: modules/currently_reading/config.lua:904
+msgid "%dh %02d min"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1751
+msgid "'%s' set as default profile."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1958
+#: modules/currently_reading/menu.lua:2021
+msgid "(No saved profiles)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:901
+msgid "0 min"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1570
+msgid "0 px (Full Width)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2365
+msgid "1st Bar Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2364
+msgid "1st Ring Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3289
+msgid "2 Seconds"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2365
+msgid "2nd Bar Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2364
+msgid "2nd Ring Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2398
+#: modules/currently_reading/menu.lua:2406
+msgid "3 Covers (1 Above / 1 Below)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3290
+msgid "3 Seconds (Default)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2365
+msgid "3rd Bar Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2364
+msgid "3rd Ring Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3291
+msgid "4 Seconds"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2400
+#: modules/currently_reading/menu.lua:2405
+msgid "5 Covers (2 Above / 2 Below)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3292
+msgid "5 Seconds"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2399
+#: modules/currently_reading/menu.lua:2404
+msgid "7 Covers (3 Above / 3 Below)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1782
+msgid "A profile with that name already exists."
+msgstr ""
+
+#: main.lua:1009
+msgid "About"
+msgstr ""
+
+#: modules/currently_reading/stats_editor.lua:235
+msgid "Active"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:490
+msgid "Active Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2486
+msgid "Add Visual Item"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2485
+msgid "Add at least 2 visual items to arrange."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1755
+msgid "Add to Quick Switch"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1760
+msgid "Added to Quick Switch."
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:611
+msgid "Afternoon"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1981
+msgid "All"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:762
+msgid "All Statistics"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2939
+msgid "All colors reset."
+msgstr ""
+
+#: modules/currently_reading/config.lua:365
+#: modules/currently_reading/config.lua:365
+#: modules/currently_reading/config.lua:366
+msgid "All-Time"
+msgstr ""
+
+#: modules/currently_reading/config.lua:299
+msgid "All-Time Books"
+msgstr ""
+
+#: modules/currently_reading/config.lua:300
+msgid "All-Time Days"
+msgstr ""
+
+#: modules/currently_reading/config.lua:298
+msgid "All-Time Duration"
+msgstr ""
+
+#: modules/currently_reading/config.lua:297
+msgid "All-Time Pages"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1266
+#: modules/currently_reading/menu.lua:1317
+#: modules/currently_reading/menu.lua:1421
+msgid "Apply"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1687
+msgid "Apply Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1825
+msgid "Are you sure you want to delete profile '%s'?"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2483
+msgid "Arrange Visual Items"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1621
+#: modules/currently_reading/menu.lua:1625
+#: modules/currently_reading/menu.lua:1629
+msgid "At Bottom"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1623
+#: modules/currently_reading/menu.lua:1643
+msgid "At Top"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2847
+#: modules/currently_reading/menu.lua:2924
+msgid "Author Name Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2836
+msgid "Author Name Font"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2840
+#: modules/currently_reading/menu.lua:2842
+msgid "Author Name Size"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3300
+#: modules/currently_reading/menu.lua:3315
+msgid "Auto (Follow KOReader)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2460
+msgid "Automatic (Active Book)"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:790
+msgid "Average per day"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:792
+msgid "Average per page"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3169
+#: modules/currently_reading/menu.lua:3172
+msgid "Bar Height"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3135
+#: modules/currently_reading/menu.lua:3138
+msgid "Bar Length"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2215
+msgid "Black"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2771
+msgid "Bold"
+msgstr ""
+
+#: modules/currently_reading/config.lua:393
+#: modules/currently_reading/visuals.lua:620
+msgid "Book"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:963
+msgid "Book Description"
+msgstr ""
+
+#: modules/currently_reading/config.lua:393
+#: modules/currently_reading/config.lua:393
+msgid "Book Progress"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2388
+msgid "Book Source"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:822
+msgid "Book Statistics"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:123
+msgid "Book Statistics Window"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2835
+#: modules/currently_reading/menu.lua:2923
+msgid "Book Title Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2824
+msgid "Book Title Font"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2828
+#: modules/currently_reading/menu.lua:2830
+msgid "Book Title Size"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2822
+#: modules/currently_reading/menu.lua:2971
+msgid "Book and Author"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2726
+#: modules/currently_reading/menu.lua:2741
+msgid "Bracket Frame"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2160
+msgid "Bundled profiles restored."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:226
+#: modules/currently_reading/menu.lua:264
+#: modules/currently_reading/menu.lua:284
+msgid "Cancel"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2884
+#: modules/currently_reading/menu.lua:2927
+msgid "Category Header Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2986
+msgid "Category Header Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2712
+msgid "Category Headers"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2775
+msgid "Change Column 1 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2785
+msgid "Change Column 2 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2795
+msgid "Change Column 3 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2805
+msgid "Change Column 4 Header"
+msgstr ""
+
+#: modules/currently_reading/config.lua:283
+msgid "Chapter Pages Left"
+msgstr ""
+
+#: modules/currently_reading/config.lua:284
+msgid "Chapter Time Left"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3021
+msgid "Chronometer Bezel"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3009
+msgid "Classic"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3043
+msgid "Classic Bar"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3026
+msgid "Classic Capsule"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2041
+msgid "Clear All"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1422
+msgid "Close"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2920
+msgid "Colors"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2778
+msgid "Column 1 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2788
+msgid "Column 2 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2798
+msgid "Column 3 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2808
+msgid "Column 4 Header"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2707
+msgid "Columns"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3352
+msgid ""
+"Comma separated path fragments.\n"
+"Books containing any of these fragments in their path will be skipped."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1539
+#: modules/currently_reading/menu.lua:1541
+msgid "Corner Radius"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1542
+msgid ""
+"Corner radius for the statistics and progress borders.\n"
+"Default is 10 px. Set to 0 px for square corners."
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:209
+msgid "Could not open statistics database."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2401
+msgid "Cover Deck Stack"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2693
+msgid "Cover Settings"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2671
+#: modules/currently_reading/menu.lua:2671
+#: modules/currently_reading/menu.lua:2674
+msgid "Cover Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2652
+#: modules/currently_reading/menu.lua:2652
+#: modules/currently_reading/menu.lua:2654
+msgid "Cover size"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2680
+#: modules/module_currently_yanllsama.lua:394
+#: modules/module_currently_yanllsama.lua:2128
+msgid "Currently Reading"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:393
+msgid "Currently Reading (Yanllsama)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3020
+msgid "Cyber Crescent"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2544
+msgid "Daily"
+msgstr ""
+
+#: modules/currently_reading/config.lua:268
+msgid "Daily Average"
+msgstr ""
+
+#: modules/currently_reading/config.lua:394
+#: modules/currently_reading/config.lua:395
+msgid "Daily Goals"
+msgstr ""
+
+#: modules/currently_reading/config.lua:395
+#: modules/currently_reading/visuals.lua:638
+msgid "Daily Min"
+msgstr ""
+
+#: modules/currently_reading/config.lua:394
+#: modules/currently_reading/menu.lua:2547
+#: modules/currently_reading/menu.lua:2548
+msgid "Daily Page Goal"
+msgstr ""
+
+#: modules/currently_reading/config.lua:394
+#: modules/currently_reading/visuals.lua:629
+msgid "Daily Pg"
+msgstr ""
+
+#: modules/currently_reading/config.lua:280
+msgid "Daily Streak"
+msgstr ""
+
+#: modules/currently_reading/config.lua:395
+#: modules/currently_reading/menu.lua:2554
+#: modules/currently_reading/menu.lua:2555
+msgid "Daily Time Goal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2725
+#: modules/currently_reading/menu.lua:2740
+msgid "Dark Capsule Badge"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2216
+msgid "Dark Gray"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2851
+#: modules/currently_reading/menu.lua:2978
+msgid "Data"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2980
+msgid "Data Row Spacing"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:505
+msgid "Days"
+msgstr ""
+
+#: modules/currently_reading/config.lua:266
+msgid "Days Reading"
+msgstr ""
+
+#: modules/currently_reading/config.lua:275
+msgid "Days Since Start"
+msgstr ""
+
+#: modules/currently_reading/config.lua:267
+msgid "Days to Go"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1290
+#: modules/currently_reading/menu.lua:2222
+#: modules/currently_reading/menu.lua:2257
+msgid "Default"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1751
+msgid "Default profile unset."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1826
+#: modules/currently_reading/menu.lua:2194
+msgid "Delete"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2192
+msgid "Delete All Profiles from SimpleUI"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2188
+msgid "Delete All Profiles from SimpleUI..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1812
+#: modules/currently_reading/menu.lua:1824
+msgid "Delete Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2193
+msgid ""
+"Delete all unlocked profiles from SimpleUI settings (sui_settings.lua)?\n"
+"\n"
+"Locked profiles will be kept. Unlocked presets in default_profiles.lua will reload on the next restart unless removed from default_profiles.lua."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2203
+msgid "Deleted %d unlocked profile(s) from SimpleUI (%d locked kept)."
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:124
+msgid "Detailed reading statistics and time-of-day distribution window opened by tapping the progress rings or bars."
+msgstr ""
+
+#: wizard.lua:271
+msgid "Details"
+msgstr ""
+
+#: modules/currently_reading/stats_editor.lua:430
+msgid "Done"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2727
+#: modules/currently_reading/menu.lua:2742
+msgid "Dot & Line"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3030
+msgid "Double Bordered"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3012
+msgid "Double Framed"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3047
+msgid "Double Framed Tank"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3036
+#: modules/currently_reading/menu.lua:3052
+msgid "Dual Split Rail"
+msgstr ""
+
+#: modules/currently_reading/config.lua:662
+msgid "EXTRA 1"
+msgstr ""
+
+#: modules/currently_reading/config.lua:662
+msgid "EXTRA 2"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3023
+msgid "Eclipse Rim"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2423
+msgid "Edit Statistics Items"
+msgstr ""
+
+#: _meta.lua:18
+msgid "Enhanced module suite and setup wizard for SimpleUI dashboard."
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:395
+msgid "Enhanced reading dashboard featuring a dynamic stats grid, 39 reading metrics, 45 progress visuals, and multi-book cover deck."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1246
+msgid "Enter Manually"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2082
+msgid "Enter a name for the new profile:"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1255
+msgid "Enter a value"
+msgstr ""
+
+#: modules/currently_reading/config.lua:278
+msgid "Est. Finish Date"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:612
+msgid "Evening"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3342
+#: modules/currently_reading/menu.lua:3344
+#: modules/currently_reading/menu.lua:3349
+msgid "Exclude Paths from Recents"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2172
+msgid "Export"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2170
+msgid "Export Profiles to Plugin"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2167
+msgid "Export Profiles to Plugin..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2171
+msgid ""
+"Export current profiles to default_profiles.lua inside plugin?\n"
+"\n"
+"This will update bundled presets for all future users."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2180
+msgid "Failed to export: "
+msgstr ""
+
+#: modules/currently_reading/profiles.lua:548
+msgid "Failed to write file: %s"
+msgstr ""
+
+#: wizard.lua:345
+msgid "Finish Setup"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:743
+msgid "Finished Books"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3010
+msgid "Flat Cut"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2461
+#: modules/currently_reading/menu.lua:2462
+#: modules/currently_reading/menu.lua:2463
+msgid "Goal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3075
+msgid "Goals"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3032
+msgid "Graduated Scale"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2719
+#: modules/currently_reading/menu.lua:2734
+msgid "Gray Fill"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2705
+msgid "Grid Dimensions"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2702
+msgid "Grid Settings"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3037
+#: modules/currently_reading/menu.lua:3053
+msgid "HUD Calipers"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3014
+msgid "HUD Visor (220°)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2729
+msgid "Header Style"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2767
+msgid "Header Thickness"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2723
+#: modules/currently_reading/menu.lua:2738
+msgid "Heavy Underline"
+msgstr ""
+
+#: modules/currently_reading/config.lua:281
+#: modules/module_currently_books_stat.lua:794
+msgid "Highlights"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3034
+#: modules/currently_reading/menu.lua:3051
+msgid "Horizon Blade"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3004
+#: modules/currently_reading/menu.lua:3094
+msgid "Horizontal Bar"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3180
+#: modules/currently_reading/menu.lua:3183
+msgid "Horizontal Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1574
+msgid ""
+"Horizontal side padding for the module.\n"
+"0 px expands to full width, matching all other SimpleUI modules."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2675
+msgid ""
+"Horizontal space between the cover and the text.\n"
+"100% is the default spacing."
+msgstr ""
+
+#: modules/currently_reading/config.lua:663
+msgid "INFO"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1622
+#: modules/currently_reading/menu.lua:1636
+msgid "In Center"
+msgstr ""
+
+#: modules/currently_reading/stats_editor.lua:140
+msgid "Inactive"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2869
+#: modules/currently_reading/menu.lua:2984
+msgid "Label"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2883
+#: modules/currently_reading/menu.lua:2926
+msgid "Label Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2871
+#: modules/currently_reading/menu.lua:2891
+msgid "Label Font"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2875
+#: modules/currently_reading/menu.lua:2877
+#: modules/currently_reading/menu.lua:2895
+msgid "Label Size"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2882
+#: modules/currently_reading/menu.lua:2902
+msgid "Label Weight: Bold"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2882
+#: modules/currently_reading/menu.lua:2902
+msgid "Label Weight: Normal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3309
+msgid "Language"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3330
+msgid "Language changed. Reopen settings to refresh all menu labels."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1589
+#: modules/currently_reading/menu.lua:1609
+msgid "Large"
+msgstr ""
+
+#: modules/currently_reading/config.lua:277
+msgid "Last Read Date"
+msgstr ""
+
+#: modules/currently_reading/config.lua:271
+msgid "Last Session Pages"
+msgstr ""
+
+#: wizard.lua:308
+msgid "Later"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2721
+#: modules/currently_reading/menu.lua:2736
+msgid "Left Accent Bar"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2218
+msgid "Light Gray"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3049
+msgid "Line & Marker"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2954
+msgid "Line Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3249
+msgid "Live Preview Mode"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3254
+msgid "Live Preview Mode: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3254
+msgid "Live Preview Mode: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1730
+msgid "Lock Profile (Prevent Deletion & Edits)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1935
+msgid "Manage Profile Options..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1588
+#: modules/currently_reading/menu.lua:1591
+#: modules/currently_reading/menu.lua:1602
+msgid "Medium"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2217
+msgid "Medium Gray"
+msgstr ""
+
+#: modules/currently_reading/config.lua:270
+msgid "Mins/Session"
+msgstr ""
+
+#: wizard.lua:135
+msgid "Module Details & Information"
+msgstr ""
+
+#: main.lua:1005
+msgid "Modules"
+msgstr ""
+
+#: modules/currently_reading/config.lua:399
+#: modules/currently_reading/visuals.lua:674
+msgid "Month Min"
+msgstr ""
+
+#: modules/currently_reading/config.lua:398
+#: modules/currently_reading/visuals.lua:665
+msgid "Month Pg"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2582
+msgid "Monthly"
+msgstr ""
+
+#: modules/currently_reading/config.lua:398
+#: modules/currently_reading/config.lua:399
+msgid "Monthly Goals"
+msgstr ""
+
+#: modules/currently_reading/config.lua:398
+#: modules/currently_reading/menu.lua:2585
+#: modules/currently_reading/menu.lua:2586
+msgid "Monthly Page Goal"
+msgstr ""
+
+#: modules/currently_reading/config.lua:399
+#: modules/currently_reading/menu.lua:2592
+#: modules/currently_reading/menu.lua:2593
+msgid "Monthly Time Goal"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:610
+msgid "Morning"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3057
+msgid "Neon Chamber"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3017
+msgid "Neon Halo"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3040
+msgid "Neon Side Stripe"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:613
+msgid "Night"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:960
+msgid "No description available for this book."
+msgstr ""
+
+#: wizard.lua:161
+msgid "No detailed description is available for this module."
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:184
+msgid "No filepath."
+msgstr ""
+
+#: wizard.lua:241
+msgid "No installed modules found."
+msgstr ""
+
+#: main.lua:1047
+msgid "No modules available"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:196
+#: modules/module_currently_books_stat.lua:240
+msgid "No statistics found for this book."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2484
+msgid "No visual items selected."
+msgstr ""
+
+#: modules/currently_reading/config.lua:282
+#: modules/module_currently_books_stat.lua:796
+msgid "Notes"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2865
+#: modules/currently_reading/menu.lua:2925
+msgid "Number Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2853
+msgid "Number Font"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2857
+#: modules/currently_reading/menu.lua:2859
+msgid "Number Size"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2864
+msgid "Number Weight: Bold"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2864
+msgid "Number Weight: Normal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:225
+#: modules/currently_reading/menu.lua:1702
+#: modules/currently_reading/menu.lua:1818
+msgid "OK"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1976
+#: modules/currently_reading/menu.lua:3249
+msgid "Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3013
+msgid "Open Gauge (270°)"
+msgstr ""
+
+#: main.lua:1001
+msgid "Open the setup wizard to select and toggle modules."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3035
+msgid "Orbit Pin"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3015
+msgid "Orbit Satellite"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2722
+#: modules/currently_reading/menu.lua:2737
+#: modules/currently_reading/menu.lua:3029
+msgid "Outlined Box"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3046
+msgid "Outlined Tank"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1710
+#: modules/currently_reading/menu.lua:2117
+msgid "Overwrite"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1708
+msgid "Overwrite Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2115
+msgid "Overwrite Profile?"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1709
+msgid "Overwrite profile '%s' with your current settings?"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1696
+msgid "Overwrite with Current Settings"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:507
+msgid "Pages"
+msgstr ""
+
+#: modules/currently_reading/config.lua:265
+msgid "Pages Left"
+msgstr ""
+
+#: modules/currently_reading/config.lua:263
+msgid "Pages Read"
+msgstr ""
+
+#: modules/currently_reading/config.lua:269
+msgid "Pages/Minute"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2720
+#: modules/currently_reading/menu.lua:2735
+msgid "Plain"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3054
+msgid "Plasma Conduit"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2697
+msgid "Positioning & Border Settings"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1580
+msgid "Positioning Window"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3268
+msgid "Preview Behavior"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3285
+msgid "Preview Duration"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3263
+msgid "Preview Homescreen Now"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3038
+msgid "Prism Monolith"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2079
+msgid "Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2116
+msgid ""
+"Profile '%s' already exists.\n"
+"Overwrite?"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1850
+msgid "Profile '%s' deleted."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1817
+msgid ""
+"Profile '%s' is locked and cannot be deleted!\n"
+"Unlock it first to delete."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2097
+msgid ""
+"Profile '%s' is locked!\n"
+"You must unlock it before overwriting."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1701
+msgid ""
+"Profile '%s' is locked.\n"
+"Unlock it first if you want to overwrite it."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2111
+msgid "Profile '%s' saved."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1724
+msgid "Profile '%s' updated."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1859
+msgid "Profile Actions"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1700
+#: modules/currently_reading/menu.lua:1816
+#: modules/currently_reading/menu.lua:2096
+msgid "Profile Locked"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1742
+msgid "Profile locked."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1742
+msgid "Profile unlocked."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2688
+#: modules/currently_reading/menu.lua:2688
+msgid "Profiles"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2178
+msgid "Profiles exported to plugin successfully."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1518
+#: modules/currently_reading/menu.lua:2888
+#: modules/currently_reading/menu.lua:2996
+msgid "Progress Visuals"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1976
+#: modules/currently_reading/menu.lua:1981
+#: modules/currently_reading/menu.lua:1984
+msgid "Quick Profile Switch"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2008
+msgid "Quick Profile Switch: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2007
+msgid "Quick Profile Switch: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3019
+msgid "Reactor Core"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2947
+msgid "Readable"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2949
+msgid "Readable (e.g., 3.5 hours)"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:632
+msgid "Reading Time Distribution"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2390
+msgid "Recent"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1755
+msgid "Remove from Quick Switch"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1760
+msgid "Removed from Quick Switch."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1773
+msgid "Rename"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1771
+msgid "Rename Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1764
+msgid "Rename Profile..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2135
+msgid "Reset"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2935
+msgid "Reset All Colors"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2909
+msgid "Reset Visual Colors"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2134
+msgid "Reset all settings for Currently Reading to default?"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2133
+msgid "Reset to Factory Defaults"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2130
+msgid "Reset to Factory Defaults..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2154
+msgid "Restore"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2152
+msgid "Restore Bundled Profiles"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2149
+msgid "Restore Bundled Profiles..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2153
+msgid "Restore default bundled profiles? Custom profiles created by you will be kept safely."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3248
+#: modules/currently_reading/menu.lua:3271
+msgid "Return via Button (Manual)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3234
+msgid "Ring Labels: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3234
+msgid "Ring Labels: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3203
+#: modules/currently_reading/menu.lua:3206
+msgid "Ring Size"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3003
+#: modules/currently_reading/menu.lua:3092
+msgid "Rings"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2708
+msgid "Rows"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3050
+msgid "Ruler Gauge"
+msgstr ""
+
+#: modules/currently_reading/config.lua:662
+msgid "SPEED"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:263
+#: modules/currently_reading/menu.lua:291
+#: modules/currently_reading/menu.lua:2084
+msgid "Save"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2081
+msgid "Save as New Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2076
+msgid "Save as New Profile..."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1965
+#: modules/currently_reading/menu.lua:1967
+msgid "Saved Profiles"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2632
+#: modules/currently_reading/menu.lua:2632
+#: modules/currently_reading/menu.lua:2635
+msgid "Scale"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2655
+msgid ""
+"Scale for the cover thumbnail only.\n"
+"100% is the default size."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2636
+msgid ""
+"Scale for this module.\n"
+"100% is the default size."
+msgstr ""
+
+#: modules/currently_reading/config.lua:274
+msgid "Sec/Page"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3285
+msgid "Seconds"
+msgstr ""
+
+#: wizard.lua:321
+msgid "Select / Deselect All"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2026
+msgid "Select All"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1950
+msgid "Select Profile to Manage"
+msgstr ""
+
+#: wizard.lua:230
+msgid "Select the modules you want to use on your SimpleUI home screen:"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2292
+msgid "Selected Tone"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1746
+msgid "Set as Default Profile (Auto-Load on Startup)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:572
+#: modules/currently_reading/menu.lua:574
+msgid "Settings"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2142
+msgid "Settings reset to default."
+msgstr ""
+
+#: main.lua:1000
+msgid "Setup Wizard"
+msgstr ""
+
+#: wizard.lua:212
+msgid "Setup Wizard & Module Selection"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3045
+msgid "Sharp Minimal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3027
+msgid "Sharp Rectangular"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2762
+msgid "Show Headers: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2762
+msgid "Show Headers: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3079
+msgid "Show Visuals: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3079
+msgid "Show Visuals: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2724
+#: modules/currently_reading/menu.lua:2739
+msgid "Side Lines"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1571
+#: modules/currently_reading/menu.lua:1573
+msgid "Side Padding"
+msgstr ""
+
+#: _meta.lua:17
+#: main.lua:996
+#: wizard.lua:207
+msgid "SimpleUI Plus"
+msgstr ""
+
+#: main.lua:1012
+msgid ""
+"SimpleUI Plus v3.0.0\n"
+"Developer: Yanllsama\n"
+"\n"
+"Enhanced reading modules and interactive setup wizard suite for SimpleUI."
+msgstr ""
+
+#: main.lua:926
+msgid "SimpleUI Plus: Selected modules have been saved and enabled on the SimpleUI home screen."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2397
+#: modules/currently_reading/menu.lua:2407
+msgid "Single Cover (No Stack)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1587
+#: modules/currently_reading/menu.lua:1595
+msgid "Small"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3028
+#: modules/currently_reading/menu.lua:3044
+msgid "Soft Rounded"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3022
+msgid "Sonar Ping"
+msgstr ""
+
+#: modules/currently_reading/config.lua:341
+#: modules/currently_reading/config.lua:341
+#: modules/currently_reading/config.lua:342
+msgid "Speed & Pace"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3033
+msgid "Spine Core"
+msgstr ""
+
+#: modules/currently_reading/config.lua:276
+msgid "Started Date"
+msgstr ""
+
+#: modules/currently_reading/stats_editor.lua:228
+#: modules/currently_reading/stats_editor.lua:538
+#: modules/currently_reading/stats_editor.lua:567
+msgid "Statistics"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2928
+#: modules/currently_reading/menu.lua:2945
+msgid "Statistics Area Background Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1526
+msgid "Statistics Border: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1526
+msgid "Statistics Border: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2683
+msgid "Statistics Layout & Appearance"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1510
+msgid "Statistics Table"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:188
+msgid "Statistics database library not available."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3087
+msgid "Style"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:730
+msgid "System UI Font"
+msgstr ""
+
+#: modules/currently_reading/config.lua:662
+msgid "THIS BOOK"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1549
+msgid "Tab Headers Radius: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1549
+msgid "Tab Headers Radius: On"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3016
+msgid "Tactical Reticle"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3055
+msgid "Target Node"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3039
+msgid "Target Pillar"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3018
+msgid "Telemetry Dial"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2819
+msgid "Text, Font and Color Settings"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3157
+#: modules/currently_reading/menu.lua:3160
+#: modules/currently_reading/menu.lua:3191
+msgid "Thickness"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2769
+msgid "Thin"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3011
+msgid "Thin Track"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3048
+msgid "Thin Track + Bold Fill"
+msgstr ""
+
+#: modules/currently_reading/config.lua:324
+#: modules/currently_reading/config.lua:324
+#: modules/currently_reading/config.lua:325
+msgid "This Book"
+msgstr ""
+
+#: modules/currently_reading/config.lua:355
+#: modules/currently_reading/config.lua:355
+#: modules/currently_reading/config.lua:356
+msgid "This Month"
+msgstr ""
+
+#: modules/currently_reading/config.lua:291
+msgid "This Month's Books"
+msgstr ""
+
+#: modules/currently_reading/config.lua:292
+msgid "This Month's Days"
+msgstr ""
+
+#: modules/currently_reading/config.lua:289
+msgid "This Month's Pages"
+msgstr ""
+
+#: modules/currently_reading/config.lua:290
+msgid "This Month's Time"
+msgstr ""
+
+#: modules/currently_reading/config.lua:350
+#: modules/currently_reading/config.lua:350
+#: modules/currently_reading/config.lua:351
+msgid "This Week"
+msgstr ""
+
+#: modules/currently_reading/config.lua:287
+msgid "This Week's Books"
+msgstr ""
+
+#: modules/currently_reading/config.lua:288
+msgid "This Week's Days"
+msgstr ""
+
+#: modules/currently_reading/config.lua:285
+msgid "This Week's Pages"
+msgstr ""
+
+#: modules/currently_reading/config.lua:286
+msgid "This Week's Time"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2947
+msgid "Time Format"
+msgstr ""
+
+#: modules/currently_reading/config.lua:262
+msgid "Time Left"
+msgstr ""
+
+#: modules/currently_reading/config.lua:264
+msgid "Time Spent"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3248
+#: modules/currently_reading/menu.lua:3276
+msgid "Timed Auto-Return (Seconds)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2973
+msgid "Title Line Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1502
+msgid "Title and Author"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2974
+msgid "Title-Author Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2391
+msgid "To Be Read (TBR)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:346
+#: modules/currently_reading/config.lua:346
+#: modules/currently_reading/config.lua:347
+msgid "Today & Streak"
+msgstr ""
+
+#: modules/currently_reading/config.lua:272
+msgid "Today's Pages"
+msgstr ""
+
+#: modules/currently_reading/config.lua:273
+msgid "Today's Time"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:503
+msgid "Total"
+msgstr ""
+
+#: modules/currently_reading/config.lua:279
+msgid "Total Sessions"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3031
+msgid "Track & Knob"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2907
+#: modules/currently_reading/menu.lua:2933
+msgid "Track Background Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2718
+#: modules/currently_reading/menu.lua:2729
+#: modules/currently_reading/menu.lua:2733
+msgid "Underline"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:425
+msgid "Unknown error."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1730
+msgid "Unlock Profile"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1767
+msgid "Unlock profile first to rename it."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1746
+msgid "Unset as Default Profile"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:396
+msgid ""
+"User Guide & Features:\n"
+"• Book Summary: Tap the book cover or title/author to view the book summary.\n"
+"• Progress Visuals: Tap the rings or bars on the right to open the detailed Book Stats window.\n"
+"• Quick Insights: Tap the statistics grid to open the Reading Insights popup.\n"
+"• Multi-Book Cover Deck: Swipe vertically or tap stacked covers (1, 3, 5, or 7 books) to switch between recent or TBR books.\n"
+"• Fully Customizable: Dynamic grid (1–4 columns, 1–7 rows), width ratio, typography, colors, borders, 2D live positioning, and profiles."
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:125
+msgid ""
+"User Guide & Features:\n"
+"• How to Open: Tap the progress rings or bars on the right side of the Currently Reading card.\n"
+"• Analytics: View total reading time, active days, pages read percentage, reading speed, and time-of-day distribution (morning, afternoon, evening, night).\n"
+"• Browse Books: Use the left/right arrows to browse statistics for previously read books.\n"
+"• Quick Shortcuts: Tap 'Finished Books' or 'All Statistics' at the bottom for detailed views."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2987
+msgid "Value-Label Gap"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3101
+msgid "Variant"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3002
+#: modules/currently_reading/menu.lua:3093
+msgid "Vertical Bars"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3146
+#: modules/currently_reading/menu.lua:3149
+#: modules/currently_reading/menu.lua:3214
+msgid "Vertical Spacing"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:3056
+msgid "Visor Strip"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2478
+#: modules/currently_reading/menu.lua:2499
+msgid "Visual Items (Max 3)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2903
+#: modules/currently_reading/menu.lua:2929
+msgid "Visual Text Color"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2913
+msgid "Visual colors reset."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1531
+msgid "Visuals Border: Off"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1531
+msgid "Visuals Border: On"
+msgstr ""
+
+#: modules/currently_reading/config.lua:397
+#: modules/currently_reading/visuals.lua:656
+msgid "Week Min"
+msgstr ""
+
+#: modules/currently_reading/config.lua:396
+#: modules/currently_reading/visuals.lua:647
+msgid "Week Pg"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2563
+msgid "Weekly"
+msgstr ""
+
+#: modules/currently_reading/config.lua:396
+#: modules/currently_reading/config.lua:397
+msgid "Weekly Goals"
+msgstr ""
+
+#: modules/currently_reading/config.lua:396
+#: modules/currently_reading/menu.lua:2566
+#: modules/currently_reading/menu.lua:2567
+msgid "Weekly Page Goal"
+msgstr ""
+
+#: modules/currently_reading/config.lua:397
+#: modules/currently_reading/menu.lua:2573
+#: modules/currently_reading/menu.lua:2574
+msgid "Weekly Time Goal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1560
+#: modules/currently_reading/menu.lua:1562
+msgid "Width Ratio (Stats / Visuals)"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1625
+msgid "Window Position"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:1591
+msgid "Window Size"
+msgstr ""
+
+#: modules/module_currently_books_stat.lua:432
+msgid "Window system not available."
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2950
+msgid "XhYm (e.g., 3h 30 min)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:402
+#: modules/currently_reading/visuals.lua:701
+msgid "Year Books"
+msgstr ""
+
+#: modules/currently_reading/config.lua:401
+#: modules/currently_reading/visuals.lua:692
+msgid "Year Min"
+msgstr ""
+
+#: modules/currently_reading/config.lua:400
+#: modules/currently_reading/visuals.lua:683
+msgid "Year Pg"
+msgstr ""
+
+#: modules/currently_reading/config.lua:360
+#: modules/currently_reading/config.lua:360
+#: modules/currently_reading/config.lua:361
+msgid "Yearly"
+msgstr ""
+
+#: modules/currently_reading/config.lua:402
+#: modules/currently_reading/menu.lua:2618
+#: modules/currently_reading/menu.lua:2619
+msgid "Yearly Book Goal"
+msgstr ""
+
+#: modules/currently_reading/config.lua:295
+msgid "Yearly Books (2026)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:296
+msgid "Yearly Days (2026)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:400
+#: modules/currently_reading/config.lua:401
+#: modules/currently_reading/config.lua:402
+msgid "Yearly Goals"
+msgstr ""
+
+#: modules/currently_reading/config.lua:400
+#: modules/currently_reading/menu.lua:2604
+#: modules/currently_reading/menu.lua:2605
+msgid "Yearly Page Goal"
+msgstr ""
+
+#: modules/currently_reading/config.lua:293
+msgid "Yearly Pages (2026)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:294
+msgid "Yearly Time (2026)"
+msgstr ""
+
+#: modules/currently_reading/config.lua:401
+#: modules/currently_reading/menu.lua:2611
+#: modules/currently_reading/menu.lua:2612
+msgid "Yearly Time Goal"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2488
+#: modules/currently_reading/menu.lua:2525
+msgid "You can activate at most %d progress visuals. Remove one first."
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:1139
+msgid "a day"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:1168
+#: modules/module_currently_yanllsama.lua:1169
+#: modules/module_currently_yanllsama.lua:1170
+msgid "all-time"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2469
+#: modules/currently_reading/menu.lua:2618
+#: modules/currently_reading/stats.lua:226
+msgid "books"
+msgstr ""
+
+#: modules/currently_reading/config.lua:912
+msgid "days"
+msgstr ""
+
+#: modules/currently_reading/config.lua:921
+msgid "days ago"
+msgstr ""
+
+#: modules/currently_reading/config.lua:919
+msgid "days left"
+msgstr ""
+
+#: modules/currently_reading/config.lua:918
+msgid "days read"
+msgstr ""
+
+#: modules/currently_reading/config.lua:920
+msgid "days streak"
+msgstr ""
+
+#: modules/currently_reading/visuals.lua:588
+msgid "h"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:220
+#: modules/currently_reading/stats.lua:381
+msgid "highlights"
+msgstr ""
+
+#: modules/currently_reading/config.lua:895
+msgid "hours"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2454
+#: modules/currently_reading/menu.lua:2456
+#: modules/currently_reading/menu.lua:2577
+msgid "hr"
+msgstr ""
+
+#: modules/currently_reading/visuals.lua:590
+msgid "m"
+msgstr ""
+
+#: modules/currently_reading/config.lua:889
+#: modules/currently_reading/config.lua:891
+#: modules/currently_reading/config.lua:892
+msgid "min"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:209
+msgid "mins/session"
+msgstr ""
+
+#: modules/currently_reading/config.lua:921
+msgid "months ago"
+msgstr ""
+
+#: modules/currently_reading/config.lua:919
+msgid "months left"
+msgstr ""
+
+#: modules/currently_reading/config.lua:918
+msgid "months read"
+msgstr ""
+
+#: modules/currently_reading/config.lua:920
+msgid "months streak"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:221
+#: modules/currently_reading/stats.lua:382
+msgid "notes"
+msgstr ""
+
+#: modules/currently_reading/menu.lua:2461
+#: modules/currently_reading/menu.lua:2463
+#: modules/currently_reading/menu.lua:2465
+msgid "pages"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:210
+msgid "pages (last)"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:222
+#: modules/currently_reading/stats.lua:657
+msgid "pages left"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:206
+#: modules/currently_reading/stats.lua:607
+msgid "pages/min"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:272
+#: modules/currently_reading/stats.lua:406
+#: modules/currently_reading/stats.lua:414
+msgid "read"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:1135
+#: modules/module_currently_yanllsama.lua:1136
+msgid "remaining"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:213
+#: modules/currently_reading/stats.lua:603
+msgid "sec/page"
+msgstr ""
+
+#: modules/currently_reading/stats.lua:218
+#: modules/currently_reading/stats.lua:581
+msgid "sessions"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:1160
+#: modules/module_currently_yanllsama.lua:1161
+#: modules/module_currently_yanllsama.lua:1162
+msgid "this month"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:1156
+#: modules/module_currently_yanllsama.lua:1157
+#: modules/module_currently_yanllsama.lua:1158
+msgid "this week"
+msgstr ""
+
+#: modules/module_currently_yanllsama.lua:1143
+#: modules/module_currently_yanllsama.lua:1144
+msgid "today"
+msgstr ""
+
+#: modules/currently_reading/config.lua:921
+msgid "weeks ago"
+msgstr ""
+
+#: modules/currently_reading/config.lua:919
+msgid "weeks left"
+msgstr ""
+
+#: modules/currently_reading/config.lua:918
+msgid "weeks read"
+msgstr ""
+
+#: modules/currently_reading/config.lua:920
+msgid "weeks streak"
+msgstr ""
+
+#: wizard.lua:173
+msgid "← Back"
+msgstr ""

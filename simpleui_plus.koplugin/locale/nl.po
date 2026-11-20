@@ -1,0 +1,1453 @@
+# SimpleUI Plus (nl) translation.
+msgid ""
+msgstr ""
+"Project-Id-Version: SimpleUI Plus 3.0.0\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid " (Default)"
+msgstr " (Standaard)"
+
+msgid "%d min"
+msgstr "%d min"
+
+msgid "%dh %02d min"
+msgstr "%du %02d min"
+
+msgid "'%s' set as default profile."
+msgstr "‘%s’ ingesteld als standaardprofiel."
+
+msgid "(No saved profiles)"
+msgstr "(Geen opgeslagen profielen)"
+
+msgid "0 min"
+msgstr "0 min"
+
+msgid "0 px (Full Width)"
+msgstr "0 px (Volledige breedte)"
+
+msgid "1st Bar Color"
+msgstr "Kleur 1e balk"
+
+msgid "1st Ring Color"
+msgstr "Kleur 1e ring"
+
+msgid "2 Seconds"
+msgstr "2 seconden"
+
+msgid "2nd Bar Color"
+msgstr "Kleur 2e balk"
+
+msgid "2nd Ring Color"
+msgstr "Kleur 2e ring"
+
+msgid "3 Covers (1 Above / 1 Below)"
+msgstr "3 omslagen (1 boven / 1 onder)"
+
+msgid "3 Seconds (Default)"
+msgstr "3 seconden (Standaard)"
+
+msgid "3rd Bar Color"
+msgstr "Kleur 3e balk"
+
+msgid "3rd Ring Color"
+msgstr "Kleur 3e ring"
+
+msgid "4 Seconds"
+msgstr "4 seconden"
+
+msgid "5 Covers (2 Above / 2 Below)"
+msgstr "5 omslagen (2 boven / 2 onder)"
+
+msgid "5 Seconds"
+msgstr "5 seconden"
+
+msgid "7 Covers (3 Above / 3 Below)"
+msgstr "7 omslagen (3 boven / 3 onder)"
+
+msgid "A profile with that name already exists."
+msgstr "Er bestaat al een profiel met die naam."
+
+msgid "About"
+msgstr "Over"
+
+msgid "Active"
+msgstr "Actief"
+
+msgid "Active Profile"
+msgstr "Actief profiel"
+
+msgid "Add Visual Item"
+msgstr "Visueel item toevoegen"
+
+msgid "Add at least 2 visual items to arrange."
+msgstr "Voeg minstens 2 visuele items toe om te rangschikken."
+
+msgid "Add to Quick Switch"
+msgstr "Toevoegen aan snelwisselaar"
+
+msgid "Added to Quick Switch."
+msgstr "Toegevoegd aan snelwisselaar."
+
+msgid "Afternoon"
+msgstr "Middag"
+
+msgid "All"
+msgstr "Alles"
+
+msgid "All Statistics"
+msgstr "Alle statistieken"
+
+msgid "All colors reset."
+msgstr "Alle kleuren hersteld."
+
+msgid "All-Time"
+msgstr "Altijd"
+
+msgid "All-Time Books"
+msgstr "Boeken (Totaal)"
+
+msgid "All-Time Days"
+msgstr "Dagen (Totaal)"
+
+msgid "All-Time Duration"
+msgstr "Totale duur"
+
+msgid "All-Time Pages"
+msgstr "Pagina's (Totaal)"
+
+msgid "Apply"
+msgstr "Toepassen"
+
+msgid "Apply Profile"
+msgstr "Profiel toepassen"
+
+msgid "Are you sure you want to delete profile '%s'?"
+msgstr "Weet je zeker dat je profiel ‘%s’ wilt verwijderen?"
+
+msgid "Arrange Visual Items"
+msgstr "Visuele items ordenen"
+
+msgid "At Bottom"
+msgstr "Onderaan"
+
+msgid "At Top"
+msgstr "Bovenaan"
+
+msgid "Author Name Color"
+msgstr "Kleur auteursnaam"
+
+msgid "Author Name Font"
+msgstr "Lettertype auteursnaam"
+
+msgid "Author Name Size"
+msgstr "Grootte auteursnaam"
+
+msgid "Auto (Follow KOReader)"
+msgstr "Auto (Volg KOReader)"
+
+msgid "Automatic (Active Book)"
+msgstr "Automatisch (Actief boek)"
+
+msgid "Average per day"
+msgstr "Gemiddeld per dag"
+
+msgid "Average per page"
+msgstr "Gemiddeld per pagina"
+
+msgid "Bar Height"
+msgstr "Balkhoogte"
+
+msgid "Bar Length"
+msgstr "Balklengte"
+
+msgid "Black"
+msgstr "Zwart"
+
+msgid "Bold"
+msgstr "Vet"
+
+msgid "Book"
+msgstr "Boek"
+
+msgid "Book Description"
+msgstr "Boekbeschrijving"
+
+msgid "Book Progress"
+msgstr "Boekvoortgang"
+
+msgid "Book Source"
+msgstr "Boekbron"
+
+msgid "Book Statistics"
+msgstr "Boekstatistieken"
+
+msgid "Book Statistics Window"
+msgstr "Venster Boekstatistieken"
+
+msgid "Book Title Color"
+msgstr "Kleur boektitel"
+
+msgid "Book Title Font"
+msgstr "Lettertype boektitel"
+
+msgid "Book Title Size"
+msgstr "Grootte boektitel"
+
+msgid "Book and Author"
+msgstr "Boek en auteur"
+
+msgid "Bracket Frame"
+msgstr "Haakjeskader"
+
+msgid "Bundled profiles restored."
+msgstr "Meegeleverde profielen hersteld."
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Category Header Color"
+msgstr "Kleur categoriekoppen"
+
+msgid "Category Header Spacing"
+msgstr "Afstand categoriekoppen"
+
+msgid "Category Headers"
+msgstr "Categoriekoppen"
+
+msgid "Change Column 1 Header"
+msgstr "Kop kolom 1 wijzigen"
+
+msgid "Change Column 2 Header"
+msgstr "Kop kolom 2 wijzigen"
+
+msgid "Change Column 3 Header"
+msgstr "Kop kolom 3 wijzigen"
+
+msgid "Change Column 4 Header"
+msgstr "Kop kolom 4 wijzigen"
+
+msgid "Chapter Pages Left"
+msgstr "Resterende hoofdstukpag."
+
+msgid "Chapter Time Left"
+msgstr "Resterende hoofdstuktijd"
+
+msgid "Chronometer Bezel"
+msgstr "Chronometerrand"
+
+msgid "Classic"
+msgstr "Klassiek"
+
+msgid "Classic Bar"
+msgstr "Klassieke balk"
+
+msgid "Classic Capsule"
+msgstr "Klassieke capsule"
+
+msgid "Clear All"
+msgstr "Alles wissen"
+
+msgid "Close"
+msgstr "Sluiten"
+
+msgid "Colors"
+msgstr "Kleuren"
+
+msgid "Column 1 Header"
+msgstr "Kop kolom 1"
+
+msgid "Column 2 Header"
+msgstr "Kop kolom 2"
+
+msgid "Column 3 Header"
+msgstr "Kop kolom 3"
+
+msgid "Column 4 Header"
+msgstr "Kop kolom 4"
+
+msgid "Columns"
+msgstr "Kolommen"
+
+msgid ""
+"Comma separated path fragments.\n"
+"Books containing any of these fragments in their path will be skipped."
+msgstr ""
+"Kommagescheiden padfragmenten.\n"
+"Boeken met een van deze fragmenten in het pad worden overgeslagen."
+
+msgid "Corner Radius"
+msgstr "Hoekradius"
+
+msgid ""
+"Corner radius for the statistics and progress borders.\n"
+"Default is 10 px. Set to 0 px for square corners."
+msgstr ""
+"Hoekradius voor statistiek- en voortgangsranden.\n"
+"Standaard is 10 px. Stel 0 px in voor rechte hoeken."
+
+msgid "Could not open statistics database."
+msgstr "Kan statistiekendatabase niet openen."
+
+msgid "Cover Deck Stack"
+msgstr "Omslagstapel"
+
+msgid "Cover Settings"
+msgstr "Omslaginstellingen"
+
+msgid "Cover Spacing"
+msgstr "Omslagafstand"
+
+msgid "Cover size"
+msgstr "Omslaggrootte"
+
+msgid "Currently Reading"
+msgstr "Nu aan het lezen"
+
+msgid "Currently Reading (Yanllsama)"
+msgstr "Nu aan het lezen (Yanllsama)"
+
+msgid "Cyber Crescent"
+msgstr "Cyber-sikkel"
+
+msgid "Daily"
+msgstr "Dagelijks"
+
+msgid "Daily Average"
+msgstr "Daggemiddelde"
+
+msgid "Daily Goals"
+msgstr "Dagdoelen"
+
+msgid "Daily Min"
+msgstr "Min/dag"
+
+msgid "Daily Page Goal"
+msgstr "Dagelijks paginadoel"
+
+msgid "Daily Pg"
+msgstr "Pag./dag"
+
+msgid "Daily Streak"
+msgstr "Leesreeks"
+
+msgid "Daily Time Goal"
+msgstr "Dagelijks tijddoel"
+
+msgid "Dark Capsule Badge"
+msgstr "Donkere capsulebadge"
+
+msgid "Dark Gray"
+msgstr "Donkergrijs"
+
+msgid "Data"
+msgstr "Gegevens"
+
+msgid "Data Row Spacing"
+msgstr "Rijafstand gegevens"
+
+msgid "Days"
+msgstr "Dagen"
+
+msgid "Days Reading"
+msgstr "Dagen gelezen"
+
+msgid "Days Since Start"
+msgstr "Dagen sinds start"
+
+msgid "Days to Go"
+msgstr "Dagen te gaan"
+
+msgid "Default"
+msgstr "Standaard"
+
+msgid "Default profile unset."
+msgstr "Standaardprofiel uitgeschakeld."
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Delete All Profiles from SimpleUI"
+msgstr "Alle profielen uit SimpleUI verwijderen"
+
+msgid "Delete All Profiles from SimpleUI..."
+msgstr "Alle profielen uit SimpleUI verwijderen..."
+
+msgid "Delete Profile"
+msgstr "Profiel verwijderen"
+
+msgid ""
+"Delete all unlocked profiles from SimpleUI settings (sui_settings.lua)?\n"
+"\n"
+"Locked profiles will be kept. Unlocked presets in default_profiles.lua will reload on the next restart unless removed from default_profiles.lua."
+msgstr ""
+"Alle ontgrendelde profielen uit SimpleUI-instellingen (sui_settings.lua) verwijderen?\n"
+"\n"
+"Vergrendelde profielen blijven behouden. Ontgrendelde voorinstellingen uit default_profiles.lua laden opnieuw bij herstart tenzij verwijderd."
+
+msgid "Deleted %d unlocked profile(s) from SimpleUI (%d locked kept)."
+msgstr "%d ontgrendelde profiel(en) uit SimpleUI verwijderd (%d vergrendeld behouden)."
+
+msgid "Detailed reading statistics and time-of-day distribution window opened by tapping the progress rings or bars."
+msgstr "Gedetailleerd statistiek- en dagdeelvenster bij tikken op voortgangsringen of -balken."
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Done"
+msgstr "Klaar"
+
+msgid "Dot & Line"
+msgstr "Punt & lijn"
+
+msgid "Double Bordered"
+msgstr "Dubbel omlijnd"
+
+msgid "Double Framed"
+msgstr "Dubbel kader"
+
+msgid "Double Framed Tank"
+msgstr "Dubbel kader-tank"
+
+msgid "Dual Split Rail"
+msgstr "Dubbele gesplitste rail"
+
+msgid "EXTRA 1"
+msgstr "EXTRA 1"
+
+msgid "EXTRA 2"
+msgstr "EXTRA 2"
+
+msgid "Eclipse Rim"
+msgstr "Eclipsrand"
+
+msgid "Edit Statistics Items"
+msgstr "Statistiekitems bewerken"
+
+msgid "Enhanced module suite and setup wizard for SimpleUI dashboard."
+msgstr "Uitgebreide modulesuite en installatiewizard voor SimpleUI."
+
+msgid "Enhanced reading dashboard featuring a dynamic stats grid, 39 reading metrics, 45 progress visuals, and multi-book cover deck."
+msgstr "Uitgebreid leesdashboard met dynamisch raster, 39 statistieken, 45 voortgangsgrafieken en omslagstapel."
+
+msgid "Enter Manually"
+msgstr "Handmatig invoeren"
+
+msgid "Enter a name for the new profile:"
+msgstr "Voer een naam in voor het nieuwe profiel:"
+
+msgid "Enter a value"
+msgstr "Voer een waarde in"
+
+msgid "Est. Finish Date"
+msgstr "Geschatte einddatum"
+
+msgid "Evening"
+msgstr "Avond"
+
+msgid "Exclude Paths from Recents"
+msgstr "Paden uitsluiten van recent"
+
+msgid "Export"
+msgstr "Exporteren"
+
+msgid "Export Profiles to Plugin"
+msgstr "Profielen naar plugin exporteren"
+
+msgid "Export Profiles to Plugin..."
+msgstr "Profielen naar plugin exporteren..."
+
+msgid ""
+"Export current profiles to default_profiles.lua inside plugin?\n"
+"\n"
+"This will update bundled presets for all future users."
+msgstr ""
+"Huidige profielen exporteren naar default_profiles.lua in de plugin?\n"
+"\n"
+"Dit werkt de meegeleverde voorinstellingen bij."
+
+msgid "Failed to export: "
+msgstr "Exporteren mislukt: "
+
+msgid "Failed to write file: %s"
+msgstr "Bestand schrijven mislukt: %s"
+
+msgid "Finish Setup"
+msgstr "Installatie voltooien"
+
+msgid "Finished Books"
+msgstr "Uitgelezen boeken"
+
+msgid "Flat Cut"
+msgstr "Vlakke snede"
+
+msgid "Goal"
+msgstr "Doel"
+
+msgid "Goals"
+msgstr "Doelen"
+
+msgid "Graduated Scale"
+msgstr "Schaalverdeling"
+
+msgid "Gray Fill"
+msgstr "Grijze vulling"
+
+msgid "Grid Dimensions"
+msgstr "Rasterafmetingen"
+
+msgid "Grid Settings"
+msgstr "Rasterinstellingen"
+
+msgid "HUD Calipers"
+msgstr "HUD-schuifmaat"
+
+msgid "HUD Visor (220°)"
+msgstr "HUD-vizier (220°)"
+
+msgid "Header Style"
+msgstr "Kopstijl"
+
+msgid "Header Thickness"
+msgstr "Kopdikte"
+
+msgid "Heavy Underline"
+msgstr "Dikke onderstreping"
+
+msgid "Highlights"
+msgstr "Markeringen"
+
+msgid "Horizon Blade"
+msgstr "Horizonblad"
+
+msgid "Horizontal Bar"
+msgstr "Horizontale balk"
+
+msgid "Horizontal Spacing"
+msgstr "Horizontale ruimte"
+
+msgid ""
+"Horizontal side padding for the module.\n"
+"0 px expands to full width, matching all other SimpleUI modules."
+msgstr ""
+"Horizontale zijmarge voor de module.\n"
+"0 px gebruikt volledige breedte zoals andere SimpleUI-modules."
+
+msgid ""
+"Horizontal space between the cover and the text.\n"
+"100% is the default spacing."
+msgstr ""
+"Horizontale ruimte tussen omslag en tekst.\n"
+"100% is de standaardafstand."
+
+msgid "INFO"
+msgstr "INFO"
+
+msgid "In Center"
+msgstr "In het midden"
+
+msgid "Inactive"
+msgstr "Inactief"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Label Color"
+msgstr "Labelkleur"
+
+msgid "Label Font"
+msgstr "Labellettertype"
+
+msgid "Label Size"
+msgstr "Labelgrootte"
+
+msgid "Label Weight: Bold"
+msgstr "Labelgewicht: Vet"
+
+msgid "Label Weight: Normal"
+msgstr "Labelgewicht: Normaal"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Language changed. Reopen settings to refresh all menu labels."
+msgstr "Taal gewijzigd. Open de instellingen opnieuw om alle menu's te vernieuwen."
+
+msgid "Large"
+msgstr "Groot"
+
+msgid "Last Read Date"
+msgstr "Laatst gelezen"
+
+msgid "Last Session Pages"
+msgstr "Pag. laatste sessie"
+
+msgid "Later"
+msgstr "Later"
+
+msgid "Left Accent Bar"
+msgstr "Linker accentbalk"
+
+msgid "Light Gray"
+msgstr "Lichtgrijs"
+
+msgid "Line & Marker"
+msgstr "Lijn & markering"
+
+msgid "Line Spacing"
+msgstr "Regelafstand"
+
+msgid "Live Preview Mode"
+msgstr "Live voorbeeldmodus"
+
+msgid "Live Preview Mode: Off"
+msgstr "Live voorbeeldmodus: Uit"
+
+msgid "Live Preview Mode: On"
+msgstr "Live voorbeeldmodus: Aan"
+
+msgid "Lock Profile (Prevent Deletion & Edits)"
+msgstr "Profiel vergrendelen (Voorkom wissen/bewerken)"
+
+msgid "Manage Profile Options..."
+msgstr "Profielopties beheren..."
+
+msgid "Medium"
+msgstr "Gemiddeld"
+
+msgid "Medium Gray"
+msgstr "Middelgrijs"
+
+msgid "Mins/Session"
+msgstr "Min/sessie"
+
+msgid "Module Details & Information"
+msgstr "Moduledetails & informatie"
+
+msgid "Modules"
+msgstr "Modules"
+
+msgid "Month Min"
+msgstr "Min/maand"
+
+msgid "Month Pg"
+msgstr "Pag./maand"
+
+msgid "Monthly"
+msgstr "Maandelijks"
+
+msgid "Monthly Goals"
+msgstr "Maanddoelen"
+
+msgid "Monthly Page Goal"
+msgstr "Maandelijks paginadoel"
+
+msgid "Monthly Time Goal"
+msgstr "Maandelijks tijddoel"
+
+msgid "Morning"
+msgstr "Ochtend"
+
+msgid "Neon Chamber"
+msgstr "Neonkamer"
+
+msgid "Neon Halo"
+msgstr "Neonhalo"
+
+msgid "Neon Side Stripe"
+msgstr "Neonzijstreep"
+
+msgid "Night"
+msgstr "Nacht"
+
+msgid "No description available for this book."
+msgstr "Geen beschrijving beschikbaar voor dit boek."
+
+msgid "No detailed description is available for this module."
+msgstr "Geen gedetailleerde beschrijving beschikbaar voor deze module."
+
+msgid "No filepath."
+msgstr "Geen bestandspad."
+
+msgid "No installed modules found."
+msgstr "Geen geïnstalleerde modules gevonden."
+
+msgid "No modules available"
+msgstr "Geen modules beschikbaar"
+
+msgid "No statistics found for this book."
+msgstr "Geen statistieken gevonden voor dit boek."
+
+msgid "No visual items selected."
+msgstr "Geen visuele items geselecteerd."
+
+msgid "Notes"
+msgstr "Notities"
+
+msgid "Number Color"
+msgstr "Cijferkleur"
+
+msgid "Number Font"
+msgstr "Cijferlettertype"
+
+msgid "Number Size"
+msgstr "Cijfergrootte"
+
+msgid "Number Weight: Bold"
+msgstr "Cijfergewicht: Vet"
+
+msgid "Number Weight: Normal"
+msgstr "Cijfergewicht: Normaal"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Off"
+msgstr "Uit"
+
+msgid "Open Gauge (270°)"
+msgstr "Open meter (270°)"
+
+msgid "Open the setup wizard to select and toggle modules."
+msgstr "Opent de wizard om modules te selecteren en in/uit te schakelen."
+
+msgid "Orbit Pin"
+msgstr "Orbit-pin"
+
+msgid "Orbit Satellite"
+msgstr "Orbit-satelliet"
+
+msgid "Outlined Box"
+msgstr "Omlijnd vak"
+
+msgid "Outlined Tank"
+msgstr "Omlijnde tank"
+
+msgid "Overwrite"
+msgstr "Overschrijven"
+
+msgid "Overwrite Profile"
+msgstr "Profiel overschrijven"
+
+msgid "Overwrite Profile?"
+msgstr "Profiel overschrijven?"
+
+msgid "Overwrite profile '%s' with your current settings?"
+msgstr "Profiel ‘%s’ overschrijven met huidige instellingen?"
+
+msgid "Overwrite with Current Settings"
+msgstr "Overschrijven met huidige instellingen"
+
+msgid "Pages"
+msgstr "Pagina's"
+
+msgid "Pages Left"
+msgstr "Resterende pagina's"
+
+msgid "Pages Read"
+msgstr "Gelezen pagina's"
+
+msgid "Pages/Minute"
+msgstr "Pagina's/minuut"
+
+msgid "Plain"
+msgstr "Eenvoudig"
+
+msgid "Plasma Conduit"
+msgstr "Plasmabuis"
+
+msgid "Positioning & Border Settings"
+msgstr "Positie- & randinstellingen"
+
+msgid "Positioning Window"
+msgstr "Positievenster"
+
+msgid "Preview Behavior"
+msgstr "Voorbeeldgedrag"
+
+msgid "Preview Duration"
+msgstr "Voorbeeldduur"
+
+msgid "Preview Homescreen Now"
+msgstr "Startscherm nu bekijken"
+
+msgid "Prism Monolith"
+msgstr "Prismamonoliet"
+
+msgid "Profile"
+msgstr "Profiel"
+
+msgid ""
+"Profile '%s' already exists.\n"
+"Overwrite?"
+msgstr ""
+"Profiel ‘%s’ bestaat al.\n"
+"Overschrijven?"
+
+msgid "Profile '%s' deleted."
+msgstr "Profiel ‘%s’ verwijderd."
+
+msgid ""
+"Profile '%s' is locked and cannot be deleted!\n"
+"Unlock it first to delete."
+msgstr ""
+"Profiel ‘%s’ is vergrendeld en kan niet worden verwijderd!\n"
+"Ontgrendel het eerst."
+
+msgid ""
+"Profile '%s' is locked!\n"
+"You must unlock it before overwriting."
+msgstr ""
+"Profiel ‘%s’ is vergrendeld!\n"
+"Ontgrendel het eerst voor overschrijven."
+
+msgid ""
+"Profile '%s' is locked.\n"
+"Unlock it first if you want to overwrite it."
+msgstr ""
+"Profiel ‘%s’ is vergrendeld.\n"
+"Ontgrendel het eerst om te overschrijven."
+
+msgid "Profile '%s' saved."
+msgstr "Profiel ‘%s’ opgeslagen."
+
+msgid "Profile '%s' updated."
+msgstr "Profiel ‘%s’ bijgewerkt."
+
+msgid "Profile Actions"
+msgstr "Profielacties"
+
+msgid "Profile Locked"
+msgstr "Profiel vergrendeld"
+
+msgid "Profile locked."
+msgstr "Profiel vergrendeld."
+
+msgid "Profile unlocked."
+msgstr "Profiel ontgrendeld."
+
+msgid "Profiles"
+msgstr "Profielen"
+
+msgid "Profiles exported to plugin successfully."
+msgstr "Profielen succesvol naar plugin geëxporteerd."
+
+msgid "Progress Visuals"
+msgstr "Voortgangsgrafieken"
+
+msgid "Quick Profile Switch"
+msgstr "Snelle profielwissel"
+
+msgid "Quick Profile Switch: Off"
+msgstr "Snelle profielwissel: Uit"
+
+msgid "Quick Profile Switch: On"
+msgstr "Snelle profielwissel: Aan"
+
+msgid "Reactor Core"
+msgstr "Reactorkern"
+
+msgid "Readable"
+msgstr "Leesbaar"
+
+msgid "Readable (e.g., 3.5 hours)"
+msgstr "Leesbaar (bijv. 3.5 uur)"
+
+msgid "Reading Time Distribution"
+msgstr "Verdeling leestijd"
+
+msgid "Recent"
+msgstr "Recent"
+
+msgid "Remove from Quick Switch"
+msgstr "Verwijderen uit snelwisselaar"
+
+msgid "Removed from Quick Switch."
+msgstr "Verwijderd uit snelwisselaar."
+
+msgid "Rename"
+msgstr "Hernoemen"
+
+msgid "Rename Profile"
+msgstr "Profiel hernoemen"
+
+msgid "Rename Profile..."
+msgstr "Profiel hernoemen..."
+
+msgid "Reset"
+msgstr "Herstellen"
+
+msgid "Reset All Colors"
+msgstr "Alle kleuren herstellen"
+
+msgid "Reset Visual Colors"
+msgstr "Grafiekkleuren herstellen"
+
+msgid "Reset all settings for Currently Reading to default?"
+msgstr "Alle instellingen voor Nu aan het lezen terugzetten naar standaard?"
+
+msgid "Reset to Factory Defaults"
+msgstr "Fabrieksinstellingen herstellen"
+
+msgid "Reset to Factory Defaults..."
+msgstr "Fabrieksinstellingen herstellen..."
+
+msgid "Restore"
+msgstr "Herstellen"
+
+msgid "Restore Bundled Profiles"
+msgstr "Meegeleverde profielen herstellen"
+
+msgid "Restore Bundled Profiles..."
+msgstr "Meegeleverde profielen herstellen..."
+
+msgid "Restore default bundled profiles? Custom profiles created by you will be kept safely."
+msgstr "Meegeleverde standaardprofielen herstellen? Eigen profielen blijven veilig bewaard."
+
+msgid "Return via Button (Manual)"
+msgstr "Terug via knop (Handmatig)"
+
+msgid "Ring Labels: Off"
+msgstr "Ringlabels: Uit"
+
+msgid "Ring Labels: On"
+msgstr "Ringlabels: Aan"
+
+msgid "Ring Size"
+msgstr "Ringgrootte"
+
+msgid "Rings"
+msgstr "Ringen"
+
+msgid "Rows"
+msgstr "Rijen"
+
+msgid "Ruler Gauge"
+msgstr "Liniaalmeter"
+
+msgid "SPEED"
+msgstr "TEMPO"
+
+msgid "Save"
+msgstr "Opslaan"
+
+msgid "Save as New Profile"
+msgstr "Opslaan als nieuw profiel"
+
+msgid "Save as New Profile..."
+msgstr "Opslaan als nieuw profiel..."
+
+msgid "Saved Profiles"
+msgstr "Opgeslagen profielen"
+
+msgid "Scale"
+msgstr "Schaal"
+
+msgid ""
+"Scale for the cover thumbnail only.\n"
+"100% is the default size."
+msgstr ""
+"Schaal alleen voor de omslagminiatuur.\n"
+"100% is de standaardgrootte."
+
+msgid ""
+"Scale for this module.\n"
+"100% is the default size."
+msgstr ""
+"Schaal voor deze module.\n"
+"100% is de standaardgrootte."
+
+msgid "Sec/Page"
+msgstr "Sec/pag."
+
+msgid "Seconds"
+msgstr "seconden"
+
+msgid "Select / Deselect All"
+msgstr "Alles selecteren / deselecteren"
+
+msgid "Select All"
+msgstr "Alles selecteren"
+
+msgid "Select Profile to Manage"
+msgstr "Kies profiel om te beheren"
+
+msgid "Select the modules you want to use on your SimpleUI home screen:"
+msgstr "Selecteer de modules die je op je SimpleUI-startscherm wilt gebruiken:"
+
+msgid "Selected Tone"
+msgstr "Geselecteerde tint"
+
+msgid "Set as Default Profile (Auto-Load on Startup)"
+msgstr "Instellen als standaardprofiel (Laden bij opstarten)"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Settings reset to default."
+msgstr "Instellingen hersteld naar standaard."
+
+msgid "Setup Wizard"
+msgstr "Installatiewizard"
+
+msgid "Setup Wizard & Module Selection"
+msgstr "Installatiewizard & moduleselectie"
+
+msgid "Sharp Minimal"
+msgstr "Strak minimaal"
+
+msgid "Sharp Rectangular"
+msgstr "Strak rechthoekig"
+
+msgid "Show Headers: Off"
+msgstr "Koppen tonen: Uit"
+
+msgid "Show Headers: On"
+msgstr "Koppen tonen: Aan"
+
+msgid "Show Visuals: Off"
+msgstr "Grafieken tonen: Uit"
+
+msgid "Show Visuals: On"
+msgstr "Grafieken tonen: Aan"
+
+msgid "Side Lines"
+msgstr "Zijlijnen"
+
+msgid "Side Padding"
+msgstr "Zijmarge"
+
+msgid "SimpleUI Plus"
+msgstr "SimpleUI Plus"
+
+msgid ""
+"SimpleUI Plus v3.0.0\n"
+"Developer: Yanllsama\n"
+"\n"
+"Enhanced reading modules and interactive setup wizard suite for SimpleUI."
+msgstr ""
+"SimpleUI Plus v3.0.0\n"
+"Ontwikkelaar: Yanllsama\n"
+"\n"
+"Uitgebreide leesmodules en interactieve installatiewizard voor SimpleUI."
+
+msgid "SimpleUI Plus: Selected modules have been saved and enabled on the SimpleUI home screen."
+msgstr "SimpleUI Plus: Geselecteerde modules opgeslagen en ingeschakeld op het SimpleUI-startscherm."
+
+msgid "Single Cover (No Stack)"
+msgstr "Enkele omslag (Geen stapel)"
+
+msgid "Small"
+msgstr "Klein"
+
+msgid "Soft Rounded"
+msgstr "Zacht afgerond"
+
+msgid "Sonar Ping"
+msgstr "Sonarpuls"
+
+msgid "Speed & Pace"
+msgstr "Snelheid & tempo"
+
+msgid "Spine Core"
+msgstr "Rugkern"
+
+msgid "Started Date"
+msgstr "Startdatum"
+
+msgid "Statistics"
+msgstr "Statistieken"
+
+msgid "Statistics Area Background Color"
+msgstr "Achtergrondkleur statistieken"
+
+msgid "Statistics Border: Off"
+msgstr "Statistiekrand: Uit"
+
+msgid "Statistics Border: On"
+msgstr "Statistiekrand: Aan"
+
+msgid "Statistics Layout & Appearance"
+msgstr "Statistieklay-out & uiterlijk"
+
+msgid "Statistics Table"
+msgstr "Statistiekentabel"
+
+msgid "Statistics database library not available."
+msgstr "Statistiekdatabase-bibliotheek niet beschikbaar."
+
+msgid "Style"
+msgstr "Stijl"
+
+msgid "System UI Font"
+msgstr "Systeemlettertype"
+
+msgid "THIS BOOK"
+msgstr "DIT BOEK"
+
+msgid "Tab Headers Radius: Off"
+msgstr "Kopradius: Uit"
+
+msgid "Tab Headers Radius: On"
+msgstr "Kopradius: Aan"
+
+msgid "Tactical Reticle"
+msgstr "Tactisch dradenkruis"
+
+msgid "Target Node"
+msgstr "Doelknooppunt"
+
+msgid "Target Pillar"
+msgstr "Doelpilaar"
+
+msgid "Telemetry Dial"
+msgstr "Telemetrieschijf"
+
+msgid "Text, Font and Color Settings"
+msgstr "Tekst-, lettertype- & kleurinstellingen"
+
+msgid "Thickness"
+msgstr "Dikte"
+
+msgid "Thin"
+msgstr "Dun"
+
+msgid "Thin Track"
+msgstr "Dun spoor"
+
+msgid "Thin Track + Bold Fill"
+msgstr "Dun spoor + Vette vulling"
+
+msgid "This Book"
+msgstr "Dit boek"
+
+msgid "This Month"
+msgstr "Deze maand"
+
+msgid "This Month's Books"
+msgstr "Boeken deze maand"
+
+msgid "This Month's Days"
+msgstr "Dagen deze maand"
+
+msgid "This Month's Pages"
+msgstr "Pagina's deze maand"
+
+msgid "This Month's Time"
+msgstr "Tijd deze maand"
+
+msgid "This Week"
+msgstr "Deze week"
+
+msgid "This Week's Books"
+msgstr "Boeken deze week"
+
+msgid "This Week's Days"
+msgstr "Dagen deze week"
+
+msgid "This Week's Pages"
+msgstr "Pagina's deze week"
+
+msgid "This Week's Time"
+msgstr "Tijd deze week"
+
+msgid "Time Format"
+msgstr "Tijdnotatie"
+
+msgid "Time Left"
+msgstr "Resterende tijd"
+
+msgid "Time Spent"
+msgstr "Bestede tijd"
+
+msgid "Timed Auto-Return (Seconds)"
+msgstr "Automatisch terug (Seconden)"
+
+msgid "Title Line Spacing"
+msgstr "Regelafstand titel"
+
+msgid "Title and Author"
+msgstr "Titel en auteur"
+
+msgid "Title-Author Spacing"
+msgstr "Afstand titel-auteur"
+
+msgid "To Be Read (TBR)"
+msgstr "Nog te lezen (TBR)"
+
+msgid "Today & Streak"
+msgstr "Vandaag & reeks"
+
+msgid "Today's Pages"
+msgstr "Pagina's vandaag"
+
+msgid "Today's Time"
+msgstr "Tijd vandaag"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "Total Sessions"
+msgstr "Totaal sessies"
+
+msgid "Track & Knob"
+msgstr "Spoor & knop"
+
+msgid "Track Background Color"
+msgstr "Achtergrondkleur spoor"
+
+msgid "Underline"
+msgstr "Onderstreept"
+
+msgid "Unknown error."
+msgstr "Onbekende fout."
+
+msgid "Unlock Profile"
+msgstr "Profiel ontgrendelen"
+
+msgid "Unlock profile first to rename it."
+msgstr "Ontgrendel het profiel eerst om het te hernoemen."
+
+msgid "Unset as Default Profile"
+msgstr "Niet meer als standaard gebruiken"
+
+msgid ""
+"User Guide & Features:\n"
+"• Book Summary: Tap the book cover or title/author to view the book summary.\n"
+"• Progress Visuals: Tap the rings or bars on the right to open the detailed Book Stats window.\n"
+"• Quick Insights: Tap the statistics grid to open the Reading Insights popup.\n"
+"• Multi-Book Cover Deck: Swipe vertically or tap stacked covers (1, 3, 5, or 7 books) to switch between recent or TBR books.\n"
+"• Fully Customizable: Dynamic grid (1–4 columns, 1–7 rows), width ratio, typography, colors, borders, 2D live positioning, and profiles."
+msgstr ""
+"Handleiding & functies:\n"
+"• Boekbeschrijving: Tik op de omslag of titel/auteur voor de samenvatting.\n"
+"• Voortgangsgrafieken: Tik rechts op ringen of balken voor uitgebreide boekstatistieken.\n"
+"• Snel inzicht: Tik op het raster voor het Reading Insights-venster.\n"
+"• Omslagstapel: Veeg verticaal of tik op gestapelde omslagen (1, 3, 5 of 7 boeken) om van boek te wisselen.\n"
+"• Volledig aanpasbaar: Dynamisch raster (1–4 kolommen, 1–7 rijen), verhouding, lettertypen, kleuren, randen, 2D-positionering en profielen."
+
+msgid ""
+"User Guide & Features:\n"
+"• How to Open: Tap the progress rings or bars on the right side of the Currently Reading card.\n"
+"• Analytics: View total reading time, active days, pages read percentage, reading speed, and time-of-day distribution (morning, afternoon, evening, night).\n"
+"• Browse Books: Use the left/right arrows to browse statistics for previously read books.\n"
+"• Quick Shortcuts: Tap 'Finished Books' or 'All Statistics' at the bottom for detailed views."
+msgstr ""
+"Handleiding & functies:\n"
+"• Openen: Tik op de voortgangsringen of -balken rechts op de kaart Nu aan het lezen.\n"
+"• Analyses: Totale leestijd, actieve dagen, gelezen percentage, leessnelheid en dagdeelverdeling (ochtend, middag, avond, nacht).\n"
+"• Bladeren: Gebruik de pijlen links/rechts voor eerdere boeken.\n"
+"• Snelkoppelingen: Tik onderaan op ‘Uitgelezen boeken’ of ‘Alle statistieken’."
+
+msgid "Value-Label Gap"
+msgstr "Ruimte waarde-label"
+
+msgid "Variant"
+msgstr "Variant"
+
+msgid "Vertical Bars"
+msgstr "Verticale balken"
+
+msgid "Vertical Spacing"
+msgstr "Verticale ruimte"
+
+msgid "Visor Strip"
+msgstr "Vizierstrook"
+
+msgid "Visual Items (Max 3)"
+msgstr "Visuele items (Max. 3)"
+
+msgid "Visual Text Color"
+msgstr "Tekstkleur grafieken"
+
+msgid "Visual colors reset."
+msgstr "Grafiekkleuren hersteld."
+
+msgid "Visuals Border: Off"
+msgstr "Grafiekrand: Uit"
+
+msgid "Visuals Border: On"
+msgstr "Grafiekrand: Aan"
+
+msgid "Week Min"
+msgstr "Min/week"
+
+msgid "Week Pg"
+msgstr "Pag./week"
+
+msgid "Weekly"
+msgstr "Wekelijks"
+
+msgid "Weekly Goals"
+msgstr "Weekdoelen"
+
+msgid "Weekly Page Goal"
+msgstr "Wekelijks paginadoel"
+
+msgid "Weekly Time Goal"
+msgstr "Wekelijks tijddoel"
+
+msgid "Width Ratio (Stats / Visuals)"
+msgstr "Breedteverhouding (Statistiek / Grafiek)"
+
+msgid "Window Position"
+msgstr "Vensterpositie"
+
+msgid "Window Size"
+msgstr "Venstergrootte"
+
+msgid "Window system not available."
+msgstr "Venstersysteem niet beschikbaar."
+
+msgid "XhYm (e.g., 3h 30 min)"
+msgstr "XuYm (bijv. 3u 30 min)"
+
+msgid "Year Books"
+msgstr "Boeken/jaar"
+
+msgid "Year Min"
+msgstr "Min/jaar"
+
+msgid "Year Pg"
+msgstr "Pag./jaar"
+
+msgid "Yearly"
+msgstr "Jaarlijks"
+
+msgid "Yearly Book Goal"
+msgstr "Jaarlijks boekdoel"
+
+msgid "Yearly Books (2026)"
+msgstr "Jaarboeken (2026)"
+
+msgid "Yearly Days (2026)"
+msgstr "Jaardagen (2026)"
+
+msgid "Yearly Goals"
+msgstr "Jaardoelen"
+
+msgid "Yearly Page Goal"
+msgstr "Jaarlijks paginadoel"
+
+msgid "Yearly Pages (2026)"
+msgstr "Jaarpagina's (2026)"
+
+msgid "Yearly Time (2026)"
+msgstr "Jaartijd (2026)"
+
+msgid "Yearly Time Goal"
+msgstr "Jaarlijks tijddoel"
+
+msgid "You can activate at most %d progress visuals. Remove one first."
+msgstr "Je kunt maximaal %d voortgangsgrafieken activeren. Verwijder er eerst een."
+
+msgid "a day"
+msgstr "per dag"
+
+msgid "all-time"
+msgstr "altijd"
+
+msgid "books"
+msgstr "boeken"
+
+msgid "days"
+msgstr "dagen"
+
+msgid "days ago"
+msgstr "dagen geleden"
+
+msgid "days left"
+msgstr "dagen over"
+
+msgid "days read"
+msgstr "dagen gelezen"
+
+msgid "days streak"
+msgstr "dagen reeks"
+
+msgid "h"
+msgstr "u"
+
+msgid "highlights"
+msgstr "markeringen"
+
+msgid "hours"
+msgstr "uur"
+
+msgid "hr"
+msgstr "u"
+
+msgid "m"
+msgstr "m"
+
+msgid "min"
+msgstr "min"
+
+msgid "mins/session"
+msgstr "min/sessie"
+
+msgid "months ago"
+msgstr "maanden geleden"
+
+msgid "months left"
+msgstr "maanden over"
+
+msgid "months read"
+msgstr "maanden gelezen"
+
+msgid "months streak"
+msgstr "maanden reeks"
+
+msgid "notes"
+msgstr "notities"
+
+msgid "pages"
+msgstr "pagina's"
+
+msgid "pages (last)"
+msgstr "pag. (laatste)"
+
+msgid "pages left"
+msgstr "pagina's over"
+
+msgid "pages/min"
+msgstr "pag./min"
+
+msgid "read"
+msgstr "gelezen"
+
+msgid "remaining"
+msgstr "over"
+
+msgid "sec/page"
+msgstr "sec/pag."
+
+msgid "sessions"
+msgstr "sessies"
+
+msgid "this month"
+msgstr "deze maand"
+
+msgid "this week"
+msgstr "deze week"
+
+msgid "today"
+msgstr "vandaag"
+
+msgid "weeks ago"
+msgstr "weken geleden"
+
+msgid "weeks left"
+msgstr "weken over"
+
+msgid "weeks read"
+msgstr "weken gelezen"
+
+msgid "weeks streak"
+msgstr "weken reeks"
+
+msgid "← Back"
+msgstr "← Terug"

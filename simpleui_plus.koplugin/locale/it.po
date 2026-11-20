@@ -1,0 +1,1453 @@
+# SimpleUI Plus (it) translation.
+msgid ""
+msgstr ""
+"Project-Id-Version: SimpleUI Plus 3.0.0\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid " (Default)"
+msgstr " (Predefinito)"
+
+msgid "%d min"
+msgstr "%d min"
+
+msgid "%dh %02d min"
+msgstr "%dh %02d min"
+
+msgid "'%s' set as default profile."
+msgstr "«%s» impostato come profilo predefinito."
+
+msgid "(No saved profiles)"
+msgstr "(Nessun profilo salvato)"
+
+msgid "0 min"
+msgstr "0 min"
+
+msgid "0 px (Full Width)"
+msgstr "0 px (Larghezza intera)"
+
+msgid "1st Bar Color"
+msgstr "Colore 1ª barra"
+
+msgid "1st Ring Color"
+msgstr "Colore 1º anello"
+
+msgid "2 Seconds"
+msgstr "2 secondi"
+
+msgid "2nd Bar Color"
+msgstr "Colore 2ª barra"
+
+msgid "2nd Ring Color"
+msgstr "Colore 2º anello"
+
+msgid "3 Covers (1 Above / 1 Below)"
+msgstr "3 copertine (1 sopra / 1 sotto)"
+
+msgid "3 Seconds (Default)"
+msgstr "3 secondi (Predefinito)"
+
+msgid "3rd Bar Color"
+msgstr "Colore 3ª barra"
+
+msgid "3rd Ring Color"
+msgstr "Colore 3º anello"
+
+msgid "4 Seconds"
+msgstr "4 secondi"
+
+msgid "5 Covers (2 Above / 2 Below)"
+msgstr "5 copertine (2 sopra / 2 sotto)"
+
+msgid "5 Seconds"
+msgstr "5 secondi"
+
+msgid "7 Covers (3 Above / 3 Below)"
+msgstr "7 copertine (3 sopra / 3 sotto)"
+
+msgid "A profile with that name already exists."
+msgstr "Esiste già un profilo con questo nome."
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "Active"
+msgstr "Attivo"
+
+msgid "Active Profile"
+msgstr "Profilo attivo"
+
+msgid "Add Visual Item"
+msgstr "Aggiungi elemento visivo"
+
+msgid "Add at least 2 visual items to arrange."
+msgstr "Aggiungi almeno 2 elementi visivi da ordinare."
+
+msgid "Add to Quick Switch"
+msgstr "Aggiungi a cambio rapido"
+
+msgid "Added to Quick Switch."
+msgstr "Aggiunto al cambio rapido."
+
+msgid "Afternoon"
+msgstr "Pomeriggio"
+
+msgid "All"
+msgstr "Tutti"
+
+msgid "All Statistics"
+msgstr "Tutte le statistiche"
+
+msgid "All colors reset."
+msgstr "Tutti i colori ripristinati."
+
+msgid "All-Time"
+msgstr "Sempre"
+
+msgid "All-Time Books"
+msgstr "Libri (Totale)"
+
+msgid "All-Time Days"
+msgstr "Giorni (Totale)"
+
+msgid "All-Time Duration"
+msgstr "Durata totale"
+
+msgid "All-Time Pages"
+msgstr "Pagine (Totale)"
+
+msgid "Apply"
+msgstr "Applica"
+
+msgid "Apply Profile"
+msgstr "Applica profilo"
+
+msgid "Are you sure you want to delete profile '%s'?"
+msgstr "Sei sicuro di voler eliminare il profilo «%s»?"
+
+msgid "Arrange Visual Items"
+msgstr "Ordina elementi visivi"
+
+msgid "At Bottom"
+msgstr "In basso"
+
+msgid "At Top"
+msgstr "In alto"
+
+msgid "Author Name Color"
+msgstr "Colore autore"
+
+msgid "Author Name Font"
+msgstr "Carattere autore"
+
+msgid "Author Name Size"
+msgstr "Dimensione autore"
+
+msgid "Auto (Follow KOReader)"
+msgstr "Auto (Segui KOReader)"
+
+msgid "Automatic (Active Book)"
+msgstr "Automatico (Libro attivo)"
+
+msgid "Average per day"
+msgstr "Media giornaliera"
+
+msgid "Average per page"
+msgstr "Media per pagina"
+
+msgid "Bar Height"
+msgstr "Altezza barra"
+
+msgid "Bar Length"
+msgstr "Lunghezza barra"
+
+msgid "Black"
+msgstr "Nero"
+
+msgid "Bold"
+msgstr "Grassetto"
+
+msgid "Book"
+msgstr "Libro"
+
+msgid "Book Description"
+msgstr "Descrizione del libro"
+
+msgid "Book Progress"
+msgstr "Avanzamento libro"
+
+msgid "Book Source"
+msgstr "Origine libri"
+
+msgid "Book Statistics"
+msgstr "Statistiche libro"
+
+msgid "Book Statistics Window"
+msgstr "Finestra statistiche libro"
+
+msgid "Book Title Color"
+msgstr "Colore titolo"
+
+msgid "Book Title Font"
+msgstr "Carattere titolo"
+
+msgid "Book Title Size"
+msgstr "Dimensione titolo"
+
+msgid "Book and Author"
+msgstr "Libro e autore"
+
+msgid "Bracket Frame"
+msgstr "Cornice a parentesi"
+
+msgid "Bundled profiles restored."
+msgstr "Profili inclusi ripristinati."
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Category Header Color"
+msgstr "Colore intestazioni"
+
+msgid "Category Header Spacing"
+msgstr "Spaziatura intestazioni"
+
+msgid "Category Headers"
+msgstr "Intestazioni categoria"
+
+msgid "Change Column 1 Header"
+msgstr "Modifica intestazione colonna 1"
+
+msgid "Change Column 2 Header"
+msgstr "Modifica intestazione colonna 2"
+
+msgid "Change Column 3 Header"
+msgstr "Modifica intestazione colonna 3"
+
+msgid "Change Column 4 Header"
+msgstr "Modifica intestazione colonna 4"
+
+msgid "Chapter Pages Left"
+msgstr "Pagine rest. capitolo"
+
+msgid "Chapter Time Left"
+msgstr "Tempo rest. capitolo"
+
+msgid "Chronometer Bezel"
+msgstr "Ghiera cronometro"
+
+msgid "Classic"
+msgstr "Classico"
+
+msgid "Classic Bar"
+msgstr "Barra classica"
+
+msgid "Classic Capsule"
+msgstr "Capsula classica"
+
+msgid "Clear All"
+msgstr "Cancella tutto"
+
+msgid "Close"
+msgstr "Chiudi"
+
+msgid "Colors"
+msgstr "Colori"
+
+msgid "Column 1 Header"
+msgstr "Intestazione colonna 1"
+
+msgid "Column 2 Header"
+msgstr "Intestazione colonna 2"
+
+msgid "Column 3 Header"
+msgstr "Intestazione colonna 3"
+
+msgid "Column 4 Header"
+msgstr "Intestazione colonna 4"
+
+msgid "Columns"
+msgstr "Colonne"
+
+msgid ""
+"Comma separated path fragments.\n"
+"Books containing any of these fragments in their path will be skipped."
+msgstr ""
+"Frammenti di percorso separati da virgole.\n"
+"I libri che li contengono nel percorso verranno saltati."
+
+msgid "Corner Radius"
+msgstr "Raggio angoli"
+
+msgid ""
+"Corner radius for the statistics and progress borders.\n"
+"Default is 10 px. Set to 0 px for square corners."
+msgstr ""
+"Raggio degli angoli per i bordi di statistiche e avanzamento.\n"
+"Predefinito: 10 px. Imposta 0 px per angoli retti."
+
+msgid "Could not open statistics database."
+msgstr "Impossibile aprire il database delle statistiche."
+
+msgid "Cover Deck Stack"
+msgstr "Pila di copertine"
+
+msgid "Cover Settings"
+msgstr "Impostazioni copertina"
+
+msgid "Cover Spacing"
+msgstr "Spaziatura copertina"
+
+msgid "Cover size"
+msgstr "Dimensione copertina"
+
+msgid "Currently Reading"
+msgstr "In lettura"
+
+msgid "Currently Reading (Yanllsama)"
+msgstr "In lettura (Yanllsama)"
+
+msgid "Cyber Crescent"
+msgstr "Falce cyber"
+
+msgid "Daily"
+msgstr "Giornaliero"
+
+msgid "Daily Average"
+msgstr "Media giornaliera"
+
+msgid "Daily Goals"
+msgstr "Obiettivi giornalieri"
+
+msgid "Daily Min"
+msgstr "Min/giorno"
+
+msgid "Daily Page Goal"
+msgstr "Obiettivo pagine giornaliero"
+
+msgid "Daily Pg"
+msgstr "Pag./giorno"
+
+msgid "Daily Streak"
+msgstr "Serie giornaliera"
+
+msgid "Daily Time Goal"
+msgstr "Obiettivo tempo giornaliero"
+
+msgid "Dark Capsule Badge"
+msgstr "Badge capsula scura"
+
+msgid "Dark Gray"
+msgstr "Grigio scuro"
+
+msgid "Data"
+msgstr "Dati"
+
+msgid "Data Row Spacing"
+msgstr "Spaziatura righe dati"
+
+msgid "Days"
+msgstr "Giorni"
+
+msgid "Days Reading"
+msgstr "Giorni di lettura"
+
+msgid "Days Since Start"
+msgstr "Giorni dall'inizio"
+
+msgid "Days to Go"
+msgstr "Giorni rimanenti"
+
+msgid "Default"
+msgstr "Predefinito"
+
+msgid "Default profile unset."
+msgstr "Profilo predefinito rimosso."
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Delete All Profiles from SimpleUI"
+msgstr "Elimina tutti i profili da SimpleUI"
+
+msgid "Delete All Profiles from SimpleUI..."
+msgstr "Elimina tutti i profili da SimpleUI..."
+
+msgid "Delete Profile"
+msgstr "Elimina profilo"
+
+msgid ""
+"Delete all unlocked profiles from SimpleUI settings (sui_settings.lua)?\n"
+"\n"
+"Locked profiles will be kept. Unlocked presets in default_profiles.lua will reload on the next restart unless removed from default_profiles.lua."
+msgstr ""
+"Eliminare tutti i profili sbloccati dalle impostazioni SimpleUI (sui_settings.lua)?\n"
+"\n"
+"I profili bloccati saranno mantenuti. Quelli predefiniti sbloccati in default_profiles.lua ricompariranno al riavvio salvo rimozione dal file."
+
+msgid "Deleted %d unlocked profile(s) from SimpleUI (%d locked kept)."
+msgstr "Eliminati %d profilo/i sbloccati da SimpleUI (%d bloccati mantenuti)."
+
+msgid "Detailed reading statistics and time-of-day distribution window opened by tapping the progress rings or bars."
+msgstr "Finestra dettagliata delle statistiche e distribuzione oraria toccando anelli o barre."
+
+msgid "Details"
+msgstr "Dettagli"
+
+msgid "Done"
+msgstr "Fatto"
+
+msgid "Dot & Line"
+msgstr "Punto e linea"
+
+msgid "Double Bordered"
+msgstr "Doppio bordo"
+
+msgid "Double Framed"
+msgstr "Doppia cornice"
+
+msgid "Double Framed Tank"
+msgstr "Serbatoio doppia cornice"
+
+msgid "Dual Split Rail"
+msgstr "Doppio binario diviso"
+
+msgid "EXTRA 1"
+msgstr "EXTRA 1"
+
+msgid "EXTRA 2"
+msgstr "EXTRA 2"
+
+msgid "Eclipse Rim"
+msgstr "Bordo eclissi"
+
+msgid "Edit Statistics Items"
+msgstr "Modifica voci statistiche"
+
+msgid "Enhanced module suite and setup wizard for SimpleUI dashboard."
+msgstr "Suite avanzata di moduli e procedura guidata per SimpleUI."
+
+msgid "Enhanced reading dashboard featuring a dynamic stats grid, 39 reading metrics, 45 progress visuals, and multi-book cover deck."
+msgstr "Pannello di lettura avanzato con griglia dinamica, 39 metriche, 45 grafici di avanzamento e pila di copertine."
+
+msgid "Enter Manually"
+msgstr "Inserisci manualmente"
+
+msgid "Enter a name for the new profile:"
+msgstr "Inserisci un nome per il nuovo profilo:"
+
+msgid "Enter a value"
+msgstr "Inserisci un valore"
+
+msgid "Est. Finish Date"
+msgstr "Fine stimata"
+
+msgid "Evening"
+msgstr "Sera"
+
+msgid "Exclude Paths from Recents"
+msgstr "Escludi percorsi dai recenti"
+
+msgid "Export"
+msgstr "Esporta"
+
+msgid "Export Profiles to Plugin"
+msgstr "Esporta profili nel plugin"
+
+msgid "Export Profiles to Plugin..."
+msgstr "Esporta profili nel plugin..."
+
+msgid ""
+"Export current profiles to default_profiles.lua inside plugin?\n"
+"\n"
+"This will update bundled presets for all future users."
+msgstr ""
+"Esportare i profili attuali in default_profiles.lua nel plugin?\n"
+"\n"
+"Aggiornerà i preset inclusi."
+
+msgid "Failed to export: "
+msgstr "Esportazione fallita: "
+
+msgid "Failed to write file: %s"
+msgstr "Impossibile scrivere il file: %s"
+
+msgid "Finish Setup"
+msgstr "Completa configurazione"
+
+msgid "Finished Books"
+msgstr "Libri completati"
+
+msgid "Flat Cut"
+msgstr "Taglio piatto"
+
+msgid "Goal"
+msgstr "Obiettivo"
+
+msgid "Goals"
+msgstr "Obiettivi"
+
+msgid "Graduated Scale"
+msgstr "Scala graduata"
+
+msgid "Gray Fill"
+msgstr "Riempimento grigio"
+
+msgid "Grid Dimensions"
+msgstr "Dimensioni griglia"
+
+msgid "Grid Settings"
+msgstr "Impostazioni griglia"
+
+msgid "HUD Calipers"
+msgstr "Calibri HUD"
+
+msgid "HUD Visor (220°)"
+msgstr "Visore HUD (220°)"
+
+msgid "Header Style"
+msgstr "Stile intestazione"
+
+msgid "Header Thickness"
+msgstr "Spessore intestazione"
+
+msgid "Heavy Underline"
+msgstr "Sottolineatura spessa"
+
+msgid "Highlights"
+msgstr "Evidenziazioni"
+
+msgid "Horizon Blade"
+msgstr "Lama orizzonte"
+
+msgid "Horizontal Bar"
+msgstr "Barra orizzontale"
+
+msgid "Horizontal Spacing"
+msgstr "Spaziatura orizzontale"
+
+msgid ""
+"Horizontal side padding for the module.\n"
+"0 px expands to full width, matching all other SimpleUI modules."
+msgstr ""
+"Margine laterale orizzontale del modulo.\n"
+"0 px usa tutta la larghezza come gli altri moduli SimpleUI."
+
+msgid ""
+"Horizontal space between the cover and the text.\n"
+"100% is the default spacing."
+msgstr ""
+"Spazio orizzontale tra copertina e testo.\n"
+"100% è la spaziatura predefinita."
+
+msgid "INFO"
+msgstr "INFO"
+
+msgid "In Center"
+msgstr "Al centro"
+
+msgid "Inactive"
+msgstr "Inattivo"
+
+msgid "Label"
+msgstr "Etichetta"
+
+msgid "Label Color"
+msgstr "Colore etichetta"
+
+msgid "Label Font"
+msgstr "Carattere etichetta"
+
+msgid "Label Size"
+msgstr "Dimensione etichetta"
+
+msgid "Label Weight: Bold"
+msgstr "Peso etichetta: Grassetto"
+
+msgid "Label Weight: Normal"
+msgstr "Peso etichetta: Normale"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Language changed. Reopen settings to refresh all menu labels."
+msgstr "Lingua modificata. Riapri le impostazioni per aggiornare tutti i menu."
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Last Read Date"
+msgstr "Ultima lettura"
+
+msgid "Last Session Pages"
+msgstr "Pagine ultima sessione"
+
+msgid "Later"
+msgstr "Più tardi"
+
+msgid "Left Accent Bar"
+msgstr "Barra laterale sinistra"
+
+msgid "Light Gray"
+msgstr "Grigio chiaro"
+
+msgid "Line & Marker"
+msgstr "Linea e marcatore"
+
+msgid "Line Spacing"
+msgstr "Interlinea"
+
+msgid "Live Preview Mode"
+msgstr "Anteprima dal vivo"
+
+msgid "Live Preview Mode: Off"
+msgstr "Anteprima dal vivo: Off"
+
+msgid "Live Preview Mode: On"
+msgstr "Anteprima dal vivo: On"
+
+msgid "Lock Profile (Prevent Deletion & Edits)"
+msgstr "Blocca profilo (Impedisci eliminazione/modifiche)"
+
+msgid "Manage Profile Options..."
+msgstr "Gestisci opzioni profilo..."
+
+msgid "Medium"
+msgstr "Medio"
+
+msgid "Medium Gray"
+msgstr "Grigio medio"
+
+msgid "Mins/Session"
+msgstr "Min/sessione"
+
+msgid "Module Details & Information"
+msgstr "Dettagli e info modulo"
+
+msgid "Modules"
+msgstr "Moduli"
+
+msgid "Month Min"
+msgstr "Min/mese"
+
+msgid "Month Pg"
+msgstr "Pag./mese"
+
+msgid "Monthly"
+msgstr "Mensile"
+
+msgid "Monthly Goals"
+msgstr "Obiettivi mensili"
+
+msgid "Monthly Page Goal"
+msgstr "Obiettivo pagine mensile"
+
+msgid "Monthly Time Goal"
+msgstr "Obiettivo tempo mensile"
+
+msgid "Morning"
+msgstr "Mattina"
+
+msgid "Neon Chamber"
+msgstr "Camera neon"
+
+msgid "Neon Halo"
+msgstr "Alone neon"
+
+msgid "Neon Side Stripe"
+msgstr "Striscia laterale neon"
+
+msgid "Night"
+msgstr "Notte"
+
+msgid "No description available for this book."
+msgstr "Nessuna descrizione disponibile per questo libro."
+
+msgid "No detailed description is available for this module."
+msgstr "Nessuna descrizione dettagliata disponibile per questo modulo."
+
+msgid "No filepath."
+msgstr "Nessun percorso file."
+
+msgid "No installed modules found."
+msgstr "Nessun modulo installato trovato."
+
+msgid "No modules available"
+msgstr "Nessun modulo disponibile"
+
+msgid "No statistics found for this book."
+msgstr "Nessuna statistica trovata per questo libro."
+
+msgid "No visual items selected."
+msgstr "Nessun elemento visivo selezionato."
+
+msgid "Notes"
+msgstr "Note"
+
+msgid "Number Color"
+msgstr "Colore numeri"
+
+msgid "Number Font"
+msgstr "Carattere numeri"
+
+msgid "Number Size"
+msgstr "Dimensione numeri"
+
+msgid "Number Weight: Bold"
+msgstr "Peso numeri: Grassetto"
+
+msgid "Number Weight: Normal"
+msgstr "Peso numeri: Normale"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Off"
+msgstr "Off"
+
+msgid "Open Gauge (270°)"
+msgstr "Indicatore aperto (270°)"
+
+msgid "Open the setup wizard to select and toggle modules."
+msgstr "Apre la procedura guidata per selezionare e attivare i moduli."
+
+msgid "Orbit Pin"
+msgstr "Perno orbitale"
+
+msgid "Orbit Satellite"
+msgstr "Satellite orbitale"
+
+msgid "Outlined Box"
+msgstr "Riquadro contornato"
+
+msgid "Outlined Tank"
+msgstr "Serbatoio contornato"
+
+msgid "Overwrite"
+msgstr "Sovrascrivi"
+
+msgid "Overwrite Profile"
+msgstr "Sovrascrivi profilo"
+
+msgid "Overwrite Profile?"
+msgstr "Sovrascrivere il profilo?"
+
+msgid "Overwrite profile '%s' with your current settings?"
+msgstr "Sovrascrivere il profilo «%s» con le impostazioni attuali?"
+
+msgid "Overwrite with Current Settings"
+msgstr "Sovrascrivi con impostazioni attuali"
+
+msgid "Pages"
+msgstr "Pagine"
+
+msgid "Pages Left"
+msgstr "Pagine rimanenti"
+
+msgid "Pages Read"
+msgstr "Pagine lette"
+
+msgid "Pages/Minute"
+msgstr "Pagine/minuto"
+
+msgid "Plain"
+msgstr "Semplice"
+
+msgid "Plasma Conduit"
+msgstr "Condotto plasma"
+
+msgid "Positioning & Border Settings"
+msgstr "Posizione e bordi"
+
+msgid "Positioning Window"
+msgstr "Finestra posizionamento"
+
+msgid "Preview Behavior"
+msgstr "Comportamento anteprima"
+
+msgid "Preview Duration"
+msgstr "Durata anteprima"
+
+msgid "Preview Homescreen Now"
+msgstr "Anteprima home ora"
+
+msgid "Prism Monolith"
+msgstr "Monolite prisma"
+
+msgid "Profile"
+msgstr "Profilo"
+
+msgid ""
+"Profile '%s' already exists.\n"
+"Overwrite?"
+msgstr ""
+"Il profilo «%s» esiste già.\n"
+"Sovrascrivere?"
+
+msgid "Profile '%s' deleted."
+msgstr "Profilo «%s» eliminato."
+
+msgid ""
+"Profile '%s' is locked and cannot be deleted!\n"
+"Unlock it first to delete."
+msgstr ""
+"Il profilo «%s» è bloccato e non può essere eliminato!\n"
+"Sbloccalo prima."
+
+msgid ""
+"Profile '%s' is locked!\n"
+"You must unlock it before overwriting."
+msgstr ""
+"Il profilo «%s» è bloccato!\n"
+"Sbloccalo prima di sovrascriverlo."
+
+msgid ""
+"Profile '%s' is locked.\n"
+"Unlock it first if you want to overwrite it."
+msgstr ""
+"Il profilo «%s» è bloccato.\n"
+"Sbloccalo prima di sovrascriverlo."
+
+msgid "Profile '%s' saved."
+msgstr "Profilo «%s» salvato."
+
+msgid "Profile '%s' updated."
+msgstr "Profilo «%s» aggiornato."
+
+msgid "Profile Actions"
+msgstr "Azioni profilo"
+
+msgid "Profile Locked"
+msgstr "Profilo bloccato"
+
+msgid "Profile locked."
+msgstr "Profilo bloccato."
+
+msgid "Profile unlocked."
+msgstr "Profilo sbloccato."
+
+msgid "Profiles"
+msgstr "Profili"
+
+msgid "Profiles exported to plugin successfully."
+msgstr "Profili esportati nel plugin con successo."
+
+msgid "Progress Visuals"
+msgstr "Grafici avanzamento"
+
+msgid "Quick Profile Switch"
+msgstr "Cambio rapido profilo"
+
+msgid "Quick Profile Switch: Off"
+msgstr "Cambio rapido: Off"
+
+msgid "Quick Profile Switch: On"
+msgstr "Cambio rapido: On"
+
+msgid "Reactor Core"
+msgstr "Nucleo reattore"
+
+msgid "Readable"
+msgstr "Leggibile"
+
+msgid "Readable (e.g., 3.5 hours)"
+msgstr "Leggibile (es. 3.5 ore)"
+
+msgid "Reading Time Distribution"
+msgstr "Distribuzione tempo di lettura"
+
+msgid "Recent"
+msgstr "Recenti"
+
+msgid "Remove from Quick Switch"
+msgstr "Rimuovi da cambio rapido"
+
+msgid "Removed from Quick Switch."
+msgstr "Rimosso dal cambio rapido."
+
+msgid "Rename"
+msgstr "Rinomina"
+
+msgid "Rename Profile"
+msgstr "Rinomina profilo"
+
+msgid "Rename Profile..."
+msgstr "Rinomina profilo..."
+
+msgid "Reset"
+msgstr "Ripristina"
+
+msgid "Reset All Colors"
+msgstr "Ripristina tutti i colori"
+
+msgid "Reset Visual Colors"
+msgstr "Ripristina colori grafici"
+
+msgid "Reset all settings for Currently Reading to default?"
+msgstr "Ripristinare tutte le impostazioni di In lettura ai valori predefiniti?"
+
+msgid "Reset to Factory Defaults"
+msgstr "Ripristina impostazioni predefinite"
+
+msgid "Reset to Factory Defaults..."
+msgstr "Ripristina impostazioni predefinite..."
+
+msgid "Restore"
+msgstr "Ripristina"
+
+msgid "Restore Bundled Profiles"
+msgstr "Ripristina profili inclusi"
+
+msgid "Restore Bundled Profiles..."
+msgstr "Ripristina profili inclusi..."
+
+msgid "Restore default bundled profiles? Custom profiles created by you will be kept safely."
+msgstr "Ripristinare i profili predefiniti inclusi? I tuoi profili personalizzati verranno mantenuti."
+
+msgid "Return via Button (Manual)"
+msgstr "Ritorno tramite pulsante (Manuale)"
+
+msgid "Ring Labels: Off"
+msgstr "Etichette anello: Off"
+
+msgid "Ring Labels: On"
+msgstr "Etichette anello: On"
+
+msgid "Ring Size"
+msgstr "Dimensione anello"
+
+msgid "Rings"
+msgstr "Anelli"
+
+msgid "Rows"
+msgstr "Righe"
+
+msgid "Ruler Gauge"
+msgstr "Scala righello"
+
+msgid "SPEED"
+msgstr "VELOCITÀ"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Save as New Profile"
+msgstr "Salva come nuovo profilo"
+
+msgid "Save as New Profile..."
+msgstr "Salva come nuovo profilo..."
+
+msgid "Saved Profiles"
+msgstr "Profili salvati"
+
+msgid "Scale"
+msgstr "Scala"
+
+msgid ""
+"Scale for the cover thumbnail only.\n"
+"100% is the default size."
+msgstr ""
+"Scala solo per la miniatura copertina.\n"
+"100% è la dimensione predefinita."
+
+msgid ""
+"Scale for this module.\n"
+"100% is the default size."
+msgstr ""
+"Scala per questo modulo.\n"
+"100% è la dimensione predefinita."
+
+msgid "Sec/Page"
+msgstr "Sec/pagina"
+
+msgid "Seconds"
+msgstr "secondi"
+
+msgid "Select / Deselect All"
+msgstr "Seleziona / Deseleziona tutto"
+
+msgid "Select All"
+msgstr "Seleziona tutto"
+
+msgid "Select Profile to Manage"
+msgstr "Seleziona profilo da gestire"
+
+msgid "Select the modules you want to use on your SimpleUI home screen:"
+msgstr "Seleziona i moduli da usare nella schermata iniziale di SimpleUI:"
+
+msgid "Selected Tone"
+msgstr "Tono selezionato"
+
+msgid "Set as Default Profile (Auto-Load on Startup)"
+msgstr "Imposta come predefinito (Carica all'avvio)"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Settings reset to default."
+msgstr "Impostazioni ripristinate ai valori predefiniti."
+
+msgid "Setup Wizard"
+msgstr "Procedura guidata"
+
+msgid "Setup Wizard & Module Selection"
+msgstr "Procedura guidata e moduli"
+
+msgid "Sharp Minimal"
+msgstr "Minimale netto"
+
+msgid "Sharp Rectangular"
+msgstr "Rettangolare netto"
+
+msgid "Show Headers: Off"
+msgstr "Mostra intestazioni: Off"
+
+msgid "Show Headers: On"
+msgstr "Mostra intestazioni: On"
+
+msgid "Show Visuals: Off"
+msgstr "Mostra grafici: Off"
+
+msgid "Show Visuals: On"
+msgstr "Mostra grafici: On"
+
+msgid "Side Lines"
+msgstr "Linee laterali"
+
+msgid "Side Padding"
+msgstr "Margine laterale"
+
+msgid "SimpleUI Plus"
+msgstr "SimpleUI Plus"
+
+msgid ""
+"SimpleUI Plus v3.0.0\n"
+"Developer: Yanllsama\n"
+"\n"
+"Enhanced reading modules and interactive setup wizard suite for SimpleUI."
+msgstr ""
+"SimpleUI Plus v3.0.0\n"
+"Sviluppatore: Yanllsama\n"
+"\n"
+"Moduli di lettura avanzati e procedura guidata per SimpleUI."
+
+msgid "SimpleUI Plus: Selected modules have been saved and enabled on the SimpleUI home screen."
+msgstr "SimpleUI Plus: Moduli selezionati salvati e attivati nella home di SimpleUI."
+
+msgid "Single Cover (No Stack)"
+msgstr "Copertina singola (Senza pila)"
+
+msgid "Small"
+msgstr "Piccolo"
+
+msgid "Soft Rounded"
+msgstr "Arrotondato morbido"
+
+msgid "Sonar Ping"
+msgstr "Impulso sonar"
+
+msgid "Speed & Pace"
+msgstr "Velocità e ritmo"
+
+msgid "Spine Core"
+msgstr "Nucleo dorsale"
+
+msgid "Started Date"
+msgstr "Data inizio"
+
+msgid "Statistics"
+msgstr "Statistiche"
+
+msgid "Statistics Area Background Color"
+msgstr "Colore sfondo area statistiche"
+
+msgid "Statistics Border: Off"
+msgstr "Bordo statistiche: Off"
+
+msgid "Statistics Border: On"
+msgstr "Bordo statistiche: On"
+
+msgid "Statistics Layout & Appearance"
+msgstr "Layout e aspetto statistiche"
+
+msgid "Statistics Table"
+msgstr "Tabella statistiche"
+
+msgid "Statistics database library not available."
+msgstr "Libreria database statistiche non disponibile."
+
+msgid "Style"
+msgstr "Stile"
+
+msgid "System UI Font"
+msgstr "Carattere di sistema"
+
+msgid "THIS BOOK"
+msgstr "QUESTO LIBRO"
+
+msgid "Tab Headers Radius: Off"
+msgstr "Raggio intestazioni: Off"
+
+msgid "Tab Headers Radius: On"
+msgstr "Raggio intestazioni: On"
+
+msgid "Tactical Reticle"
+msgstr "Reticolo tattico"
+
+msgid "Target Node"
+msgstr "Nodo obiettivo"
+
+msgid "Target Pillar"
+msgstr "Pilastro obiettivo"
+
+msgid "Telemetry Dial"
+msgstr "Quadrante telemetria"
+
+msgid "Text, Font and Color Settings"
+msgstr "Testo, caratteri e colori"
+
+msgid "Thickness"
+msgstr "Spessore"
+
+msgid "Thin"
+msgstr "Sottile"
+
+msgid "Thin Track"
+msgstr "Traccia sottile"
+
+msgid "Thin Track + Bold Fill"
+msgstr "Traccia sottile + Riempimento spesso"
+
+msgid "This Book"
+msgstr "Questo libro"
+
+msgid "This Month"
+msgstr "Questo mese"
+
+msgid "This Month's Books"
+msgstr "Libri questo mese"
+
+msgid "This Month's Days"
+msgstr "Giorni questo mese"
+
+msgid "This Month's Pages"
+msgstr "Pagine questo mese"
+
+msgid "This Month's Time"
+msgstr "Tempo questo mese"
+
+msgid "This Week"
+msgstr "Questa settimana"
+
+msgid "This Week's Books"
+msgstr "Libri questa settimana"
+
+msgid "This Week's Days"
+msgstr "Giorni questa settimana"
+
+msgid "This Week's Pages"
+msgstr "Pagine questa settimana"
+
+msgid "This Week's Time"
+msgstr "Tempo questa settimana"
+
+msgid "Time Format"
+msgstr "Formato ora"
+
+msgid "Time Left"
+msgstr "Tempo rimanente"
+
+msgid "Time Spent"
+msgstr "Tempo trascorso"
+
+msgid "Timed Auto-Return (Seconds)"
+msgstr "Ritorno automatico (Secondi)"
+
+msgid "Title Line Spacing"
+msgstr "Interlinea titolo"
+
+msgid "Title and Author"
+msgstr "Titolo e autore"
+
+msgid "Title-Author Spacing"
+msgstr "Spazio titolo-autore"
+
+msgid "To Be Read (TBR)"
+msgstr "Da leggere (TBR)"
+
+msgid "Today & Streak"
+msgstr "Oggi e serie"
+
+msgid "Today's Pages"
+msgstr "Pagine di oggi"
+
+msgid "Today's Time"
+msgstr "Tempo di oggi"
+
+msgid "Total"
+msgstr "Totale"
+
+msgid "Total Sessions"
+msgstr "Sessioni totali"
+
+msgid "Track & Knob"
+msgstr "Traccia e cursore"
+
+msgid "Track Background Color"
+msgstr "Colore sfondo traccia"
+
+msgid "Underline"
+msgstr "Sottolineato"
+
+msgid "Unknown error."
+msgstr "Errore sconosciuto."
+
+msgid "Unlock Profile"
+msgstr "Sblocca profilo"
+
+msgid "Unlock profile first to rename it."
+msgstr "Sblocca prima il profilo per rinominarlo."
+
+msgid "Unset as Default Profile"
+msgstr "Rimuovi come predefinito"
+
+msgid ""
+"User Guide & Features:\n"
+"• Book Summary: Tap the book cover or title/author to view the book summary.\n"
+"• Progress Visuals: Tap the rings or bars on the right to open the detailed Book Stats window.\n"
+"• Quick Insights: Tap the statistics grid to open the Reading Insights popup.\n"
+"• Multi-Book Cover Deck: Swipe vertically or tap stacked covers (1, 3, 5, or 7 books) to switch between recent or TBR books.\n"
+"• Fully Customizable: Dynamic grid (1–4 columns, 1–7 rows), width ratio, typography, colors, borders, 2D live positioning, and profiles."
+msgstr ""
+"Guida e funzioni:\n"
+"• Trama libro: Tocca la copertina o titolo/autore per vedere la descrizione.\n"
+"• Grafici avanzamento: Tocca gli anelli o barre a destra per aprire le statistiche dettagliate.\n"
+"• Riepilogo rapido: Tocca la griglia per aprire Reading Insights.\n"
+"• Pila di copertine: Scorri verticalmente o tocca le copertine impilate (1, 3, 5 o 7 libri) per cambiare libro.\n"
+"• Personalizzabile: Griglia dinamica (1–4 colonne, 1–7 righe), proporzioni, caratteri, colori, bordi, posizione 2D e profili."
+
+msgid ""
+"User Guide & Features:\n"
+"• How to Open: Tap the progress rings or bars on the right side of the Currently Reading card.\n"
+"• Analytics: View total reading time, active days, pages read percentage, reading speed, and time-of-day distribution (morning, afternoon, evening, night).\n"
+"• Browse Books: Use the left/right arrows to browse statistics for previously read books.\n"
+"• Quick Shortcuts: Tap 'Finished Books' or 'All Statistics' at the bottom for detailed views."
+msgstr ""
+"Guida e funzioni:\n"
+"• Apertura: Tocca gli anelli o le barre sul lato destro della scheda In lettura.\n"
+"• Analisi: Tempo totale, giorni attivi, percentuale letta, velocità e distribuzione oraria (mattina, pomeriggio, sera, notte).\n"
+"• Sfoglia libri: Usa le frecce sinistra/destra per i libri precedenti.\n"
+"• Scorciatoie: Tocca «Libri completati» o «Tutte le statistiche» in basso."
+
+msgid "Value-Label Gap"
+msgstr "Spazio valore-etichetta"
+
+msgid "Variant"
+msgstr "Variante"
+
+msgid "Vertical Bars"
+msgstr "Barre verticali"
+
+msgid "Vertical Spacing"
+msgstr "Spaziatura verticale"
+
+msgid "Visor Strip"
+msgstr "Striscia visore"
+
+msgid "Visual Items (Max 3)"
+msgstr "Elementi visivi (Max 3)"
+
+msgid "Visual Text Color"
+msgstr "Colore testo grafici"
+
+msgid "Visual colors reset."
+msgstr "Colori grafici ripristinati."
+
+msgid "Visuals Border: Off"
+msgstr "Bordo grafici: Off"
+
+msgid "Visuals Border: On"
+msgstr "Bordo grafici: On"
+
+msgid "Week Min"
+msgstr "Min/sett."
+
+msgid "Week Pg"
+msgstr "Pag./sett."
+
+msgid "Weekly"
+msgstr "Settimanale"
+
+msgid "Weekly Goals"
+msgstr "Obiettivi settimanali"
+
+msgid "Weekly Page Goal"
+msgstr "Obiettivo pagine settimanale"
+
+msgid "Weekly Time Goal"
+msgstr "Obiettivo tempo settimanale"
+
+msgid "Width Ratio (Stats / Visuals)"
+msgstr "Rapporto larghezza (Statistiche / Grafici)"
+
+msgid "Window Position"
+msgstr "Posizione finestra"
+
+msgid "Window Size"
+msgstr "Dimensione finestra"
+
+msgid "Window system not available."
+msgstr "Sistema finestre non disponibile."
+
+msgid "XhYm (e.g., 3h 30 min)"
+msgstr "XhYm (es. 3h 30 min)"
+
+msgid "Year Books"
+msgstr "Libri/anno"
+
+msgid "Year Min"
+msgstr "Min/anno"
+
+msgid "Year Pg"
+msgstr "Pag./anno"
+
+msgid "Yearly"
+msgstr "Annuale"
+
+msgid "Yearly Book Goal"
+msgstr "Obiettivo libri annuale"
+
+msgid "Yearly Books (2026)"
+msgstr "Libri annuali (2026)"
+
+msgid "Yearly Days (2026)"
+msgstr "Giorni annuali (2026)"
+
+msgid "Yearly Goals"
+msgstr "Obiettivi annuali"
+
+msgid "Yearly Page Goal"
+msgstr "Obiettivo pagine annuale"
+
+msgid "Yearly Pages (2026)"
+msgstr "Pagine annuali (2026)"
+
+msgid "Yearly Time (2026)"
+msgstr "Tempo annuale (2026)"
+
+msgid "Yearly Time Goal"
+msgstr "Obiettivo tempo annuale"
+
+msgid "You can activate at most %d progress visuals. Remove one first."
+msgstr "Puoi attivare al massimo %d grafici di avanzamento. Rimuovine prima uno."
+
+msgid "a day"
+msgstr "al giorno"
+
+msgid "all-time"
+msgstr "di sempre"
+
+msgid "books"
+msgstr "libri"
+
+msgid "days"
+msgstr "giorni"
+
+msgid "days ago"
+msgstr "giorni fa"
+
+msgid "days left"
+msgstr "giorni rim."
+
+msgid "days read"
+msgstr "giorni letti"
+
+msgid "days streak"
+msgstr "giorni serie"
+
+msgid "h"
+msgstr "h"
+
+msgid "highlights"
+msgstr "evidenziazioni"
+
+msgid "hours"
+msgstr "ore"
+
+msgid "hr"
+msgstr "h"
+
+msgid "m"
+msgstr "m"
+
+msgid "min"
+msgstr "min"
+
+msgid "mins/session"
+msgstr "min/sessione"
+
+msgid "months ago"
+msgstr "mesi fa"
+
+msgid "months left"
+msgstr "mesi rim."
+
+msgid "months read"
+msgstr "mesi letti"
+
+msgid "months streak"
+msgstr "mesi serie"
+
+msgid "notes"
+msgstr "note"
+
+msgid "pages"
+msgstr "pagine"
+
+msgid "pages (last)"
+msgstr "pag. (ultima)"
+
+msgid "pages left"
+msgstr "pagine rim."
+
+msgid "pages/min"
+msgstr "pag./min"
+
+msgid "read"
+msgstr "letti"
+
+msgid "remaining"
+msgstr "rimanenti"
+
+msgid "sec/page"
+msgstr "sec/pag."
+
+msgid "sessions"
+msgstr "sessioni"
+
+msgid "this month"
+msgstr "questo mese"
+
+msgid "this week"
+msgstr "questa sett."
+
+msgid "today"
+msgstr "oggi"
+
+msgid "weeks ago"
+msgstr "settimane fa"
+
+msgid "weeks left"
+msgstr "settimane rim."
+
+msgid "weeks read"
+msgstr "settimane lette"
+
+msgid "weeks streak"
+msgstr "settimane serie"
+
+msgid "← Back"
+msgstr "← Indietro"

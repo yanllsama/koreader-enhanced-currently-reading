@@ -4,6 +4,7 @@ local logger = require("logger")
 
 local C            = require("modules/currently_reading/config")
 local CFG          = C.CFG
+local _            = C._
 local getSUIModule = C.getSUIModule
 
 local M = {}
@@ -510,14 +511,14 @@ function CFG.exportProfilesToPlugin(pfx)
         local current_data = M.captureCurrentProfileData(pfx)
         cur_profiles = {
             {
-                name = "Varsayılan",
+                name = "Default",
                 locked = false,
                 data = current_data,
             }
         }
         if SUISettings then
             SUISettings:saveSetting(pfx .. CFG.PROFILES_KEY, cur_profiles)
-            SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, "Varsayılan")
+            SUISettings:saveSetting(pfx .. CFG.ACTIVE_PROFILE_KEY, "Default")
             if SUISettings.flush then pcall(function() SUISettings:flush() end) end
         end
     end
@@ -544,7 +545,7 @@ function CFG.exportProfilesToPlugin(pfx)
     end
     if not f then
         logger.err("simpleui_plus: failed to open " .. tostring(path) .. " for writing: " .. tostring(err))
-        return false, err or ("Dosya yazılamadı: " .. tostring(path))
+        return false, err or string.format(_("Failed to write file: %s"), tostring(path))
     end
     f:write(serialized)
     f:flush()

@@ -18,7 +18,15 @@ end
 local UIManager       = require("ui/uimanager")
 local InfoMessage     = require("ui/widget/infomessage")
 local logger          = require("logger")
-local _               = require("gettext")
+local _src_path = debug.getinfo(1, "S") and debug.getinfo(1, "S").source or ""
+local _plugin_dir = _src_path:sub(1, 1) == "@" and _src_path:sub(2):match("^(.*)[/\\]main%.lua$")
+if _plugin_dir and _plugin_dir ~= "" then
+    _G._simpleui_plus_path = _plugin_dir
+    if not package.path:find(_plugin_dir, 1, true) then
+        package.path = _plugin_dir .. "/?.lua;" .. _plugin_dir .. "/modules/?.lua;" .. package.path
+    end
+end
+local _               = require("infra/plus_i18n").translate
 
 -- Lazy load wizard when needed
 local function getWizardDialog()
@@ -915,7 +923,7 @@ function SimpleUIPlus:showWizard(is_manual)
             plugin:_applyModuleStates(selected_dict)
 
             UIManager:show(InfoMessage:new{
-                text = _("SimpleUI Plus: Seçilen modüller başarıyla kaydedildi ve SimpleUI ana ekranında aktif edildi."),
+                text = _("SimpleUI Plus: Selected modules have been saved and enabled on the SimpleUI home screen."),
                 timeout = 4,
             })
         end,
@@ -946,6 +954,14 @@ function SimpleUIPlus:init()
     if self.path and not package.path:find(self.path, 1, true) then
         package.path = self.path .. "/?.lua;" .. self.path .. "/modules/?.lua;" .. package.path
     end
+    pcall(function()
+        local pi = package.loaded["infra/plus_i18n"]
+        if pi and type(pi.reset) == "function" then pi.reset() end
+        local cfg_mod = package.loaded["modules/currently_reading/config"]
+        if cfg_mod and cfg_mod.CFG and type(cfg_mod.CFG.refreshTranslations) == "function" then
+            cfg_mod.CFG.refreshTranslations()
+        end
+    end)
 
     -- Immediate compatibility setup so Config and aliases are ready before any UI render
     pcall(function() self:_setupCompatAliases() end)
@@ -985,27 +1001,27 @@ end
 -- ---------------------------------------------------------------------------
 function SimpleUIPlus:addToMainMenu(menu_list)
     menu_list["simpleui_plus"] = {
-        text = _("SimpleUI Plus"),
+        text_func = function() return _("SimpleUI Plus") end,
         sorting_hint = "tools",
-        sub_item_table = {
+        sub_item_table_func = function() return {
             {
-                text = _("Kurulum Sihirbazı"),
-                help_text = _("Modülleri seçmek ve topluca aktif/pasif hale getirmek için kurulum ekranını açar."),
+                text = _("Setup Wizard"),
+                help_text = _("Open the setup wizard to select and toggle modules."),
                 callback = function() self:showWizard(true) end,
             },
             {
-                text = _("Modüller"),
+                text = _("Modules"),
                 sub_item_table_func = function() return self:_buildModuleToggleMenu() end,
             },
             {
-                text = _("Hakkında"),
+                text = _("About"),
                 callback = function()
                     UIManager:show(InfoMessage:new{
-                        text = _("SimpleUI Plus v1.0\nGeliştirici: Yanllsama\n\nSimpleUI için zenginleştirilmiş okuma modülleri ve interaktif kurulum sihirbazı paketi."),
+                        text = _("SimpleUI Plus v3.0.0\nDeveloper: Yanllsama\n\nEnhanced reading modules and interactive setup wizard suite for SimpleUI."),
                     })
                 end,
             },
-        },
+        } end,
     }
 end
 
@@ -1036,7 +1052,7 @@ function SimpleUIPlus:_buildModuleToggleMenu()
 
     if #menu == 0 then
         table.insert(menu, {
-            text = _("Kullanılabilir modül yok"),
+            text = _("No modules available"),
             enabled = false,
         })
     end

@@ -69,12 +69,12 @@ local function getSUIModule(short_name, default_folder)
 end
 
 local _ = (function()
-    local i18n = getSUIModule("sui_i18n", "infra")
-    if i18n and type(i18n.translate) == "function" then
-        return i18n
+    local ok_p, pi = pcall(require, "infra/plus_i18n")
+    if ok_p and pi and type(pi.translate) == "function" then
+        return pi.translate
     end
-    return require("gettext")
-end)().translate
+    return function(s) return s end
+end)()
 
 local Config = getSUIModule("sui_config", "infra")
 
@@ -110,13 +110,17 @@ local Size = require("ui/size")
 
 local CBS = {
     id              = "currently_books_stat",
-    name            = _("Kitap İstatistikleri Penceresi"),
-    description     = _("Halka ve çubuk grafiklerine dokunulduğunda açılan zenginleştirilmiş okuma istatistikleri ve zaman analizi penceresi."),
-    how_to_use      = _("Kullanım Rehberi & Özellikler:\n• Nasıl Açılır: Ana ekranda Şu An Okunan Kitap kartının sağ tarafındaki halka veya çubuk grafiğine dokunun.\n• Analizler: Toplam süre, gün sayısı, okunan sayfa oranı, sayfa hızı ve günün saatlerine göre okuma dağılımı (sabah, öğlen, akşam, gece).\n• Kitaplar Arası Geçiş: Sağ/sol oklarla geçmişte okuduğunuz kitapların istatistikleri arasında gezinebilirsiniz.\n• Doğrudan Butonlar: Alt kısımdaki 'Bitirilenler' ve 'Tüm İstatistikler' ile detay ekranlarına hızla ulaşabilirsiniz."),
     default_enabled = true,
     enabled_key     = "currently_books_stat",
     is_popup        = true,
 }
+
+function CBS.refreshTranslations()
+    CBS.name        = _("Book Statistics Window")
+    CBS.description = _("Detailed reading statistics and time-of-day distribution window opened by tapping the progress rings or bars.")
+    CBS.how_to_use  = _("User Guide & Features:\n• How to Open: Tap the progress rings or bars on the right side of the Currently Reading card.\n• Analytics: View total reading time, active days, pages read percentage, reading speed, and time-of-day distribution (morning, afternoon, evening, night).\n• Browse Books: Use the left/right arrows to browse statistics for previously read books.\n• Quick Shortcuts: Tap 'Finished Books' or 'All Statistics' at the bottom for detailed views.")
+end
+CBS.refreshTranslations()
 
 function CBS.isEnabled()
     local SUIStore = getSUIModule("sui_store", "infra")
@@ -599,10 +603,10 @@ function CBS.showBookStatsWindow(fp, md5, ui_context)
         local CLR_NGHT = Blitbuffer.COLOR_DARK_GRAY or Blitbuffer.gray(0.8)
 
         local tod_items = {
-            { "Sabah", tod.morning,   CLR_MORN },
-            { "Öğlen", tod.afternoon, CLR_AFT  },
-            { "Akşam", tod.evening,   CLR_EVE  },
-            { "Gece",  tod.night,     CLR_NGHT },
+            { _("Morning"),   tod.morning,   CLR_MORN },
+            { _("Afternoon"), tod.afternoon, CLR_AFT  },
+            { _("Evening"),   tod.evening,   CLR_EVE  },
+            { _("Night"),     tod.night,     CLR_NGHT },
         }
         local lbl_w_tod = Screen:scaleBySize(60) -- Reduced slightly since no icon
         local pct_w_spc = Screen:scaleBySize(45)
@@ -621,7 +625,7 @@ function CBS.showBookStatsWindow(fp, md5, ui_context)
         local tod_card = FrameContainer:new{
             bordersize = SUIStyle.BORDER_SZ, color = CLR_BORDER, radius = Screen:scaleBySize(12), padding = Screen:scaleBySize(8),
             VerticalGroup:new{ align = "center",
-                TextWidget:new{ text = "Okuma Zamanı Dağılımı", face = face_author, bold = true, fgcolor = CLR_BLACK },
+                TextWidget:new{ text = _("Reading Time Distribution"), face = face_author, bold = true, fgcolor = CLR_BLACK },
                 tod_vg
             }
         }
@@ -732,7 +736,7 @@ function CBS.showBookStatsWindow(fp, md5, ui_context)
         end
 
         local finished_stats_btn = Button:new{
-            text = "Bitirilenler",
+            text = _("Finished Books"),
             callback = function()
                 local UIManager = require("ui/uimanager")
                 UIManager:nextTick(function()
@@ -751,7 +755,7 @@ function CBS.showBookStatsWindow(fp, md5, ui_context)
         }
 
         local all_stats_btn = Button:new{
-            text = "Tüm İstatistikler",
+            text = _("All Statistics"),
             callback = function()
                 local UIManager = require("ui/uimanager")
                 UIManager:nextTick(function()
@@ -811,7 +815,7 @@ function CBS.showBookStatsWindow(fp, md5, ui_context)
     end
 
     my_win = SUIWindow:new{
-        title = "Kitap İstatistikleri",
+        title = _("Book Statistics"),
         height = math.floor(Screen:getHeight() * 0.96),
         position = "bottom",
         navpager_mode = Config.isNavpagerEnabled and Config.isNavpagerEnabled() or false,

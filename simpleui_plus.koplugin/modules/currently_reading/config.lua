@@ -92,8 +92,35 @@ local function ensureBentoCompat(cfg)
     end
 end
 
-local SUI_i18n = getSUIModule("sui_i18n", "infra")
-local _        = SUI_i18n and SUI_i18n.translate or require("gettext")
+local PlusI18n = (function()
+    local ok, mod = pcall(require, "infra/plus_i18n")
+    if ok and mod and type(mod.translate) == "function" then return mod end
+    return nil
+end)()
+local _        = (PlusI18n and PlusI18n.translate) or function(s) return s end
+local N_       = (PlusI18n and PlusI18n.ngettext) or function(a, b, n) return (n == 1) and a or b end
+local function wrapTranslate(_unused)
+    return _
+end
+
+local LANG_OPTIONS = (PlusI18n and PlusI18n.LANG_OPTIONS) or {
+    { code = "auto", label = "Auto (Follow KOReader)", native = "Auto" },
+    { code = "en",   label = "English",                native = "English" },
+}
+local function getLanguage()
+    if PlusI18n and type(PlusI18n.getOverrideLang) == "function" then
+        return PlusI18n.getOverrideLang()
+    end
+    return "auto"
+end
+local function setLanguage(code, refresh_fn)
+    if PlusI18n and type(PlusI18n.setOverrideLang) == "function" then
+        PlusI18n.setOverrideLang(code)
+    end
+    if type(refresh_fn) == "function" then
+        pcall(refresh_fn)
+    end
+end
 
 local function getSH()
     local mod = getSUIModule("module_books_shared", "modules")
@@ -227,47 +254,48 @@ local CFG = {
 CFG.MAX_VISUAL_ITEMS = 3
 CFG.DEFAULT_VISUAL_ITEMS = { "daily_page", "book_progress" }
 
-CFG.STAT_LABELS = {
-    book_time_left          = _("Time Left"),
-    book_pages_read         = _("Pages Read"),
-    book_time_spent         = _("Time Spent"),
-    pages_left              = _("Pages Left"),
-    days_reading            = _("Days Reading"),
-    days_to_go              = _("Days to Go"),
-    avg_time_per_day        = _("Daily Average"),
-    pages_per_minute        = _("Pages/Minute"),
-    mins_per_session        = _("Mins/Session"),
-    pages_last_session      = _("Last Session Pages"),
-    today_pages             = _("Today's Pages"),
-    today_time              = _("Today's Time"),
-    seconds_per_page        = _("Sec/Page"),
-    days_since_start        = _("Days Since Start"),
-    started_date            = _("Started Date"),
-    last_read_date          = _("Last Read Date"),
-    estimated_finish_date   = _("Est. Finish Date"),
-    total_sessions          = _("Total Sessions"),
-    reading_streak          = _("Daily Streak"),
-    highlights_count        = _("Highlights"),
-    notes_count             = _("Notes"),
-    this_chapter_pages_left = _("Chapter Pages Left"),
-    this_chapter_time_left  = _("Chapter Time Left"),
-    week_pages              = _("This Week's Pages"),
-    week_time               = _("This Week's Time"),
-    week_books              = _("This Week's Books"),
-    week_days               = _("This Week's Days"),
-    month_pages             = _("This Month's Pages"),
-    month_time              = _("This Month's Time"),
-    month_books             = _("This Month's Books"),
-    month_days              = _("This Month's Days"),
-    year_pages              = _("Yearly Pages (2026)"),
-    year_time               = _("Yearly Time (2026)"),
-    year_books              = _("Yearly Books (2026)"),
-    year_days               = _("Yearly Days (2026)"),
-    all_time_pages          = _("All-Time Pages"),
-    all_time_time           = _("All-Time Duration"),
-    all_time_books          = _("All-Time Books"),
-    all_time_days           = _("All-Time Days"),
+local RAW_STAT_LABELS = {
+    book_time_left          = "Time Left",
+    book_pages_read         = "Pages Read",
+    book_time_spent         = "Time Spent",
+    pages_left              = "Pages Left",
+    days_reading            = "Days Reading",
+    days_to_go              = "Days to Go",
+    avg_time_per_day        = "Daily Average",
+    pages_per_minute        = "Pages/Minute",
+    mins_per_session        = "Mins/Session",
+    pages_last_session      = "Last Session Pages",
+    today_pages             = "Today's Pages",
+    today_time              = "Today's Time",
+    seconds_per_page        = "Sec/Page",
+    days_since_start        = "Days Since Start",
+    started_date            = "Started Date",
+    last_read_date          = "Last Read Date",
+    estimated_finish_date   = "Est. Finish Date",
+    total_sessions          = "Total Sessions",
+    reading_streak          = "Daily Streak",
+    highlights_count        = "Highlights",
+    notes_count             = "Notes",
+    this_chapter_pages_left = "Chapter Pages Left",
+    this_chapter_time_left  = "Chapter Time Left",
+    week_pages              = "This Week's Pages",
+    week_time               = "This Week's Time",
+    week_books              = "This Week's Books",
+    week_days               = "This Week's Days",
+    month_pages             = "This Month's Pages",
+    month_time              = "This Month's Time",
+    month_books             = "This Month's Books",
+    month_days              = "This Month's Days",
+    year_pages              = "Yearly Pages (2026)",
+    year_time               = "Yearly Time (2026)",
+    year_books              = "Yearly Books (2026)",
+    year_days               = "Yearly Days (2026)",
+    all_time_pages          = "All-Time Pages",
+    all_time_time           = "All-Time Duration",
+    all_time_books          = "All-Time Books",
+    all_time_days           = "All-Time Days",
 }
+CFG.STAT_LABELS = {}
 
 CFG.DEFAULT_STAT_ORDER = {
     "book_time_left", "book_pages_read",
@@ -289,57 +317,54 @@ CFG.DEFAULT_STAT_ORDER = {
 }
 
 local STAT_GROUPS = {
-    { id = "book_time_left",          group = _("This Book") },
-    { id = "book_pages_read",         group = _("This Book") },
-    { id = "book_time_spent",         group = _("This Book") },
-    { id = "pages_left",              group = _("This Book") },
-    { id = "this_chapter_pages_left", group = _("This Book") },
-    { id = "this_chapter_time_left",  group = _("This Book") },
-    { id = "days_reading",            group = _("This Book") },
-    { id = "days_to_go",              group = _("This Book") },
-    { id = "days_since_start",        group = _("This Book") },
-    { id = "started_date",            group = _("This Book") },
-    { id = "last_read_date",          group = _("This Book") },
-    { id = "estimated_finish_date",   group = _("This Book") },
-    { id = "total_sessions",          group = _("This Book") },
-    { id = "pages_last_session",      group = _("This Book") },
-    { id = "highlights_count",        group = _("This Book") },
-    { id = "notes_count",             group = _("This Book") },
+    { id = "book_time_left",          raw_group = "This Book",      group = "This Book" },
+    { id = "book_pages_read",         raw_group = "This Book",      group = "This Book" },
+    { id = "book_time_spent",         raw_group = "This Book",      group = "This Book" },
+    { id = "pages_left",              raw_group = "This Book",      group = "This Book" },
+    { id = "this_chapter_pages_left", raw_group = "This Book",      group = "This Book" },
+    { id = "this_chapter_time_left",  raw_group = "This Book",      group = "This Book" },
+    { id = "days_reading",            raw_group = "This Book",      group = "This Book" },
+    { id = "days_to_go",              raw_group = "This Book",      group = "This Book" },
+    { id = "days_since_start",        raw_group = "This Book",      group = "This Book" },
+    { id = "started_date",            raw_group = "This Book",      group = "This Book" },
+    { id = "last_read_date",          raw_group = "This Book",      group = "This Book" },
+    { id = "estimated_finish_date",   raw_group = "This Book",      group = "This Book" },
+    { id = "total_sessions",          raw_group = "This Book",      group = "This Book" },
+    { id = "pages_last_session",      raw_group = "This Book",      group = "This Book" },
+    { id = "highlights_count",        raw_group = "This Book",      group = "This Book" },
+    { id = "notes_count",             raw_group = "This Book",      group = "This Book" },
 
-    { id = "avg_time_per_day",        group = _("Speed & Pace") },
-    { id = "pages_per_minute",        group = _("Speed & Pace") },
-    { id = "seconds_per_page",        group = _("Speed & Pace") },
-    { id = "mins_per_session",        group = _("Speed & Pace") },
+    { id = "avg_time_per_day",        raw_group = "Speed & Pace",   group = "Speed & Pace" },
+    { id = "pages_per_minute",        raw_group = "Speed & Pace",   group = "Speed & Pace" },
+    { id = "seconds_per_page",        raw_group = "Speed & Pace",   group = "Speed & Pace" },
+    { id = "mins_per_session",        raw_group = "Speed & Pace",   group = "Speed & Pace" },
 
-    { id = "today_pages",             group = _("Today & Streak") },
-    { id = "today_time",              group = _("Today & Streak") },
-    { id = "reading_streak",          group = _("Today & Streak") },
+    { id = "today_pages",             raw_group = "Today & Streak", group = "Today & Streak" },
+    { id = "today_time",              raw_group = "Today & Streak", group = "Today & Streak" },
+    { id = "reading_streak",          raw_group = "Today & Streak", group = "Today & Streak" },
 
-    { id = "week_pages",              group = _("This Week") },
-    { id = "week_time",               group = _("This Week") },
-    { id = "week_books",              group = _("This Week") },
-    { id = "week_days",               group = _("This Week") },
+    { id = "week_pages",              raw_group = "This Week",      group = "This Week" },
+    { id = "week_time",               raw_group = "This Week",      group = "This Week" },
+    { id = "week_books",              raw_group = "This Week",      group = "This Week" },
+    { id = "week_days",               raw_group = "This Week",      group = "This Week" },
 
-    { id = "month_pages",             group = _("This Month") },
-    { id = "month_time",              group = _("This Month") },
-    { id = "month_books",             group = _("This Month") },
-    { id = "month_days",              group = _("This Month") },
+    { id = "month_pages",             raw_group = "This Month",     group = "This Month" },
+    { id = "month_time",              raw_group = "This Month",     group = "This Month" },
+    { id = "month_books",             raw_group = "This Month",     group = "This Month" },
+    { id = "month_days",              raw_group = "This Month",     group = "This Month" },
 
-    { id = "year_pages",              group = _("Yearly") },
-    { id = "year_time",               group = _("Yearly") },
-    { id = "year_books",              group = _("Yearly") },
-    { id = "year_days",               group = _("Yearly") },
+    { id = "year_pages",              raw_group = "Yearly",         group = "Yearly" },
+    { id = "year_time",               raw_group = "Yearly",         group = "Yearly" },
+    { id = "year_books",              raw_group = "Yearly",         group = "Yearly" },
+    { id = "year_days",               raw_group = "Yearly",         group = "Yearly" },
 
-    { id = "all_time_pages",          group = _("All-Time") },
-    { id = "all_time_time",           group = _("All-Time") },
-    { id = "all_time_books",          group = _("All-Time") },
-    { id = "all_time_days",           group = _("All-Time") },
+    { id = "all_time_pages",          raw_group = "All-Time",       group = "All-Time" },
+    { id = "all_time_time",           raw_group = "All-Time",       group = "All-Time" },
+    { id = "all_time_books",          raw_group = "All-Time",       group = "All-Time" },
+    { id = "all_time_days",           raw_group = "All-Time",       group = "All-Time" },
 }
 
 local STAT_GROUP_OF = {}
-for _, g in ipairs(STAT_GROUPS) do
-    STAT_GROUP_OF[g.id] = g.group
-end
 
 function CFG.getStatGroup(id)
     return STAT_GROUP_OF[id]
@@ -349,11 +374,11 @@ function CFG.getStatPool(_lc)
     local tr = _lc or _
     local pool = {}
     for _, entry in ipairs(STAT_GROUPS) do
-        local lbl = CFG.STAT_LABELS[entry.id] or entry.id
+        local lbl = RAW_STAT_LABELS[entry.id] or entry.id
         pool[#pool + 1] = {
             id    = entry.id,
             label = tr(lbl),
-            group = tr(entry.group),
+            group = tr(entry.raw_group),
         }
     end
     return pool
@@ -361,22 +386,39 @@ end
 
 -- Progress Visual Item Registry (used by both visuals renderer & menu picker)
 local VISUAL_DEFS = {
-    { id = "book_progress", label = _("Book Progress"),      short = _("Book"),       group = _("Book Progress"), kind = "book" },
-    { id = "daily_page",    label = _("Daily Page Goal"),    short = _("Daily Pg"),   group = _("Daily Goals"),   kind = "pages", period = "day" },
-    { id = "daily_time",    label = _("Daily Time Goal"),    short = _("Daily Min"),  group = _("Daily Goals"),   kind = "time",  period = "day" },
-    { id = "week_pages",    label = _("Weekly Page Goal"),   short = _("Week Pg"),    group = _("Weekly Goals"),  kind = "pages", period = "week" },
-    { id = "week_time",     label = _("Weekly Time Goal"),   short = _("Week Min"),   group = _("Weekly Goals"),  kind = "time",  period = "week" },
-    { id = "month_pages",   label = _("Monthly Page Goal"),  short = _("Month Pg"),   group = _("Monthly Goals"), kind = "pages", period = "month" },
-    { id = "month_time",    label = _("Monthly Time Goal"),  short = _("Month Min"),  group = _("Monthly Goals"), kind = "time",  period = "month" },
-    { id = "year_pages",    label = _("Yearly Page Goal"),   short = _("Year Pg"),    group = _("Yearly Goals"),  kind = "pages", period = "year" },
-    { id = "year_time",     label = _("Yearly Time Goal"),   short = _("Year Min"),   group = _("Yearly Goals"),  kind = "time",  period = "year" },
-    { id = "year_books",    label = _("Yearly Book Goal"),   short = _("Year Books"), group = _("Yearly Goals"),  kind = "books", period = "year" },
+    { id = "book_progress", raw_label = "Book Progress",     raw_short = "Book",       raw_group = "Book Progress", kind = "book" },
+    { id = "daily_page",    raw_label = "Daily Page Goal",   raw_short = "Daily Pg",   raw_group = "Daily Goals",   kind = "pages", period = "day" },
+    { id = "daily_time",    raw_label = "Daily Time Goal",   raw_short = "Daily Min",  raw_group = "Daily Goals",   kind = "time",  period = "day" },
+    { id = "week_pages",    raw_label = "Weekly Page Goal",  raw_short = "Week Pg",    raw_group = "Weekly Goals",  kind = "pages", period = "week" },
+    { id = "week_time",     raw_label = "Weekly Time Goal",  raw_short = "Week Min",   raw_group = "Weekly Goals",  kind = "time",  period = "week" },
+    { id = "month_pages",   raw_label = "Monthly Page Goal", raw_short = "Month Pg",   raw_group = "Monthly Goals", kind = "pages", period = "month" },
+    { id = "month_time",    raw_label = "Monthly Time Goal", raw_short = "Month Min",  raw_group = "Monthly Goals", kind = "time",  period = "month" },
+    { id = "year_pages",    raw_label = "Yearly Page Goal",  raw_short = "Year Pg",    raw_group = "Yearly Goals",  kind = "pages", period = "year" },
+    { id = "year_time",     raw_label = "Yearly Time Goal",  raw_short = "Year Min",   raw_group = "Yearly Goals",  kind = "time",  period = "year" },
+    { id = "year_books",    raw_label = "Yearly Book Goal",  raw_short = "Year Books", raw_group = "Yearly Goals",  kind = "books", period = "year" },
 }
 
 local VISUAL_BY_ID = {}
 for _, v in ipairs(VISUAL_DEFS) do
     VISUAL_BY_ID[v.id] = v
 end
+
+function CFG.refreshTranslations()
+    for id, raw_lbl in pairs(RAW_STAT_LABELS) do
+        CFG.STAT_LABELS[id] = _(raw_lbl)
+    end
+    for _idx, g in ipairs(STAT_GROUPS) do
+        local tr_g = _(g.raw_group)
+        g.group = tr_g
+        STAT_GROUP_OF[g.id] = tr_g
+    end
+    for _idx, v in ipairs(VISUAL_DEFS) do
+        v.label = _(v.raw_label)
+        v.short = _(v.raw_short)
+        v.group = _(v.raw_group)
+    end
+end
+CFG.refreshTranslations()
 
 CFG.VISUAL_DEFS  = VISUAL_DEFS
 CFG.VISUAL_BY_ID = VISUAL_BY_ID
@@ -387,8 +429,8 @@ function CFG.getVisualPool(_lc)
     for _, v in ipairs(VISUAL_DEFS) do
         pool[#pool + 1] = {
             id    = v.id,
-            label = tr(v.label),
-            group = tr(v.group),
+            label = tr(v.raw_label),
+            group = tr(v.raw_group),
         }
     end
     return pool
@@ -1216,6 +1258,11 @@ end
 return {
     CFG             = CFG,
     _               = _,
+    N_              = N_,
+    wrapTranslate   = wrapTranslate,
+    LANG_OPTIONS    = LANG_OPTIONS,
+    getLanguage     = getLanguage,
+    setLanguage     = setLanguage,
     getSUIModule    = getSUIModule,
     ensureBentoCompat = ensureBentoCompat,
     getSH           = getSH,

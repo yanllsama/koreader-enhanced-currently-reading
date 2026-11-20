@@ -389,10 +389,13 @@ end
 local M = {}
 
 M.id              = "currently_yanllsama"
-M.name            = _("Şu An Okunan Kitap")
-M.label           = _("Şu An Okunan")
-M.description     = _("Dinamik ızgara, 10 zengin istatistik metriği, dikey çubuk ve halka grafikleri sunan gelişmiş okuma gösterge paneli.")
-M.how_to_use      = _("Kullanım Rehberi & Özellikler:\n• Kitap Özeti: Kitap kapağına veya başlığına dokunarak kitap özetini ve açıklamasını açabilirsiniz.\n• Halka / Çubuk İstatistikleri: Sağdaki ilerleme halkalarına veya çubuklarına dokunarak detaylı okuma grafikleri penceresini (Books Stat) açabilirsiniz.\n• Hızlı İstatistik: İstatistikler tablosuna dokunarak okuma bilgileri özet penceresine ulaşabilirsiniz.\n• Çoklu Kitap Desteği (Kapak Yığını): 1, 3 veya 5 kitaplık kapak desteği ile okuma geçmişinizdeki kitaplar arasında dikey kaydırma veya dokunmayla hızla gezinebilirsiniz.\n• Tamamen Özelleştirilebilir: Izgara boyutları (1-4 sütun, 1-7 satır), dinamik genişlik paylaşımı (%50-%80), metin boyutları, yazı tipleri, çerçeveler ve kategori başlık stilleri.")
+function M.refreshTranslations()
+    M.name            = _("Currently Reading (Yanllsama)")
+    M.label           = _("Currently Reading")
+    M.description     = _("Enhanced reading dashboard featuring a dynamic stats grid, 39 reading metrics, 45 progress visuals, and multi-book cover deck.")
+    M.how_to_use      = _("User Guide & Features:\n• Book Summary: Tap the book cover or title/author to view the book summary.\n• Progress Visuals: Tap the rings or bars on the right to open the detailed Book Stats window.\n• Quick Insights: Tap the statistics grid to open the Reading Insights popup.\n• Multi-Book Cover Deck: Swipe vertically or tap stacked covers (1, 3, 5, or 7 books) to switch between recent or TBR books.\n• Fully Customizable: Dynamic grid (1–4 columns, 1–7 rows), width ratio, typography, colors, borders, 2D live positioning, and profiles.")
+end
+M.refreshTranslations()
 M.default_enabled = true
 M.enabled_key     = "currently_yanllsama"
 M.default_on      = true
@@ -1129,8 +1132,8 @@ local function _buildWidget(w, ctx, pfx, SH, bd, cover, stats, D, scale, lbl_sca
     local stat_defs = {
         book_time_spent         = { data = stats.book_time_spent,         extra = _("read") },
         book_pages_read         = { data = stats.book_pages_read,         extra = "" },
-        book_time_left          = { data = stats.book_time_left,          extra = _("left") },
-        pages_left              = { data = pages_left_data,               extra = _("left") },
+        book_time_left          = { data = stats.book_time_left,          extra = _("remaining") },
+        pages_left              = { data = pages_left_data,               extra = _("remaining") },
         days_reading            = { data = stats.days_reading,            extra = "" },
         days_to_go              = { data = stats.days_to_go,              extra = "" },
         avg_time_per_day        = { data = stats.avg_time_per_day,        extra = _("a day") },
@@ -1963,6 +1966,8 @@ M.seedBundledProfiles = CFG.seedDefaultProfiles
 M.exportProfilesToPlugin = CFG.exportProfilesToPlugin
 
 function M.getMenuItems(ctx_menu)
+    if type(CFG.refreshTranslations) == "function" then pcall(CFG.refreshTranslations) end
+    if type(M.refreshTranslations) == "function" then pcall(M.refreshTranslations) end
     return MenuMod.buildMenuItems(ctx_menu)
 end
 
